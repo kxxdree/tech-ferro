@@ -1,0 +1,277 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../assets/fonts/Gotham Pro/gothampro.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../assets/fonts/Gotham Pro/gothampro_medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../assets/fonts/Gotham Pro/gothampro_bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: 0.3rem;
+  font-size: calc(16 * (min(100vw, 1920px) / 1920));
+  list-style-type: none;
+}
+
+body {
+  font-family: "Gotham Pro", sans-serif;
+  background-color: #fff;
+  min-width: 20rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+button:hover {
+  opacity: 0.9;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 120rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: transparent;
+  padding: 1.25rem 4rem;
+  transition: all 0.3s ease;
+  border-bottom: 1.33px solid rgba(255, 255, 255, 0.3);
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 3.75rem;
+}
+
+.header__logo img {
+  max-height: 3.375rem;
+  max-width: 9.375rem;
+}
+
+.header__menu {
+  display: flex;
+  list-style: none;
+}
+
+.header__menu a {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.315rem;
+  line-height: 1.5;
+  letter-spacing: -5%;
+  padding: 0.625rem 2rem;
+}
+
+.header__menu a:hover {
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+
+.header__buttons {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.header__buttons-wrapper {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.header__buttons-wrapper:hover {
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+
+.header__buttons img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.header__cart .header__search {
+  position: relative;
+}
+
+.header__cart-count {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  background-color: #ff4444;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.hero {
+  width: 100%;
+  background-image: url("../assets/images/main-page/hero-section.jpg");
+  background-repeat: no-repeat;
+  background-position: center 40%;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+.hero__container {
+  width: 100%;
+  margin-top: 11.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+  border-bottom: 1.33px solid rgba(255, 255, 255, 0.3);
+  gap: 2rem;
+}
+
+.hero__subtitle-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 4rem;
+  border-bottom: 1.33px solid rgba(255, 255, 255, 0.3);
+}
+
+.hero__title {
+  font-size: 1.625rem;
+  font-weight: 400;
+  line-height: 1.1;
+  color: #fff;
+  min-width: 35.75rem;
+  text-transform: uppercase;
+}
+
+.hero__title-right {
+  display: block;
+  text-align: right;
+}
+
+.hero__title-left {
+  display: block;
+  text-align: left;
+}
+
+.hero__description {
+  font-size: 11rem;
+  font-weight: 400;
+  letter-spacing: -0.08em;
+  color: #fff;
+}
+
+.hero__cookies {
+  position: absolute;
+  z-index: 20;
+  bottom: 0rem;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: auto auto 2.5rem;
+  background-color: #fcf7f3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  padding: 1.5rem;
+}
+
+.hero__cookies p {
+  line-height: 1.2;
+  font-size: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.hero__cookies p span a {
+  text-decoration: underline;
+}
+
+.hero__cookies p span a:hover {
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+
+.hero__cookies button {
+  border: none;
+  border-radius: 4px;
+  padding: 1rem 1.5rem;
+  color: white;
+  font-size: 1rem;
+  background-color: #252324;
+}
+
+.hero__catalog-link {
+  position: absolute;
+  width: 25rem;
+  height: 25rem;
+  bottom: 2.5rem;
+  right: 19.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1.33px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  padding: 42.67px;
+  backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.1);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.hero__catalog-link a {
+  text-wrap: nowrap;
+  color: white;
+  font-size: 2rem;
+}
+
+.hero__catalog-link:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all 0.3s;
+}
