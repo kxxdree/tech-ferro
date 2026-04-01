@@ -3,66 +3,260 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ТехФерро</title>
+    <title>ТехФерро — Мангалы и костровые чаши</title>
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="header__container container">
-        <div class="header__logo">
-          <img src="/assets/icons/logo.svg" alt="Логотип" />
+
+    <!-- ═══ TASKBAR ═══ -->
+    <div class="taskbar">
+      <button class="start-btn">
+        <span class="start-icon">⊞</span> Пуск
+      </button>
+      <div class="taskbar-divider"></div>
+      <div class="taskbar-active-window">
+        <span class="win-icon">🔥</span> ТехФерро — Главная
+      </div>
+      <div class="taskbar-tray">
+        <span class="tray-item">🔊</span>
+        <span class="tray-item">🌐</span>
+        <span class="tray-time" id="tray-clock">12:00</span>
+      </div>
+    </div>
+
+    <!-- ═══ DESKTOP ═══ -->
+    <div class="desktop">
+
+      <!-- Desktop Icons -->
+      <div class="desktop-icons">
+        <div class="desktop-icon">
+          <div class="desktop-icon__img">📁</div>
+          <span>Каталог</span>
         </div>
-        <nav class="header__nav">
-          <ul class="header__menu">
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Каталог</a></li>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Контакты</a></li>
-            <li><a href="#">+7 (952) 500-50-50</a></li>
-          </ul>
-        </nav>
-        <div class="header__buttons">
-          <div class="header__buttons-wrapper">
-            <img class="header__cart" src="assets/icons/search.svg" alt="Поиск" />
-          </div>
-          <div class="header__buttons-wrapper">
-            <img class="header__search" src="assets/icons/cart.svg" alt="Корзина" />
-          </div>
-          <!-- <span class="header__cart-count">0</span> -->
+        <div class="desktop-icon">
+          <div class="desktop-icon__img">🛒</div>
+          <span>Корзина</span>
+        </div>
+        <div class="desktop-icon">
+          <div class="desktop-icon__img">📞</div>
+          <span>Контакты</span>
+        </div>
+        <div class="desktop-icon">
+          <div class="desktop-icon__img">ℹ️</div>
+          <span>О нас</span>
         </div>
       </div>
-    </header>
 
-    <main class="main">
-      <section class="hero">
-        <div class="hero__container container">
-          <div class="hero__title-wrapper">
-            <h1 class="hero__title">
-              <span class="hero__title-right">Мангалы и костровые чаши</span>
-              <span class="hero__title-left">из прочного металла для дома</span>
-              <span class="hero__title-left">и пространства отдыха</span>
-            </h1>
-            <h2 class="hero__description">Когда металл</h2>
+      <!-- ═══ MAIN WINDOW ═══ -->
+      <div class="window main-window">
+
+        <!-- Title Bar -->
+        <div class="window__titlebar">
+          <div class="titlebar__left">
+            <span class="titlebar__icon">🔥</span>
+            <span class="titlebar__title">ТехФерро — Мангалы и костровые чаши из прочного металла</span>
           </div>
-          <div class="hero__subtitle-wrapper">
-            <h2 class="hero__description">становится уютом</h2>
-          </div>
-        </div>
-        <div class="hero__cookies">
-          <p>
-            Мы используем <span><a href="">куки</a></span
-            >, чтобы сайт хорошо работал. <br />
-            Продолжая им пользоваться, вы соглашаетесь на обработку ваших куки‑файлов.
-          </p>
-          <button>Принято!</button>
-        </div>
-        <div class="hero__catalog-link">
-          <div style="display: flex; align-items: center; gap: 1.25rem; border-bottom: 1px solid white">
-            <a href="/catalog">Смотреть каталог</a>
-            <img src="assets/icons/link-icon.svg" />
+          <div class="titlebar__controls">
+            <button class="win-btn win-btn--minimize" title="Свернуть">_</button>
+            <button class="win-btn win-btn--maximize" title="Развернуть">□</button>
+            <button class="win-btn win-btn--close" title="Закрыть">✕</button>
           </div>
         </div>
-      </section>
-    </main>
+
+        <!-- Menu Bar -->
+        <div class="window__menubar">
+          <span class="menu-item">Файл</span>
+          <span class="menu-item">Вид</span>
+          <span class="menu-item menu-item--active">Главная</span>
+          <span class="menu-item">Каталог</span>
+          <span class="menu-item">О нас</span>
+          <span class="menu-item">Контакты</span>
+          <span class="menu-item">Справка</span>
+        </div>
+
+        <!-- Toolbar -->
+        <div class="window__toolbar">
+          <button class="toolbar-btn" title="Назад">◄</button>
+          <button class="toolbar-btn" title="Вперёд">►</button>
+          <button class="toolbar-btn" title="Обновить">↺</button>
+          <button class="toolbar-btn" title="Домой">🏠</button>
+          <div class="toolbar-divider"></div>
+          <div class="address-bar">
+            <span class="address-label">Адрес:</span>
+            <input class="address-input" type="text" value="http://www.techferro.ru/" readonly />
+            <button class="address-go">Перейти</button>
+          </div>
+          <div class="toolbar-divider"></div>
+          <button class="toolbar-btn" title="Поиск">🔍</button>
+          <button class="toolbar-btn" title="Корзина">🛒</button>
+          <span class="toolbar-phone">📞 +7 (952) 500-50-50</span>
+        </div>
+
+        <!-- Window Content -->
+        <div class="window__content">
+
+          <!-- Left Sidebar (Explorer-style) -->
+          <aside class="sidebar">
+            <div class="sidebar__section">
+              <div class="sidebar__header">Разделы сайта</div>
+              <ul class="sidebar__list">
+                <li class="sidebar__item sidebar__item--active">🏠 Главная</li>
+                <li class="sidebar__item">📦 Каталог</li>
+                <li class="sidebar__item">🔥 Мангалы</li>
+                <li class="sidebar__item">🪵 Костровые чаши</li>
+                <li class="sidebar__item">🔧 Аксессуары</li>
+                <li class="sidebar__item">📞 Контакты</li>
+                <li class="sidebar__item">ℹ️ О компании</li>
+              </ul>
+            </div>
+            <div class="sidebar__section">
+              <div class="sidebar__header">Информация</div>
+              <div class="sidebar__info-box">
+                <p><strong>Тип:</strong> Веб-страница</p>
+                <p><strong>Адрес:</strong> techferro.ru</p>
+                <p><strong>Изменено:</strong> 01.04.2000</p>
+              </div>
+            </div>
+            <div class="sidebar__section">
+              <div class="sidebar__header">Другие ресурсы</div>
+              <ul class="sidebar__list">
+                <li class="sidebar__item">💾 Сохранить</li>
+                <li class="sidebar__item">🖨️ Печать</li>
+                <li class="sidebar__item">📧 Отправить</li>
+              </ul>
+            </div>
+          </aside>
+
+          <!-- Main Content Area -->
+          <main class="content-area">
+
+            <!-- Hero Banner -->
+            <div class="hero-banner">
+              <div class="hero-banner__image-wrap">
+                <img src="assets/images/main-page/hero-section.jpg" alt="Мангалы и костровые чаши ТехФерро" class="hero-banner__img" />
+                <div class="hero-banner__overlay">
+                  <div class="hero-banner__text">
+                    <h1 class="hero-banner__title">Мангалы и костровые&nbsp;чаши</h1>
+                    <p class="hero-banner__subtitle">Когда металл становится уютом</p>
+                    <a href="/catalog" class="win2k-button win2k-button--primary">Смотреть каталог &gt;&gt;</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Welcome Panel -->
+            <div class="panel">
+              <div class="panel__titlebar">Добро пожаловать в ТехФерро!</div>
+              <div class="panel__body">
+                <table class="info-table" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td class="info-table__icon">🔥</td>
+                    <td>
+                      <strong>Мангалы из прочного металла</strong> для дома и пространства отдыха.
+                      Изготавливаем вручную — каждое изделие уникально.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="info-table__icon">🌟</td>
+                    <td>
+                      Работаем с 2000 года. Доставка по всей России.
+                      Гарантия качества на все изделия.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="info-table__icon">📞</td>
+                    <td>
+                      Звоните: <strong>+7 (952) 500-50-50</strong>
+                    </td>
+                  </tr>
+                </table>
+                <div class="button-row">
+                  <a href="/catalog" class="win2k-button">Каталог продукции</a>
+                  <a href="#" class="win2k-button">О компании</a>
+                  <a href="#" class="win2k-button">Связаться с нами</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="panel">
+              <div class="panel__titlebar">Популярные товары</div>
+              <div class="panel__body">
+                <div class="product-grid">
+                  <div class="product-card">
+                    <div class="product-card__img-wrap">
+                      <img src="assets/images/main-page/hero-section.jpg" alt="Мангал классический" class="product-card__img" />
+                    </div>
+                    <div class="product-card__title">Мангал «Классика»</div>
+                    <div class="product-card__price">от 4 500 руб.</div>
+                    <button class="win2k-button product-card__btn">В корзину</button>
+                  </div>
+                  <div class="product-card">
+                    <div class="product-card__img-wrap">
+                      <img src="assets/images/main-page/hero-section.jpg" alt="Костровая чаша" class="product-card__img" />
+                    </div>
+                    <div class="product-card__title">Костровая чаша</div>
+                    <div class="product-card__price">от 7 900 руб.</div>
+                    <button class="win2k-button product-card__btn">В корзину</button>
+                  </div>
+                  <div class="product-card">
+                    <div class="product-card__img-wrap">
+                      <img src="assets/images/main-page/hero-section.jpg" alt="Мангал Premium" class="product-card__img" />
+                    </div>
+                    <div class="product-card__title">Мангал «Premium»</div>
+                    <div class="product-card__price">от 12 000 руб.</div>
+                    <button class="win2k-button product-card__btn">В корзину</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </main>
+        </div>
+
+        <!-- Status Bar -->
+        <div class="window__statusbar">
+          <span class="statusbar__item statusbar__item--main">Готово</span>
+          <span class="statusbar__item">Местная интрасеть</span>
+          <span class="statusbar__item">🔒</span>
+        </div>
+      </div>
+
+    </div><!-- /desktop -->
+
+    <!-- ═══ COOKIE DIALOG ═══ -->
+    <div class="dialog-overlay" id="cookie-dialog">
+      <div class="dialog">
+        <div class="dialog__titlebar">
+          <span class="titlebar__icon">⚠️</span>
+          <span>Уведомление об использовании файлов cookie</span>
+          <button class="win-btn win-btn--close" onclick="document.getElementById('cookie-dialog').style.display='none'">✕</button>
+        </div>
+        <div class="dialog__body">
+          <div class="dialog__icon">⚠️</div>
+          <div class="dialog__text">
+            <p>Мы используем <a href="#">куки</a>, чтобы сайт хорошо работал.</p>
+            <p>Продолжая им пользоваться, вы соглашаетесь<br/>на обработку ваших куки&#8209;файлов.</p>
+          </div>
+        </div>
+        <div class="dialog__buttons">
+          <button class="win2k-button win2k-button--default" onclick="document.getElementById('cookie-dialog').style.display='none'">ОК</button>
+          <button class="win2k-button" onclick="document.getElementById('cookie-dialog').style.display='none'">Отмена</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+      // Live clock
+      function tick() {
+        const now = new Date();
+        const h = String(now.getHours()).padStart(2,'0');
+        const m = String(now.getMinutes()).padStart(2,'0');
+        document.getElementById('tray-clock').textContent = h + ':' + m;
+      }
+      tick();
+      setInterval(tick, 10000);
+    </script>
   </body>
 </html>
