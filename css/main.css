@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../assets/fonts/Gotham Pro/gothampro.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../assets/fonts/Gotham Pro/gothampro_medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../assets/fonts/Gotham Pro/gothampro_bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: 0.3rem;
+  /* font-size: calc(16 * (min(100vw, 1440px) / 1440)); */
+  list-style-type: none;
+}
+
+body {
+  font-family: "Gotham Pro", sans-serif;
+  background-color: #fcf7f3;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+button:hover {
+  opacity: 0.9;
+  transition: all 0.3s;
+  cursor: pointer;
+}

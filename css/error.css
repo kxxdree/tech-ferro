@@ -1,0 +1,153 @@
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: transparent;
+  padding: 1.25rem 4rem;
+  transition: all 0.3s ease;
+  border-bottom: 1.33px solid rgba(0, 0, 0, 0.3);
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 3.75rem;
+}
+
+.header__logo img {
+  max-height: 3.375rem;
+  max-width: 9.375rem;
+}
+
+.header__menu {
+  display: flex;
+  list-style: none;
+}
+
+.header__menu a {
+  color: black;
+  font-weight: 400;
+  font-size: 1.315rem;
+  line-height: 1.5;
+  letter-spacing: -5%;
+  padding: 0.625rem 2rem;
+}
+
+.header__menu a:hover {
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+
+.header__buttons {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.header__buttons-wrapper {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.header__buttons-wrapper:hover {
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+
+.header__buttons img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.header__cart,
+.header__search {
+  position: relative;
+  filter: brightness(0) contrast(100%);
+}
+
+.header__cart-count {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  background-color: #ff4444;
+  color: #fff;
+  margin-left: 2rem;
+  font-size: 12px;
+  font-weight: bold;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  width: 100%;
+  overflow-x: hidden;
+  margin-top: 7.5rem;
+}
+
+.error-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-section__text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error-404 {
+  font-size: 25rem;
+  letter-spacing: -0.05em;
+}
+
+.error-section__title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 34.125rem;
+  gap: 1.5rem;
+}
+
+.error-title {
+  font-size: 2.5rem;
+  font-weight: normal;
+  letter-spacing: -0.05em;
+}
+
+.error-subtitle {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+  text-align: center;
+}
+
+.error-button {
+  background-color: #252324;
+  border: none;
+  border-radius: 4px;
+  padding: 1rem 1.5rem;
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.4;
+  letter-spacing: -0.03em;
+}
+
+.error-button:hover {
+  background-color: black;
+  transition: all 0.3s;
+}
