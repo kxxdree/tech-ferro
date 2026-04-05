@@ -45,11 +45,12 @@
   letter-spacing: -5%;
   padding: 0.625rem 2rem;
   text-decoration: none;
+  transition: box-shadow 0.2s ease-in-out;
+  box-shadow: 0 0 0 0 transparent;
 }
 
 .header__menu a:hover {
-  opacity: 0.7;
-  transition: all 0.3s;
+  box-shadow: 0 0 0 1px black;
 }
 
 .header__buttons {
@@ -60,11 +61,14 @@
 .header__buttons-wrapper {
   padding: 1rem;
   cursor: pointer;
+  transition: box-shadow 0.2s ease-in-out;
+  box-shadow: 0 0 0 0 transparent;
+  border-radius: 4px;
 }
 
 .header__buttons-wrapper:hover {
+  box-shadow: 0 0 0 1px black;
   opacity: 0.7;
-  transition: all 0.3s;
 }
 
 .burger-wrapper {
