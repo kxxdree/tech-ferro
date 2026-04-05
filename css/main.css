@@ -41,10 +41,6 @@ a {
   text-decoration: none;
 }
 
-a:visited {
-  color: inherit;
-}
-
 button:hover {
   opacity: 0.9;
   transition: all 0.3s;
