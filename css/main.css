@@ -28,8 +28,8 @@
 html {
   scroll-behavior: smooth;
   scrollbar-width: 0.3rem;
-  /* font-size: calc(16 * (min(100vw, 1440px) / 1440)); */
   list-style-type: none;
+  font-size: 16px; 
 }
 
 body {
