@@ -967,3 +967,128 @@ h3 {
 .advantages__list li:nth-child(8) h3 {
   color: inherit;
 }
+
+/* Заявка  */
+
+.application {
+  width: 100%;
+  background-color: #252324;
+  height: 75rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.application::before {
+  content: "";
+  position: absolute;
+  top: 6.667rem;
+  left: 0;
+  right: 0;
+  height: 1.33px;
+  background: rgba(255, 255, 255, 0.3);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.application::after {
+  content: "";
+  position: absolute;
+  bottom: 6.667rem;
+  left: 0;
+  right: 0;
+  height: 1.33px;
+  background: rgba(255, 255, 255, 0.3);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.application__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 4rem;
+  position: relative;
+}
+
+.application__container::before {
+  content: "";
+  position: absolute;
+  top: 6.667rem;
+  bottom: 6.667rem;
+  left: 50%;
+  transform: translate(-50%);
+  width: 62rem;
+  border: 1.33px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.application__container-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 66.083rem;
+  gap: 2.667rem;
+  text-align: center;
+  margin: auto;
+}
+
+.application__container-text h2,
+h3 {
+  color: white;
+  font-weight: 400;
+}
+
+.application__container-text h2 {
+  font-size: 6.667rem;
+  letter-spacing: -0.08em;
+}
+
+.application__container-text h3 {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+  max-width: 35.917rem;
+  text-transform: uppercase;
+  margin: auto;
+}
+
+.application-link {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin: auto;
+  gap: 1rem;
+  border-bottom: 1.33px solid white;
+  transition: border-bottom-color 0.3s ease;
+}
+
+.application a {
+  color: white;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  letter-spacing: -0.05em;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.application-link svg {
+  margin-top: 0.5rem;
+}
+
+.application-link svg path {
+  transition: stroke 0.3s ease;
+}
+
+.application-link:hover {
+  border-bottom-color: #e64410;
+}
+
+.application-link:hover a {
+  color: #e64410;
+}
+
+.application-link:hover svg path {
+  stroke: #e64410;
+}
