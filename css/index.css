@@ -1042,7 +1042,7 @@ h3 {
 
 .application__container-text h2 {
   font-size: 6.667rem;
-  letter-spacing: -0.08em;
+  letter-spacing: -0.05em;
 }
 
 .application__container-text h3 {
@@ -1071,10 +1071,6 @@ h3 {
   letter-spacing: -0.05em;
   text-decoration: none;
   transition: color 0.3s ease;
-}
-
-.application-link svg {
-  margin-top: 0.5rem;
 }
 
 .application-link svg path {
