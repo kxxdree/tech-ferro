@@ -395,6 +395,20 @@
   position: relative;
 }
 
+.categories::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -5rem;
+  left: auto;
+  transform: translateY(-50%);
+  width: 75.167rem;
+  height: 74.8rem;
+  border: 1.33px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
 .categories__container {
   padding: 0 4rem;
   display: flex;
