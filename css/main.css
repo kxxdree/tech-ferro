@@ -6,6 +6,13 @@
 
 @font-face {
   font-family: "Gotham Pro";
+  src: url("../assets/fonts/Gotham Pro/gothampro_light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Pro";
   src: url("../assets/fonts/Gotham Pro/gothampro.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
@@ -29,7 +36,7 @@ html {
   scroll-behavior: smooth;
   scrollbar-width: 0.3rem;
   list-style-type: none;
-  font-size: 16px; 
+  font-size: 16px;
 }
 
 body {
