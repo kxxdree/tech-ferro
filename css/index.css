@@ -1372,15 +1372,17 @@ h3 {
 
 .delivery__content {
   display: flex;
-  max-height: 50rem;
   width: 100%;
+  gap: 2rem;
+  justify-content: space-between;
 }
 
 .delivery__content-text {
   display: flex;
   flex-direction: column;
   gap: 5.979rem;
-  padding-top: 4.25rem;
+  padding-top: 2rem;
+  flex: 1;
 }
 
 .delivery__content-text h2 {
@@ -1389,6 +1391,7 @@ h3 {
   letter-spacing: -0.08em;
   border-bottom: 1.33px solid rgba(0, 0, 0, 0.3);
   margin: 0;
+  width: 100%;
 }
 
 .delivery__content-text-list {
@@ -1431,6 +1434,18 @@ h3 {
   letter-spacing: -0.05em;
   color: black;
   flex: 1;
+}
+
+.delivery__content-image {
+  flex-shrink: 0;
+  width: 880px;
+  height: 800px;
+}
+
+.delivery__content-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .footer {
