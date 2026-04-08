@@ -132,7 +132,7 @@
 
 .hero {
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("../assets/images/main-page/hero-section.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("../assets/images/main-page/hero-section/hero-section-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1229,4 +1229,83 @@ h3 {
   width: auto;
   max-height: 41.667rem;
   object-fit: cover;
+}
+
+/* Отзывы  */
+
+.reviews {
+  width: 100%;
+  position: relative;
+}
+
+.reviews__container {
+  display: flex;
+  flex-direction: column;
+  padding: 18.729rem 4rem;
+}
+
+.reviews__content {
+  display: flex;
+  flex-direction: column;
+  gap: 3.333rem;
+}
+
+.reviews__content-title {
+  font-size: 6.667rem;
+  font-weight: 400;
+  letter-spacing: -0.08em;
+  max-width: 57.667rem;
+  margin: auto;
+}
+
+.reviews__content-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.reviews__content-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2.125rem;
+  padding: 2rem;
+  width: 36rem;
+  height: 20.833rem;
+  background-color: #ffffff;
+}
+
+.reviews__content-list-item-header {
+  display: flex;
+  gap: 1.479rem;
+  align-items: center;
+  max-height: 5.333rem;
+  flex-shrink: 0;
+}
+
+.reviews__content-list-item-header img {
+  max-height: 100%;
+}
+
+.reviews__content-list-item-header h4 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+  color: #121011;
+}
+
+.reviews__content-list-item-review {
+  font-size: 1.333rem;
+  line-height: 1.4;
+  letter-spacing: -0.05em;
+  color: #121011;
+  font-weight: 400;
+
+  display: -webkit-box;
+  line-clamp: 5;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
 }
