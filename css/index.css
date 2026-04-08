@@ -1343,5 +1343,80 @@ h3 {
 .reviews__arrow-button img {
   width: 1.5rem;
   height: 1.5rem;
-  filter: brightness(0) invert(1);
+}
+
+/* Доставка  */
+
+.delivery {
+  width: 100%;
+  position: relative;
+}
+
+.delivery__container {
+  display: flex;
+  padding: 0 4rem 16.667rem;
+}
+
+.delivery__content {
+  display: flex;
+  max-height: 50rem;
+  width: 100%;
+}
+
+.delivery__content-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5.979rem;
+  padding-top: 4.25rem;
+}
+
+.delivery__content-text h2 {
+  font-size: 11.667rem;
+  font-weight: 400;
+  letter-spacing: -0.08em;
+  border-bottom: 1.33px solid rgba(0, 0, 0, 0.3);
+  margin: 0;
+}
+
+.delivery__content-text-list {
+  display: flex;
+  flex-direction: column;
+  max-width: 45.417rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.delivery__content-text-list h3 {
+  font-size: 3.333rem;
+  font-weight: 400;
+  color: black;
+  letter-spacing: -0.05em;
+  margin: 0;
+  margin-bottom: 3.333rem;
+}
+
+.delivery__content-text-list li {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.333rem 0;
+  border-bottom: 1.33px solid #0000004d;
+}
+
+.delivery__content-text-list li span {
+  flex-shrink: 0;
+  font-size: 1.333rem;
+  line-height: 1.4;
+  letter-spacing: -0.05em;
+  color: black;
+}
+
+.delivery__content-text-list li p {
+  margin: 0;
+  font-size: 1.333rem;
+  line-height: 1.4;
+  letter-spacing: -0.05em;
+  color: black;
+  flex: 1;
 }
