@@ -1258,10 +1258,17 @@ h3 {
   margin: auto;
 }
 
+.reviews__slider-wrapper {
+  position: relative;
+}
+
 .reviews__content-list {
   display: flex;
   align-items: center;
   gap: 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .reviews__content-list-item {
@@ -1292,6 +1299,7 @@ h3 {
   line-height: 1.2;
   letter-spacing: -0.05em;
   color: #121011;
+  margin: 0;
 }
 
 .reviews__content-list-item-review {
@@ -1300,7 +1308,7 @@ h3 {
   letter-spacing: -0.05em;
   color: #121011;
   font-weight: 400;
-
+  margin: 0;
   display: -webkit-box;
   line-clamp: 5;
   -webkit-line-clamp: 5;
@@ -1308,4 +1316,32 @@ h3 {
   overflow: hidden;
   text-overflow: ellipsis;
   word-break: break-word;
+}
+
+.reviews__arrow-button {
+  position: absolute;
+  right: -2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4rem;
+  height: 4rem;
+  background-color: #e64410;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  padding: 0;
+}
+
+.reviews__arrow-button:hover {
+  opacity: 0.9;
+}
+
+.reviews__arrow-button img {
+  width: 1.5rem;
+  height: 1.5rem;
+  filter: brightness(0) invert(1);
 }
