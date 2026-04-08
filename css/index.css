@@ -1217,11 +1217,11 @@ h3 {
 }
 
 .market-links__content-links-ozon {
-  background-color: #2271ff;
+  background: linear-gradient(90deg, #0051e3 0%, #2271ff 100%);
 }
 
 .market-links__content-links-wb {
-  background-color: #7b07f8;
+  background: linear-gradient(90deg, #7b07f8 0%, #f745d9 100%);
 }
 
 .market-links__content-image {
