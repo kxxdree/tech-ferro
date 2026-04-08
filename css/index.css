@@ -536,7 +536,7 @@
 .categories__title-link {
   display: flex;
   align-items: center;
-  gap: 0.667rem;
+  gap: 1rem;
   border-bottom: 1.33px solid white;
   margin-bottom: 1rem;
   transition: border-bottom-color 0.3s ease;
@@ -650,7 +650,7 @@
 .best__title-link {
   display: flex;
   align-items: center;
-  gap: 0.667rem;
+  gap: 1rem;
   border-bottom: 1.33px solid black;
   margin-bottom: 1rem;
   transition: border-bottom-color 0.3s ease;
@@ -829,7 +829,7 @@ h3 {
   align-items: center;
   width: fit-content;
   margin: auto;
-  gap: 1.5rem;
+  gap: 1rem;
   border-bottom: 1.33px solid white;
   transition: border-bottom-color 0.3s ease;
 }
@@ -841,10 +841,6 @@ h3 {
   letter-spacing: -0.05em;
   text-decoration: none;
   transition: color 0.3s ease;
-}
-
-.offer-link svg {
-  margin-top: 0.5rem;
 }
 
 .offer-link svg path {
@@ -1004,12 +1000,66 @@ h3 {
 }
 
 .application__container {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
   padding: 4rem;
-  position: relative;
+}
+
+.application__container-img {
+  position: absolute;
+  z-index: 10;
+  max-width: 11.917rem;
+  max-height: 11.667rem;
+}
+
+.application__container-img:nth-child(2) {
+  top: 4rem;
+  left: 19.083rem;
+}
+
+.application__container-img:nth-child(3) {
+  top: 4rem;
+  right: 4rem;
+  max-width: 16.667rem;
+  max-height: 16.667rem;
+}
+
+.application__container-img:nth-child(4) {
+  top: 15.417rem;
+  right: 13.667rem;
+}
+
+.application__container-img:nth-child(5) {
+  bottom: 14.333rem;
+  right: 14.077rem;
+  max-width: 16.667rem;
+  max-height: 16.667rem;
+}
+
+.application__container-img:nth-child(6) {
+  bottom: 8.5rem;
+  right: 27.917rem;
+}
+
+.application__container-img:nth-child(7) {
+  bottom: 4rem;
+  left: 42rem;
+}
+
+.application__container-img:nth-child(8) {
+  bottom: 23.333rem;
+  left: 13.667rem;
+  z-index: 11;
+}
+
+.application__container-img:nth-child(9) {
+  bottom: 29.167rem;
+  left: 4rem;
+  max-width: 16.667rem;
+  max-height: 16.667rem;
 }
 
 .application__container::before {
