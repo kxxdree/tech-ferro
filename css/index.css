@@ -50,7 +50,7 @@
 }
 
 .header__menu-item a:hover {
-  border-color: #FFFFFF4D;
+  border-color: #ffffff4d;
 }
 
 .active-link {
@@ -88,7 +88,7 @@
 }
 
 .header__buttons-wrapper:hover {
-  border-color: #FFFFFF4D;
+  border-color: #ffffff4d;
 }
 
 .header__buttons img {
@@ -1448,9 +1448,89 @@ h3 {
   object-fit: cover;
 }
 
+/* Подвал  */
+
 .footer {
   display: flex;
   flex-direction: column;
   min-height: 53.5rem;
   background-color: #252324;
+}
+
+.footer__container {
+  height: 100%;
+}
+
+.footer__subscription-block {
+  display: flex;
+  gap: 9.667rem;
+  padding: 5rem 4rem;
+}
+
+.footer__subscription-block h2 {
+  font-size: 3.333rem;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  color: white;
+  margin: -0.5rem;
+}
+
+.footer__subscription-block-mailing {
+  display: flex;
+  flex-direction: column;
+  gap: 2.917rem;
+  max-width: 45.25rem;
+}
+
+.footer__subscription-block-mailing p {
+  font-size: 1.333rem;
+  line-height: 1.4;
+  letter-spacing: -0.05em;
+  color: white;
+}
+
+.footer__subscription-block-mailing div {
+  position: relative;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  max-width: 34rem;
+}
+
+.footer__subscription-block-mailing div input {
+  background: transparent;
+  border: none;
+  border-bottom: 1.33px solid #ffffff33;
+  outline: none;
+  width: 100%;
+  padding: 1.25rem 0 1.25rem 0.333rem;
+  font-size: 1.333rem;
+  color: white;
+  letter-spacing: -0.05em;
+  max-width: 27.917rem;
+}
+
+.footer__subscription-block-mailing div input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.333rem;
+  letter-spacing: -0.05em;
+}
+
+.footer__subscription-block-mailing div input:focus {
+  border-bottom-color: rgba(255, 255, 255, 0.8);
+}
+
+.footer__subscription-block-mailing div img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 1.25rem;
+  background-color: #ffffff1a;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.footer__subscription-block-mailing div img:hover {
+  opacity: 0.9;
 }
