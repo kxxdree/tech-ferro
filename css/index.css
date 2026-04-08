@@ -1138,3 +1138,95 @@ h3 {
 .application-link:hover svg path {
   stroke: #e64410;
 }
+
+/* Маркетплейсы */
+
+.market-links {
+  width: 100%;
+  position: relative;
+  min-height: 54.167rem;
+}
+
+.market-links__container {
+  padding: 12.5rem 4rem 0;
+}
+
+.market-links__content {
+  display: flex;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.market-links__content-links {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 1.75rem;
+  max-width: 36.083rem;
+  max-height: 41.667rem;
+  background-color: #252324;
+}
+
+.market-links__content-links-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.market-links__content-links-text h2 {
+  color: white;
+  font-size: 3.333rem;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  margin: 0;
+}
+
+.market-links__content-links-text p {
+  color: white;
+  font-size: 1.333rem;
+  font-weight: 300;
+  line-height: 1.4;
+  letter-spacing: -0.05em;
+  margin: 0;
+}
+
+.market-links__content-links-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.667rem;
+}
+
+.market-links__content-links-buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 1rem;
+  min-width: 15.958rem;
+  min-height: 4.479rem;
+  color: white;
+  font-weight: 300;
+  font-size: 1.667rem;
+  line-height: 1.1;
+  letter-spacing: -0.05em;
+  padding: 1.333rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.market-links__content-links-ozon {
+  background-color: #2271ff;
+}
+
+.market-links__content-links-wb {
+  background-color: #7b07f8;
+}
+
+.market-links__content-image {
+  display: block;
+  width: auto;
+  max-height: 41.667rem;
+  object-fit: cover;
+}
