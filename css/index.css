@@ -30,10 +30,11 @@
 
 .header__menu {
   display: flex;
+  gap: 4px;
   list-style: none;
 }
 
-.header__menu a {
+.header__menu-item a {
   color: #fff;
   font-weight: 300;
   font-size: 1.315rem;
@@ -41,6 +42,15 @@
   letter-spacing: -0.05em;
   padding: 0.625rem 2rem;
   border-radius: 6px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.header__menu-item a:hover {
+  border-color: #ffffff;
 }
 
 .active-link {
@@ -59,23 +69,26 @@
   border-radius: 50%;
 }
 
-.header__menu a:hover {
-  border: 1px solid white;
-}
-
 .header__buttons {
   display: flex;
   gap: 0.7rem;
 }
 
 .header__buttons-wrapper {
-  padding: 1rem;
+  position: relative;
+  padding: 0.75rem;
   cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
 }
 
 .header__buttons-wrapper:hover {
-  opacity: 0.7;
-  transition: all 0.3s;
+  border-color: #ffffff;
 }
 
 .header__buttons img {

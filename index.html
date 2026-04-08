@@ -8,34 +8,46 @@
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="header__container container">
-        <div class="header__logo">
-          <img src="/assets/icons/logo.svg" alt="Логотип" />
-        </div>
-        <nav class="header__nav">
-          <ul class="header__menu">
-            <li class="active-link"><a href="/">Главная</a></li>
-            <li><a href="#">Каталог</a></li>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Контакты</a></li>
-            <li><a href="#">+7 (952) 500-50-50</a></li>
-          </ul>
-        </nav>
-        <div class="header__buttons">
-          <div class="header__buttons-wrapper">
-            <img class="header__cart" src="assets/icons/search.svg" alt="Поиск" />
-          </div>
-          <div class="header__buttons-wrapper">
-            <img class="header__search" src="assets/icons/cart.svg" alt="Корзина" />
-          </div>
-          <div class="header__buttons-wrapper burger-wrapper">
-            <img class="header__burger" src="assets/icons/burger.svg" alt="Меню" />
-          </div>
-          <!-- <span class="header__cart-count">0</span> -->
-        </div>
+<header class="header">
+  <div class="header__container">
+    <div class="header__logo">
+      <img src="/assets/icons/logo.svg" alt="Логотип" />
+    </div>
+    
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li class="header__menu-item active-link">
+          <a href="/">Главная</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#">Каталог</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#">О нас</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#">Контакты</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#">+7 (952) 500-50-50</a>
+        </li>
+      </ul>
+    </nav>
+    
+    <div class="header__buttons">
+      <div class="header__buttons-wrapper">
+        <img src="assets/icons/search.svg" alt="Поиск" />
       </div>
-    </header>
+      <div class="header__buttons-wrapper">
+        <img src="assets/icons/cart.svg" alt="Корзина" />
+        <span class="header__cart-count">0</span>
+      </div>
+      <div class="header__buttons-wrapper">
+        <img class="header__burger" src="assets/icons/burger.svg" alt="Меню" />
+      </div>
+    </div>
+  </div>
+</header>
 
     <!-- Хиро -->
 
