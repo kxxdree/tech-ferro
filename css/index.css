@@ -11,7 +11,7 @@
   width: 100%;
   z-index: 100;
   background-color: transparent;
-  padding: 1.25rem 4rem;
+  padding: 1.333rem 4rem;
   transition: all 0.3s ease;
   border-bottom: 1.33px solid rgba(255, 255, 255, 0.3);
 }
@@ -41,7 +41,7 @@
   line-height: 1.5;
   letter-spacing: -0.05em;
   padding: 0.625rem 2rem;
-  border-radius: 6px;
+  border-radius: 8px;
   border: 1px solid transparent;
   transition: all 0.3s ease;
   text-decoration: none;
@@ -50,7 +50,7 @@
 }
 
 .header__menu-item a:hover {
-  border-color: #ffffff;
+  border-color: #FFFFFF4D;
 }
 
 .active-link {
@@ -79,7 +79,7 @@
   padding: 0.75rem;
   cursor: pointer;
   border: 1px solid transparent;
-  border-radius: 6px;
+  border-radius: 8px;
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
@@ -88,7 +88,7 @@
 }
 
 .header__buttons-wrapper:hover {
-  border-color: #ffffff;
+  border-color: #FFFFFF4D;
 }
 
 .header__buttons img {
