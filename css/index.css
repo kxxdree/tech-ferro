@@ -106,13 +106,13 @@
 
 .header__cart-count {
   position: absolute;
-  top: -8px;
-  right: -12px;
-  background-color: #ff4444;
+  top: 4px;
+  right: 4px;
+  background-color: #e64410;
   color: #fff;
   font-size: 12px;
   font-weight: bold;
-  width: 18px;
+  width: 20px;
   height: 18px;
   border-radius: 50%;
   display: flex;
@@ -1405,7 +1405,6 @@ h3 {
   font-weight: 400;
   color: black;
   letter-spacing: -0.05em;
-  margin: 0;
   margin-bottom: 3.333rem;
 }
 
@@ -1432,4 +1431,11 @@ h3 {
   letter-spacing: -0.05em;
   color: black;
   flex: 1;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  min-height: 53.5rem;
+  background-color: #252324;
 }
