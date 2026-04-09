@@ -6,6 +6,7 @@
     <title>ТехФерро</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <script src="js/main.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -335,16 +336,18 @@
               с учётом ваших пожеланий
             </h3>
             <div class="application-link">
-              <a href="/">Оставить заявку</a>
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M0.93335 14.2667L14.2667 0.93335M14.2667 0.93335H0.93335M14.2667 0.93335V14.2667"
-                  stroke="white"
-                  stroke-width="1.86667"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
+              <button>
+                <p>Оставить заявку</p>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.93335 14.2667L14.2667 0.93335M14.2667 0.93335H0.93335M14.2667 0.93335V14.2667"
+                    stroke="white"
+                    stroke-width="1.86667"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
             </div>
           </div>
           <img class="application__container-img" src="assets/images/main-page/application-section/application-section-image.png" alt="Фото" />
@@ -355,6 +358,26 @@
           <img class="application__container-img" src="assets/images/main-page/application-section/application-section-image-2.png" alt="Фото" />
           <img class="application__container-img" src="assets/images/main-page/application-section/application-section-image.png" alt="Фото" />
           <img class="application__container-img" src="assets/images/main-page/application-section/application-section-image-2.png" alt="Фото" />
+        </div>
+
+        <div class="application-modal">
+          <div class="application-modal-content">
+            <div class="application-modal-content-header">
+              <h3>Оставьте заявку</h3>
+              <h4>Мы свяжемся с вами в ближайшее время!</h4>
+            </div>
+            <div class="application-modal-content-main">
+              <div class="application-modal__text-fields">
+                <input type="text" placeholder="Введите ваше имя" />
+                <input type="text" placeholder="Введите ваш телефон" />
+              </div>
+              <div class="application-modal__dropzone">
+                <p class="application-modal__dropzone-label">Прикрепить свой эскиз</p>
+                <div class="application-modal__dropzone-wrapper"></div>
+              </div>
+              <div class="application-modal__policy"></div>
+            </div>
+          </div>
         </div>
       </section>
 
