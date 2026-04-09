@@ -336,7 +336,7 @@
               с учётом ваших пожеланий
             </h3>
             <div class="application-link">
-              <button>
+              <button class="application-link-button">
                 <p>Оставить заявку</p>
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -360,6 +360,8 @@
           <img class="application__container-img" src="assets/images/main-page/application-section/application-section-image-2.png" alt="Фото" />
         </div>
 
+        <!-- Модальное окно заявки  -->
+
         <div class="application-modal">
           <div class="application-modal-content">
             <div class="application-modal-content-header">
@@ -381,7 +383,13 @@
                   </div>
                 </div>
               </div>
-              <div class="application-modal__policy"></div>
+              <div class="application-modal__policy">
+                <label class="policy-checkbox-label">
+                  <input type="checkbox" class="policy-checkbox" />
+                  <span class="policy-text">Я ознакомлен(а) с Политикой конфиденциальности и даю согласие на обработку моих персональных данных</span>
+                </label>
+                <button class="policy-submit-button">Оставить заявку</button>
+              </div>
             </div>
           </div>
         </div>
