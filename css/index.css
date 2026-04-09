@@ -1312,6 +1312,45 @@ h4 {
   color: #121011;
 }
 
+.application-modal__dropzone-file {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.25rem;
+  border: 1px dashed #1210114d;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+}
+
+.dropzone-file__info {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 0.625rem;
+}
+
+.dropzone-file__info-title {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.dropzone-file__info-title span {
+  color: #555555;
+  font-size: 0.75rem;
+}
+
+.dropzone-file__delete-button {
+  width: 1.25rem;
+  height: 1.25rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dropzone-file__delete-button:hover {
+  opacity: 0.8;
+}
+
 .application-modal__policy {
   display: flex;
   flex-direction: column;
