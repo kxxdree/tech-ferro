@@ -1197,7 +1197,6 @@ h3 {
   flex-direction: column;
   gap: 2.5rem;
   width: 26.875rem;
-  max-height: 40.75rem;
   background-color: #f2ebe6;
   padding: 1.5rem;
 }
@@ -1345,6 +1344,11 @@ h4 {
   flex: 1;
 }
 
+.policy-text-link {
+  text-decoration: underline;
+  color: #121011;
+}
+
 .policy-submit-button {
   display: flex;
   justify-content: center;
@@ -1356,8 +1360,12 @@ h4 {
   font-weight: 300;
   font-size: 1rem;
   padding: 1rem 1.5rem;
+  transition: all 0.2s ease;
 }
 
+.policy-submit-button:hover {
+  background-color: #000000;
+}
 /* Маркетплейсы */
 
 .market-links {
