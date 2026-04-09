@@ -1176,6 +1176,8 @@ h3 {
   stroke: #e64410;
 }
 
+/* Модальное окно заявки  */
+
 .application-modal {
   position: fixed;
   z-index: 50;
@@ -1246,15 +1248,16 @@ h4 {
   color: #121011;
   letter-spacing: -0.02em;
   max-width: 27.917rem;
+  transition: all 0.2s ease;
 }
 
 .application-modal__text-fields input::placeholder {
   color: #667085;
 }
-/* 
+
 .application-modal__text-fields input:focus {
-  border-bottom-color: rgba(255, 255, 255, 0.8);
-} */
+  border-bottom-color: #101828;
+}
 
 .application-modal__dropzone {
   display: flex;
@@ -1263,9 +1266,49 @@ h4 {
 }
 
 .application-modal__dropzone-wrapper {
-  height: 9.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 9.125rem;
   border: 1px dashed #1210114d;
   border-radius: 4px;
+}
+
+.application-modal__dropzone-wrapper-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: 15rem;
+  text-align: center;
+}
+
+.application-modal__dropzone-wrapper-text p {
+  color: #101828;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.application-modal__dropzone-wrapper-text span {
+  color: #87898f;
+  font-size: 0.75rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.application-modal__dropzone-wrapper-text button {
+  color: #475467;
+  font-size: 1rem;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  text-decoration: underline;
+  transition: all 0.2s ease;
+}
+
+.application-modal__dropzone-wrapper-text button:hover {
+  color: #121011;
 }
 
 /* Маркетплейсы */
