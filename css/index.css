@@ -542,6 +542,10 @@
   transition: color 0.2s ease;
 }
 
+.menu__content-list li a {
+  color: black;
+}
+
 .menu__content-list li:hover {
   opacity: 0.8;
   transition: all 0.2s ease;
