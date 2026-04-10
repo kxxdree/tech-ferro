@@ -102,6 +102,7 @@
 
 .header__burger {
   display: none;
+  filter: invert(1);
 }
 
 .header__cart-count {
@@ -432,6 +433,126 @@
   .list-item__info-title h4,
   .list-item__info-title h3 {
     font-size: 0.875rem;
+  }
+}
+
+/* Меню  */
+
+.menu {
+  position: fixed;
+  z-index: 110;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  background-color: rgba(13, 20, 33, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition:
+    visibility 0.2s,
+    opacity 0.2s ease;
+}
+
+.menu--open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu__container {
+  position: relative;
+  z-index: 110;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 25rem;
+  background-color: #fcf7f3;
+}
+
+.menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 5rem;
+  padding: 1rem 3rem;
+  width: 100%;
+  border-bottom: 1px solid #0000004d;
+}
+
+.menu__header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.icon-btn img {
+  width: 1.125rem;
+  height: 1.125rem;
+  display: block;
+  object-fit: contain;
+}
+
+.icon-btn--search img,
+.icon-btn--cart img {
+  filter: invert(1);
+}
+
+.icon-btn--close img {
+  filter: none;
+}
+
+.menu__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 3rem 3rem 3rem 2.5rem;
+}
+
+.menu__content-list {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.menu__content-list li {
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: -0.05em;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  position: relative;
+  display: inline-block;
+  width: auto;
+  transition: color 0.2s ease;
+}
+
+.menu__content-list li:hover {
+  opacity: 0.8;
+  transition: all 0.2s ease;
+}
+
+@media (max-width: 640px) {
+  .menu__header {
+    padding: 1rem 1.25rem;
+  }
+  .menu__content {
+    padding: 0 1.25rem 1.5rem 1.25rem;
   }
 }
 
