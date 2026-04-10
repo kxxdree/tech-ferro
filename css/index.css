@@ -176,7 +176,6 @@
   padding: 2rem 3rem 2.5rem;
 }
 
-/* Остальные стили для .search__content, .search__search-bar и т.д. остаются без изменений */
 .search__content {
   display: flex;
   flex-direction: column;
