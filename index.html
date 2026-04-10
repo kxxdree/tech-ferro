@@ -9,6 +9,7 @@
     <script src="js/main.js" defer></script>
   </head>
   <body>
+    <!-- Шапка  -->
     <header class="header">
       <div class="header__container">
         <div class="header__logo">
@@ -36,16 +37,16 @@
         </nav>
 
         <div class="header__buttons">
-          <div class="header__buttons-wrapper" id="search-button">
+          <button class="header__icon-btn" id="search-button" aria-label="Поиск">
             <img src="assets/icons/search.svg" alt="Поиск" />
-          </div>
-          <div class="header__buttons-wrapper">
-            <img id="cart-icon" src="assets/icons/cart.svg" alt="Корзина" />
+          </button>
+          <button class="header__icon-btn header__cart-btn" aria-label="Корзина">
+            <img src="assets/icons/cart.svg" alt="Корзина" />
             <span class="header__cart-count">0</span>
-          </div>
-          <div class="header__buttons-wrapper">
+          </button>
+          <button class="header__icon-btn header__burger-btn" aria-label="Меню">
             <img class="header__burger" src="assets/icons/burger.svg" alt="Меню" />
-          </div>
+          </button>
         </div>
       </div>
     </header>
