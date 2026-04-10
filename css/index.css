@@ -808,6 +808,72 @@
   color: #e64410;
 }
 
+.best__list-product-card-image-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.best__list-product-card a img {
+  width: 100%;
+  height: 30.833rem;
+  object-fit: cover;
+  display: block;
+}
+
+.best__list-top .best__list-product-card:nth-child(3) .best__list-product-card-image-wrapper img,
+.best__list-bottom .best__list-product-card:nth-child(1) .best__list-product-card-image-wrapper img {
+  min-height: 43.333rem;
+  max-height: 43.333rem;
+}
+
+.best__list-product-card-cart {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.8);
+  transition: all 0.3s ease;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding: 0;
+}
+
+.best__list-product-card-cart img {
+  width: 1.25rem !important;
+  height: 1.25rem !important;
+  object-fit: contain;
+  transition: filter 0.3s ease;
+  filter: brightness(0);
+}
+
+.best__list-product-card-image-wrapper:hover .best__list-product-card-cart {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.best__list-product-card-cart:hover {
+  background-color: #e64410;
+}
+
+.best__list-product-card-cart:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.best__list-product-card-cart:active {
+  transform: scale(0.95);
+}
+
 /* Акция  */
 
 .offer {
