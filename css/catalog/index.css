@@ -4,7 +4,6 @@
   background-color: transparent;
   padding: 1rem 3rem;
   transition: all 0.3s ease;
-  border-bottom: 1.33px solid #ffffff4d;
   margin-bottom: 0.875rem;
 }
 
@@ -126,20 +125,6 @@
   filter: invert(1);
 }
 
-@media (max-width: 960px) {
-  .header__nav {
-    display: none;
-  }
-
-  .header__burger-btn {
-    display: flex;
-  }
-
-  .header {
-    padding: 1rem 2rem;
-  }
-}
-
 /* Основной контент  */
 
 .main {
@@ -190,9 +175,6 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .catalog__list li {
@@ -221,7 +203,7 @@
   bottom: 1.5rem;
   left: 1.333rem;
   color: #121011;
-  font-size: 1.667rem;
+  font-size: 1.5rem;
   font-weight: 400;
   letter-spacing: -0.05em;
   line-height: 1.2;
@@ -251,5 +233,74 @@
     left: 1rem;
     padding: 0.5rem 1rem;
     font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .header {
+    border-bottom: 1px solid #0000004d;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__burger-btn {
+    display: flex;
+  }
+
+  .header {
+    padding: 1rem 2rem;
+  }
+
+  .catalog__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .header__logo img {
+    height: 2.5rem;
+    width: 6.938rem;
+  }
+
+  .main {
+    padding: 0 1rem 6.25rem 1rem;
+  }
+
+  .catalog__container h2 {
+    font-size: 3.125rem;
+  }
+
+  .catalog__list li {
+    width: auto;
+    height: 19.188rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .header {
+    padding: 1rem;
+  }
+
+  .main {
+    padding: 0 1rem 6.25rem 1rem;
+  }
+
+  .catalog__container {
+    gap: 2rem;
+  }
+
+  .catalog__list {
+    gap: 0.5rem;
+  }
+
+  .catalog__list li {
+    width: auto;
+    height: 14.313rem;
+  }
+
+  .catalog__list li::after {
+    font-size: 1rem;
   }
 }
