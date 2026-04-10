@@ -13,3 +13,15 @@ closeApplicationButton.addEventListener("click", () => {
   document.body.style.overflow = "unset";
   document.body.style.paddingRight = "0px";
 });
+
+const searchButton = document.querySelector("#search-button");
+const searchContainer = document.querySelector(".search");
+const closeSearchButton = document.querySelector(".search-bar__close-icon");
+
+searchButton.addEventListener("click", () => {
+  searchContainer.style.display = "flex";
+});
+
+closeSearchButton.addEventListener("click", () => {
+  searchContainer.style.display = "none";
+});
