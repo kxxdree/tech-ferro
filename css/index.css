@@ -138,6 +138,29 @@
   }
 }
 
+.search {
+  position: fixed;
+  z-index: 110;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  background-color: rgba(13, 20, 33, 0.5);
+}
+
+.search-container {
+  position: relative;
+  z-index: 110;
+  display: flex;
+  gap: 2.5rem;
+  width: 100vw;
+  min-height: 15.75rem;
+  background-color: #f2ebe6;
+  padding: 1.5rem;
+}
+
 .main {
   width: 100%;
   overflow-x: hidden;
