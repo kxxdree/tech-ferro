@@ -1,13 +1,11 @@
 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   z-index: 100;
   background-color: transparent;
-  padding: 1.333rem 4rem;
+  padding: 1rem 3rem;
   transition: all 0.3s ease;
   border-bottom: 1.33px solid #ffffff4d;
+  margin-bottom: 0.875rem;
 }
 
 .header__container {
@@ -18,8 +16,8 @@
 }
 
 .header__logo img {
-  max-height: 3.375rem;
-  max-width: 9.375rem;
+  height: 3.375rem;
+  width: 9.375rem;
 }
 
 .header__menu {
@@ -139,5 +137,74 @@
 
   .header {
     padding: 1rem 2rem;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+  padding: 0 3rem 12.5rem 3rem;
+}
+
+.catalog__header-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.main-link,
+.catalog__header-nav {
+  color: #667085;
+  line-height: 1.4;
+  letter-spacing: -0.05em;
+  transition: all 0.2s ease;
+}
+
+.catalog-link {
+  color: black;
+  line-height: 1.4;
+  letter-spacing: -0.05em;
+}
+
+.main-link:hover {
+  color: black;
+}
+
+.catalog__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.catalog__container h2 {
+  font-size: 5rem;
+  font-weight: 400;
+  letter-spacing: -0.08em;
+  border-bottom: 1px solid #0000004d;
+}
+
+.catalog__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.catalog__list li {
+  flex: 1;
+  height: 40rem;
+}
+
+.catalog__list li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 30% center;
+}
+
+@media (max-width: 1440px) {
+  .catalog__list li {
+    flex: 1;
+    height: 28.75rem;
   }
 }

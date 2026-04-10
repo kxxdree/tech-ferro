@@ -5,7 +5,7 @@
   width: 100%;
   z-index: 100;
   background-color: transparent;
-  padding: 1.333rem 4rem;
+  padding: 1rem 3rem;
   transition: all 0.3s ease;
   border-bottom: 1.33px solid rgba(255, 255, 255, 0.3);
 }
@@ -18,8 +18,8 @@
 }
 
 .header__logo img {
-  max-height: 3.375rem;
-  max-width: 9.375rem;
+  height: 3.375rem;
+  width: 9.375rem;
 }
 
 .header__menu {
