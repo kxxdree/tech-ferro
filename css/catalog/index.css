@@ -1,0 +1,143 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: transparent;
+  padding: 1.333rem 4rem;
+  transition: all 0.3s ease;
+  border-bottom: 1.33px solid #ffffff4d;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 3.75rem;
+}
+
+.header__logo img {
+  max-height: 3.375rem;
+  max-width: 9.375rem;
+}
+
+.header__menu {
+  display: flex;
+  gap: 4px;
+  list-style: none;
+}
+
+.header__menu-item a {
+  color: #000000;
+  font-weight: 300;
+  font-size: 1.315rem;
+  line-height: 1.5;
+  letter-spacing: -0.05em;
+  padding: 0.625rem 2rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.header__menu-item a:hover {
+  border-color: #000000;
+}
+
+.active-link {
+  position: relative;
+}
+
+.active-link::before {
+  content: "";
+  position: absolute;
+  left: 10.67px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10.67px;
+  height: 10.67px;
+  background-color: #e64410;
+  border-radius: 50%;
+}
+
+.header__buttons {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+}
+
+.header__icon-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+
+.header__icon-btn:hover {
+  border-color: #000000;
+}
+
+.header__icon-btn img {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  object-fit: contain;
+  filter: invert(1);
+}
+
+.header__cart-btn {
+  position: relative;
+}
+
+.header__cart-count {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background-color: #e64410;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  width: 20px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__burger-btn {
+  display: none;
+}
+
+.header__burger {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  filter: invert(1);
+}
+
+@media (max-width: 960px) {
+  .header__nav {
+    display: none;
+  }
+
+  .header__burger-btn {
+    display: flex;
+  }
+
+  .header {
+    padding: 1rem 2rem;
+  }
+}
