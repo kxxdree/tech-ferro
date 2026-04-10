@@ -297,6 +297,31 @@
   gap: 1.5rem;
   width: 19.813rem;
   height: 30.688rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.search__success-list-item:hover .list-item__info-title h4,
+.search__success-list-item:hover .list-item__info-title h3,
+.search__success-list-item:hover .list-item__info-price {
+  color: #e64410;
+}
+
+.list__item-link {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.list-item__info-title h4,
+.list-item__info-title h3,
+.list-item__info-price {
+  color: #121011;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+  transition: color 0.2s ease;
 }
 
 .list__item-image {
