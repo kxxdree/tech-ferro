@@ -1,6 +1,8 @@
 // Заявка
 
-const applicationModal = document.querySelector(".application-modal");
+const applicationModal = document.querySelector("#applicationModal");
+const applicationButton = document.querySelector("#apply-button");
+const closeApplicationButton = document.querySelector(".application-modal-close-button");
 
 const addBodyStyles = () => {
   document.body.style.overflow = "hidden";
@@ -12,26 +14,40 @@ const removeBodyStyles = () => {
   document.body.style.paddingRight = "0px";
 };
 
-const applicationButton = document.querySelector("#apply-button");
-if (applicationButton) {
-  applicationButton.addEventListener("click", () => {
-    applicationModal.style.display = "flex";
+const openApplicationModal = () => {
+  if (applicationModal) {
+    applicationModal.classList.add("application-modal--open");
     addBodyStyles();
-  });
+  }
+};
+
+const closeApplicationModal = () => {
+  if (applicationModal) {
+    applicationModal.classList.remove("application-modal--open");
+    removeBodyStyles();
+  }
+};
+
+if (applicationButton) {
+  applicationButton.addEventListener("click", openApplicationModal);
 }
 
-const closeApplicationButton = document.querySelector(".application-modal-close-button");
 if (closeApplicationButton) {
-  closeApplicationButton.addEventListener("click", () => {
-    applicationModal.style.display = "none";
-    removeBodyStyles();
+  closeApplicationButton.addEventListener("click", closeApplicationModal);
+}
+
+if (applicationModal) {
+  applicationModal.addEventListener("click", (e) => {
+    if (e.target === applicationModal) {
+      closeApplicationModal();
+    }
   });
 }
 
 // Поиск
 
 const searchButton = document.querySelector("#search-button");
-const searchContainer = document.querySelector("#mainSearch"); // Используем id
+const searchContainer = document.querySelector("#mainSearch");
 const closeSearchButton = document.querySelector(".search-bar__close-icon");
 const searchInput = document.querySelector(".search-bar__input input");
 const searchDescription = document.querySelector(".search__description");
@@ -45,7 +61,6 @@ const openSearch = () => {
     if (searchInput) {
       searchInput.value = "";
       updateSearchVisibility();
-
       setTimeout(() => {
         searchInput.focus();
       }, 200);
