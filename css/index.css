@@ -257,7 +257,7 @@
 }
 
 .search__success {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 1.5rem;
 }
@@ -340,9 +340,73 @@
   }
 }
 
+@media (max-width: 960px) {
+  .search__success-list {
+    overflow-x: auto;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.5rem;
+  }
+
+  .search__success-list::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .search__success-list::-webkit-scrollbar-track {
+    background: #e5e7eb;
+    border-radius: 4px;
+  }
+
+  .search__success-list::-webkit-scrollbar-thumb {
+    background: #9ca3af;
+    border-radius: 4px;
+  }
+
+  .search__success-list-item {
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .search__success-list {
+    gap: 1rem;
+  }
+
+  .search__success-list-item {
+    width: 16rem;
+    height: 26rem;
+  }
+
+  .list__item-image {
+    height: 19rem;
+  }
+}
+
 @media (max-width: 480px) {
   .search__container {
     padding: 2rem 1rem 2.5rem;
+  }
+
+  .search__success-list {
+    gap: 0.75rem;
+  }
+
+  .search__success-list-item {
+    width: 14rem;
+    height: 23rem;
+  }
+
+  .list__item-image {
+    height: 16rem;
+  }
+
+  .list-item__info-price {
+    font-size: 1.25rem;
+  }
+
+  .list-item__info-title h4,
+  .list-item__info-title h3 {
+    font-size: 0.875rem;
   }
 }
 

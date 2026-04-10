@@ -11,27 +11,65 @@ const removeBodyStyles = () => {
 };
 
 const applicationButton = document.querySelector("#apply-button");
-applicationButton.addEventListener("click", () => {
-  applicationModal.style.display = "flex";
-  addBodyStyles();
-});
+if (applicationButton) {
+  applicationButton.addEventListener("click", () => {
+    applicationModal.style.display = "flex";
+    addBodyStyles();
+  });
+}
 
 const closeApplicationButton = document.querySelector(".application-modal-close-button");
-closeApplicationButton.addEventListener("click", () => {
-  applicationModal.style.display = "none";
-  removeBodyStyles();
-});
+if (closeApplicationButton) {
+  closeApplicationButton.addEventListener("click", () => {
+    applicationModal.style.display = "none";
+    removeBodyStyles();
+  });
+}
 
 const searchButton = document.querySelector("#search-button");
 const searchContainer = document.querySelector(".search");
 const closeSearchButton = document.querySelector(".search-bar__close-icon");
+const searchInput = document.querySelector(".search-bar__input input");
+const searchDescription = document.querySelector(".search__description");
+const searchSuccess = document.querySelector(".search__success");
 
-searchButton.addEventListener("click", () => {
-  searchContainer.style.display = "flex";
-  addBodyStyles();
-});
+const updateSearchVisibility = () => {
+  const searchQuery = searchInput.value.trim();
 
-closeSearchButton.addEventListener("click", () => {
-  searchContainer.style.display = "none";
-  removeBodyStyles();
-});
+  if (searchQuery.length > 0) {
+    searchDescription.style.display = "none";
+    searchSuccess.style.display = "flex";
+  } else {
+    searchDescription.style.display = "flex";
+    searchSuccess.style.display = "none";
+  }
+};
+
+if (searchInput) {
+  searchInput.addEventListener("input", updateSearchVisibility);
+}
+
+if (searchButton && searchContainer) {
+  searchButton.addEventListener("click", () => {
+    searchContainer.style.display = "flex";
+    addBodyStyles();
+
+    if (searchInput) {
+      searchInput.value = "";
+      updateSearchVisibility();
+    }
+  });
+}
+
+if (closeSearchButton && searchContainer) {
+  closeSearchButton.addEventListener("click", () => {
+    searchContainer.style.display = "none";
+    removeBodyStyles();
+    if (searchInput) {
+      searchInput.value = "";
+      updateSearchVisibility();
+    }
+  });
+}
+
+updateSearchVisibility();
