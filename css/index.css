@@ -1201,6 +1201,24 @@ h3 {
   padding: 1.5rem;
 }
 
+.application-modal-close-button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 1rem;
+  right: 1rem;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0.5rem;
+}
+
+.application-modal-close-button:hover {
+  opacity: 0.6;
+}
+
 .application-modal-content-header {
   display: flex;
   flex-direction: column;
@@ -1408,24 +1426,6 @@ h4 {
 
 .policy-submit-button:hover {
   background-color: #000000;
-}
-
-.application-modal-close-button {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 1rem;
-  right: 1rem;
-  min-width: 1.5rem;
-  min-height: 1.5rem;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  padding: 0.5rem;
-}
-
-.application-modal-close-button:hover {
-  opacity: 0.6;
 }
 
 /* Маркетплейсы */
