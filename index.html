@@ -52,11 +52,31 @@
 
     <!-- Поиск -->
 
-    <div class="search">
-      <div class="search-container"></div>
+<div class="search">
+  <div class="search__container">
+    <div class="search__content">
+      <div class="search__search-bar">
+        <div class="search-bar__input">
+          <img src="assets/icons/search.svg" alt="Поиск" />
+          <input type="text" name="search" placeholder="Что ищем?" />
+        </div>
+        <div class="search-bar__close-icon">
+          <img src="assets/icons/close-icon.svg" alt="Очистить" />
+        </div>
+      </div>
+      <div class="search__description">
+        <div class="search__message search__message--empty">
+          <div class="search__message-line">Начните что‑нибудь вводить</div>
+          <div class="search__message-line search__message-line--secondary">
+            Начните писать запрос в поисковой строке выше, а здесь появятся результаты поиска
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+</div>
 
-    <!-- Хиро -->
+    <!-- Основной контент -->
 
     <main class="main">
       <section class="hero">
