@@ -1,3 +1,5 @@
+// Заявка
+
 const applicationModal = document.querySelector(".application-modal");
 
 const addBodyStyles = () => {
@@ -25,6 +27,8 @@ if (closeApplicationButton) {
     removeBodyStyles();
   });
 }
+
+// Поиск
 
 const searchButton = document.querySelector("#search-button");
 const searchContainer = document.querySelector(".search");
@@ -73,3 +77,39 @@ if (closeSearchButton && searchContainer) {
 }
 
 updateSearchVisibility();
+
+// Меню
+
+const burgerButton = document.querySelector(".header__burger");
+const menu = document.querySelector("#mainMenu");
+const closeMenuButton = document.querySelector(".icon-btn--close");
+
+const openMenu = () => {
+  if (menu) {
+    menu.classList.add("menu--open");
+    addBodyStyles();
+  }
+};
+
+const closeMenu = () => {
+  if (menu) {
+    menu.classList.remove("menu--open");
+    removeBodyStyles();
+  }
+};
+
+if (burgerButton) {
+  burgerButton.addEventListener("click", openMenu);
+}
+
+if (closeMenuButton) {
+  closeMenuButton.addEventListener("click", closeMenu);
+}
+
+if (menu) {
+  menu.addEventListener("click", (e) => {
+    if (e.target === menu) {
+      closeMenu();
+    }
+  });
+}

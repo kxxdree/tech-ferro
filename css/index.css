@@ -547,15 +547,6 @@
   transition: all 0.2s ease;
 }
 
-@media (max-width: 640px) {
-  .menu__header {
-    padding: 1rem 1.25rem;
-  }
-  .menu__content {
-    padding: 0 1.25rem 1.5rem 1.25rem;
-  }
-}
-
 /* Основной контент  */
 
 .main {
