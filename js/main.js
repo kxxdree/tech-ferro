@@ -31,21 +31,49 @@ if (closeApplicationButton) {
 // Поиск
 
 const searchButton = document.querySelector("#search-button");
-const searchContainer = document.querySelector(".search");
+const searchContainer = document.querySelector("#mainSearch"); // Используем id
 const closeSearchButton = document.querySelector(".search-bar__close-icon");
 const searchInput = document.querySelector(".search-bar__input input");
 const searchDescription = document.querySelector(".search__description");
 const searchSuccess = document.querySelector(".search__success");
 
+const openSearch = () => {
+  if (searchContainer) {
+    searchContainer.classList.add("search--open");
+    addBodyStyles();
+
+    if (searchInput) {
+      searchInput.value = "";
+      updateSearchVisibility();
+
+      setTimeout(() => {
+        searchInput.focus();
+      }, 200);
+    }
+  }
+};
+
+const closeSearch = () => {
+  if (searchContainer) {
+    searchContainer.classList.remove("search--open");
+    removeBodyStyles();
+
+    if (searchInput) {
+      searchInput.value = "";
+      updateSearchVisibility();
+    }
+  }
+};
+
 const updateSearchVisibility = () => {
   const searchQuery = searchInput.value.trim();
 
   if (searchQuery.length > 0) {
-    searchDescription.style.display = "none";
-    searchSuccess.style.display = "flex";
+    if (searchDescription) searchDescription.style.display = "none";
+    if (searchSuccess) searchSuccess.style.display = "flex";
   } else {
-    searchDescription.style.display = "flex";
-    searchSuccess.style.display = "none";
+    if (searchDescription) searchDescription.style.display = "flex";
+    if (searchSuccess) searchSuccess.style.display = "none";
   }
 };
 
@@ -54,24 +82,17 @@ if (searchInput) {
 }
 
 if (searchButton && searchContainer) {
-  searchButton.addEventListener("click", () => {
-    searchContainer.style.display = "flex";
-    addBodyStyles();
-
-    if (searchInput) {
-      searchInput.value = "";
-      updateSearchVisibility();
-    }
-  });
+  searchButton.addEventListener("click", openSearch);
 }
 
 if (closeSearchButton && searchContainer) {
-  closeSearchButton.addEventListener("click", () => {
-    searchContainer.style.display = "none";
-    removeBodyStyles();
-    if (searchInput) {
-      searchInput.value = "";
-      updateSearchVisibility();
+  closeSearchButton.addEventListener("click", closeSearch);
+}
+
+if (searchContainer) {
+  searchContainer.addEventListener("click", (e) => {
+    if (e.target === searchContainer) {
+      closeSearch();
     }
   });
 }
@@ -80,7 +101,7 @@ updateSearchVisibility();
 
 // Меню
 
-const burgerButton = document.querySelector(".header__burger");
+const burgerButton = document.querySelector(".header__burger-btn");
 const menu = document.querySelector("#mainMenu");
 const closeMenuButton = document.querySelector(".icon-btn--close");
 

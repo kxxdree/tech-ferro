@@ -150,9 +150,19 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  display: none;
+  display: flex;
   align-items: flex-start;
   background-color: rgba(13, 20, 33, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition:
+    visibility 0.2s,
+    opacity 0.2s ease;
+}
+
+.search--open {
+  visibility: visible;
+  opacity: 1;
 }
 
 .search__container {
@@ -166,6 +176,7 @@
   padding: 2rem 3rem 2.5rem;
 }
 
+/* Остальные стили для .search__content, .search__search-bar и т.д. остаются без изменений */
 .search__content {
   display: flex;
   flex-direction: column;
