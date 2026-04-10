@@ -158,7 +158,7 @@
   display: flex;
   gap: 2.5rem;
   width: 100vw;
-  min-height: 21rem;
+  min-height: auto;
   background-color: #fcf7f3;
   padding: 2rem 3rem 2.5rem;
 }
@@ -181,8 +181,12 @@
 .search-bar__input {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   flex: 1;
+}
+
+.search-bar__input-icon {
+  padding: 0.5rem;
 }
 
 .search-bar__input img {
@@ -227,7 +231,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: auto
+  margin-top: auto;
 }
 
 .search__message {
@@ -250,6 +254,22 @@
   color: #121011;
   line-height: 1.4;
   letter-spacing: -0.05em;
+}
+
+@media (max-width: 1440px) {
+  .search__message-line {
+    font-size: 1.5rem;
+  }
+
+  .search__message-line--secondary {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .search__container {
+    padding: 2rem 1rem 2.5rem;
+  }
 }
 
 /* Основной контент  */
