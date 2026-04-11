@@ -284,3 +284,15 @@
 .about__about-section-gallery img:nth-child(1) {
   width: 41.188rem;
 }
+
+.about__principles-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.about__principles-section h2 {
+  font-size: 5rem;
+  font-weight: 400;
+  letter-spacing: -0.08em;
+}
