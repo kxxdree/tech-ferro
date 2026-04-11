@@ -195,6 +195,7 @@
 .about-description {
   font-size: 1rem;
   font-weight: 400;
+  line-height: 1.4;
   letter-spacing: -0.05em;
   color: #121011;
 }
@@ -206,18 +207,24 @@
 
 .about__about-section {
   display: flex;
+  flex-direction: column;
+  gap: 4.875rem;
+}
+
+.about__about-section-description {
+  display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-.about__about-section div {
+.about__about-section-description div {
   max-width: 41.25rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
 
-.about__about-section p {
+.about__about-section-description p {
   max-width: 41rem;
 }
 
@@ -259,4 +266,21 @@
 
 .about-subtitle-link:hover svg path {
   stroke: #e64410;
+}
+
+.about__about-section-gallery {
+  height: 25rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.about__about-section-gallery img {
+  height: 100%;
+  width: 19.875rem;
+  object-fit: cover;
+}
+
+.about__about-section-gallery img:nth-child(1) {
+  width: 41.188rem;
 }
