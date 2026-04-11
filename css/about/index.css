@@ -166,7 +166,7 @@
   padding: 5.25rem 3rem 12.5rem 3rem;
 }
 
-.about__title-section {
+.about__intro-section {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -179,7 +179,7 @@
   letter-spacing: -0.08em;
 }
 
-.about__title-section div {
+.about__intro-section div {
   max-width: 41.25rem;
   display: flex;
   flex-direction: column;
@@ -204,20 +204,20 @@
   object-fit: cover;
 }
 
-.about__subtitle-section {
+.about__about-section {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-.about__subtitle-section div {
+.about__about-section div {
   max-width: 41.25rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
 
-.about__subtitle-section p {
+.about__about-section p {
   max-width: 41rem;
 }
 
