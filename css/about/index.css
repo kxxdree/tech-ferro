@@ -203,3 +203,20 @@
   height: 25rem;
   object-fit: cover;
 }
+
+.about__subtitle-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.about__subtitle-section div {
+  max-width: 41.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about__subtitle-section p {
+  max-width: 41rem;
+}
