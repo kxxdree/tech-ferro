@@ -296,3 +296,55 @@
   font-weight: 400;
   letter-spacing: -0.08em;
 }
+
+.principles-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.principles-list-item {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  gap: 1.5rem;
+  border-top: 1px solid #0000004d;
+  height: 12.375rem;
+}
+
+.principles-list-item span {
+  display: flex;
+  width: 4.063rem;
+  text-align: start;
+  line-height: 1.4;
+  letter-spacing: -0.05em;
+  color: #121011;
+}
+
+.principles-list-item img {
+  width: 19.875rem;
+  height: 9.375rem;
+  object-fit: cover;
+}
+
+.principles-list-item-title-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 28.438rem;
+  padding: 2.5rem;
+}
+
+.principles-list-item-title {
+  width: 16.75rem;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+}
+
+.principles-list-item-description {
+  width: 25.688rem;
+  font-size: 1rem;
+  line-height: 1.4;
+  letter-spacing: -0.05em;
+}
