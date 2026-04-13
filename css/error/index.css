@@ -165,7 +165,7 @@
   margin-top: 0;
 }
 
-.error-section {
+.error {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -174,18 +174,19 @@
   padding: 2.5rem 1rem 5.25rem 1rem;
 }
 
-.error-section__text-container {
+.error__container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.error-404 {
+.error__code {
   font-size: 25rem;
+  font-weight: 400;
   letter-spacing: -0.05em;
 }
 
-.error-section__title-container {
+.error__content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -193,21 +194,23 @@
   gap: 1.5rem;
 }
 
-.error-title {
+.error__title {
   font-size: 2.5rem;
   font-weight: normal;
   letter-spacing: -0.05em;
+  margin: 0;
 }
 
-.error-subtitle {
+.error__message {
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.2;
   letter-spacing: -0.05em;
   text-align: center;
+  margin: 0;
 }
 
-.error-button {
+.error__button {
   background-color: #252324;
   border: none;
   border-radius: 4px;
@@ -222,7 +225,7 @@
   transition: all 0.2s;
 }
 
-.error-button:hover {
+.error__button:hover {
   background-color: black;
 }
 
@@ -231,42 +234,42 @@
     height: calc(100vh - 10rem);
   }
 
-  .error-section {
+  .error {
     padding: 0 1rem 0 1rem;
   }
 
-  .error-404 {
+  .error__code {
     font-size: 12.5rem;
   }
 
-  .error-title {
+  .error__title {
     font-size: 1.75rem;
   }
 
-  .error-subtitle {
+  .error__message {
     margin-bottom: 0.5rem;
   }
 
-  .error-section__title-container {
+  .error__content {
     max-width: 90%;
     gap: 1rem;
   }
 }
 
 @media (max-width: 360px) {
-  .error-404 {
+  .error__code {
     font-size: 8.75rem;
   }
 
-  .error-title {
+  .error__title {
     font-size: 1.5rem;
   }
 
-  .error-subtitle {
+  .error__message {
     font-size: 0.875rem;
   }
 
-  .error-button {
+  .error__button {
     padding: 0.75rem 1.25rem;
     font-size: 0.875rem;
   }
