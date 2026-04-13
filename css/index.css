@@ -730,73 +730,6 @@
   transition: all 0.3s;
 }
 
-@media (max-width: 1440px) {
-  .hero__title {
-    font-size: 1.25rem;
-    min-width: 23rem;
-  }
-
-  .hero__description {
-    font-size: 8.75rem;
-  }
-}
-
-@media (max-width: 1280px) {
-  .hero__title {
-    font-size: 1.25rem;
-  }
-
-  .hero__description {
-    font-size: 7.5rem;
-  }
-}
-
-@media (max-width: 960px) {
-  .hero__title {
-    font-size: 1rem;
-    min-width: 21.125rem;
-  }
-
-  .hero__description {
-    font-size: 5rem;
-  }
-
-  .hero__title-wrapper {
-    gap: 2rem;
-    padding: 0 2rem;
-  }
-
-  .hero__subtitle-wrapper {
-    padding: 0 2rem;
-  }
-
-  .cookies {
-    min-width: 90%;
-    width: 90%;
-    gap: 2rem;
-    padding: 1rem;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero__catalog-link {
-    min-width: 20rem;
-    min-height: 20rem;
-    right: 2rem;
-    bottom: 2rem;
-    padding: 2rem;
-  }
-
-  .hero__catalog-link a {
-    font-size: 1.5rem;
-    text-wrap: wrap;
-  }
-
-  .hero__title {
-    min-width: auto;
-  }
-}
-
 /* Качество */
 
 .quality {
@@ -2423,4 +2356,91 @@ h4 {
 .footer__info-block-catalog a:hover,
 .footer__info-block-info a:hover {
   color: #e64410;
+}
+
+@media (max-width: 1440px) {
+  .hero__title-wrapper {
+    padding: 0 3rem;
+  }
+
+  .hero__title {
+    font-size: 1.25rem;
+    min-width: 24rem;
+  }
+
+  .hero__description {
+    font-size: 8.75rem;
+  }
+
+  .hero__subtitle-wrapper {
+    padding: 0 3rem;
+  }
+
+  .hero__catalog-link {
+    width: 19.625rem;
+    height: 19.625rem;
+    bottom: 3.063rem;
+    right: 3.063rem;
+    padding: 2rem;
+  }
+
+  .hero__catalog-link a {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .hero__title {
+    font-size: 1.25rem;
+  }
+
+  .hero__description {
+    font-size: 7.5rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .hero__title {
+    font-size: 1rem;
+    min-width: 21.125rem;
+  }
+
+  .hero__description {
+    font-size: 5rem;
+  }
+
+  .hero__title-wrapper {
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+
+  .hero__subtitle-wrapper {
+    padding: 0 2rem;
+  }
+
+  .cookies {
+    min-width: 90%;
+    width: 90%;
+    gap: 2rem;
+    padding: 1rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero__catalog-link {
+    min-width: 20rem;
+    min-height: 20rem;
+    right: 2rem;
+    bottom: 2rem;
+    padding: 2rem;
+  }
+
+  .hero__catalog-link a {
+    font-size: 1.5rem;
+    text-wrap: wrap;
+  }
+
+  .hero__title {
+    min-width: auto;
+  }
 }
