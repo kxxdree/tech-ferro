@@ -1,9 +1,94 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>ТехФерро - Контакты</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/contacts/index.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- Шапка  -->
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo">
+          <img src="/assets/icons/logo-colored.svg" alt="Логотип" />
+        </div>
+
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="header__menu-item">
+              <a href="/">Главная</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="/catalog.html">Каталог</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="/about.html">О нас</a>
+            </li>
+            <li class="header__menu-item active-link">
+              <a href="/contacts.html">Контакты</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="tel:+79525005050">+7 (952) 500-50-50</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__buttons">
+          <button class="header__icon-btn" id="search-button" aria-label="Поиск">
+            <img src="assets/icons/search.svg" alt="Поиск" />
+          </button>
+          <button class="header__icon-btn header__cart-btn" aria-label="Корзина">
+            <img src="assets/icons/cart.svg" alt="Корзина" />
+            <span class="header__cart-count">0</span>
+          </button>
+          <button class="header__icon-btn header__burger-btn" aria-label="Меню">
+            <img class="header__burger" src="assets/icons/burger.svg" alt="Меню" />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Мейн -->
+
+    <main class="main">
+      <section class="contacts">
+        <h2 class="contacts__title">Контакты</h2>
+        <ul class="contacts__list">
+          <li class="contacts__list-item">
+            <div class="list-item__content-block">
+              <span>Основной офис</span>
+              <p>Город Воронеж</p>
+              <address>Улица Космонавтов, 12</address>
+            </div>
+            <div class="list-item__content-block">
+              <span>телефон</span>
+              <p>+7 (952) 500-50-50</p>
+            </div>
+            <div class="list-item__content-block">
+              <span>Email</span>
+              <p>info@mail.ru</p>
+            </div>
+          </li>
+
+          <li class="contacts__list-item">
+            <div class="list-item__content-block">
+              <span>Производство/Склад</span>
+              <p>Город Воронеж</p>
+              <address>Улица Космонавтов, 12</address>
+            </div>
+            <div class="list-item__content-block">
+              <span>телефон</span>
+              <p>+7 (952) 500-50-50</p>
+            </div>
+            <div class="list-item__content-block">
+              <span>Email</span>
+              <p>info@mail.ru</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
 </html>
