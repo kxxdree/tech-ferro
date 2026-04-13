@@ -149,3 +149,18 @@ if (menu) {
     }
   });
 }
+
+// Куки
+
+const cookiesButton = document.querySelector("#cookies-button");
+const cookies = document.querySelector("#cookies");
+
+const closeCookies = () => {
+  if (cookies) {
+    cookies.classList.remove("cookies--open");
+  }
+};
+
+if (cookiesButton) {
+  cookiesButton.addEventListener("click", closeCookies);
+}

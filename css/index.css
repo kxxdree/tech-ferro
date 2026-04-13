@@ -563,6 +563,70 @@
   transition: all 0.2s ease;
 }
 
+/* Куки  */
+
+.cookies {
+  min-width: 75rem;
+  min-height: 8.542rem;
+  position: fixed;
+  z-index: 20;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fcf7f3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  padding: 2rem;
+  visibility: hidden;
+  opacity: 0;
+  transition:
+    visibility 0.2s,
+    opacity 0.2s ease;
+}
+
+.cookies--open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.cookies p {
+  line-height: 1.2;
+  font-size: 1.333rem;
+  letter-spacing: -0.02em;
+}
+
+.cookies p span a {
+  border-bottom: 1px solid black;
+}
+
+.cookies p span a:visited {
+  border-bottom: 1px solid black;
+  color: inherit;
+}
+
+.cookies p span a:hover {
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+
+.cookies button {
+  min-height: 4.542rem;
+  border: none;
+  border-radius: 5.33px;
+  font-weight: 300;
+  padding: 1.333rem 2rem;
+  color: white;
+  font-size: 1.333rem;
+  background-color: #252324;
+}
+
+.cookies button:hover {
+  background-color: black;
+  transition: all 0.2s ease-in-out;
+}
+
 /* Основной контент  */
 
 .main {
@@ -632,58 +696,6 @@
   font-weight: 400;
   letter-spacing: -0.08em;
   color: #fff;
-}
-
-.hero__cookies {
-  min-width: 1200px;
-  min-height: 8.542rem;
-  position: absolute;
-  z-index: 20;
-  bottom: 2.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #fcf7f3;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 5rem;
-  padding: 2rem;
-}
-
-.hero__cookies p {
-  line-height: 1.2;
-  font-size: 1.333rem;
-  letter-spacing: -0.02em;
-}
-
-.hero__cookies p span a {
-  border-bottom: 1px solid black;
-}
-
-.hero__cookies p span a:visited {
-  border-bottom: 1px solid black;
-  color: inherit;
-}
-
-.hero__cookies p span a:hover {
-  opacity: 0.8;
-  transition: all 0.3s;
-}
-
-.hero__cookies button {
-  min-height: 4.542rem;
-  border: none;
-  border-radius: 5.33px;
-  font-weight: 300;
-  padding: 1.333rem 2rem;
-  color: white;
-  font-size: 1.333rem;
-  background-color: #252324;
-}
-
-.hero__cookies button:hover {
-  background-color: black;
-  transition: all 0.2s ease-in-out;
 }
 
 .hero__catalog-link {
@@ -758,7 +770,7 @@
     padding: 0 2rem;
   }
 
-  .hero__cookies {
+  .cookies {
     min-width: 90%;
     width: 90%;
     gap: 2rem;
