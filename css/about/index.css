@@ -443,3 +443,225 @@
     max-width: 21.563rem;
   }
 }
+
+@media (max-width: 480px) {
+  .main {
+    gap: 3rem;
+    padding: 2rem 1rem 4rem 1rem;
+  }
+
+  .about__intro-section {
+    gap: 2rem;
+  }
+
+  .about-title {
+    font-size: 2.5rem;
+    max-width: 100%;
+  }
+
+  .about-subtitle {
+    font-size: 1.75rem;
+  }
+
+  .about-description {
+    font-size: 0.875rem;
+  }
+
+  .about__title-image {
+    margin-top: -2rem;
+    height: 25rem;
+  }
+
+  .about__about-section {
+    gap: 2rem;
+  }
+
+  .about__about-section-description {
+    gap: 1.5rem;
+  }
+
+  .about__about-section-description div {
+    gap: 1.5rem;
+  }
+
+  .about-subtitle-link span {
+    font-size: 1.25rem;
+  }
+
+  .about-subtitle-link svg {
+    width: 0.875rem;
+    height: 0.875rem;
+  }
+
+  .about__about-section-gallery {
+    gap: 1rem;
+  }
+
+  .about__about-section-gallery img {
+    height: 15rem;
+  }
+
+  .about__about-section-gallery img:nth-child(1) {
+    width: 25rem;
+  }
+
+  .about__about-section-gallery img:not(:nth-child(1)) {
+    width: 12rem;
+  }
+
+  .about__principles-section {
+    gap: 1.5rem;
+  }
+
+  .about__principles-section h2 {
+    font-size: 2.5rem;
+  }
+
+  .principles-list {
+    gap: 0.5rem;
+  }
+
+  .principles-list-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem 0;
+    gap: 0.75rem;
+  }
+
+  .principles-list-item span {
+    width: auto;
+    font-size: 0.875rem;
+  }
+
+  .principles-list-item img {
+    width: 100%;
+    height: 12.5rem;
+  }
+
+  .principles-list-item-title-wrapper {
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 0.75rem;
+  }
+
+  .principles-list-item-title-container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .principles-list-item-title {
+    max-width: 100%;
+    width: 100%;
+    font-size: 1.25rem;
+  }
+
+  .principles-list-item-description {
+    max-width: 100%;
+    width: 100%;
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .main {
+    gap: 2.5rem;
+    padding: 1.5rem 1rem 3rem 1rem;
+  }
+
+  .about__intro-section {
+    gap: 1.5rem;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .about-description {
+    font-size: 0.813rem;
+  }
+
+  .about__title-image {
+    margin-top: -1.5rem;
+    height: 25rem;
+  }
+
+  .about__about-section {
+    gap: 1.5rem;
+  }
+
+  .about__about-section-description {
+    gap: 1rem;
+  }
+
+  .about__about-section-description div {
+    gap: 1rem;
+  }
+
+  .about-subtitle-link span {
+    font-size: 1.125rem;
+  }
+
+  .about-subtitle-link svg {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .about-subtitle-link {
+    gap: 0.75rem;
+  }
+
+  .about__about-section-gallery {
+    gap: 0.75rem;
+  }
+
+  .about__about-section-gallery img {
+    height: 12rem;
+  }
+
+  .about__about-section-gallery img:nth-child(1) {
+    width: 20rem;
+  }
+
+  .about__about-section-gallery img:not(:nth-child(1)) {
+    width: 10rem;
+  }
+
+  .about__principles-section {
+    gap: 1rem;
+  }
+
+  .about__principles-section h2 {
+    font-size: 2rem;
+  }
+
+  .principles-list-item {
+    padding: 0.75rem;
+    gap: 0.5rem;
+  }
+
+  .principles-list-item span {
+    font-size: 0.75rem;
+  }
+
+  .principles-list-item img {
+    height: 12.5rem;
+  }
+
+  .principles-list-item-title-wrapper {
+    gap: 0.5rem;
+  }
+
+  .principles-list-item-title {
+    font-size: 1.125rem;
+  }
+
+  .principles-list-item-description {
+    font-size: 0.75rem;
+  }
+}
