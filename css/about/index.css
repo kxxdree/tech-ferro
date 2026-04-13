@@ -418,16 +418,6 @@
     gap: 1rem;
   }
 
-  .principles-list-item span {
-    width: auto;
-  }
-
-  .principles-list-item img {
-    width: 100%;
-    height: auto;
-    order: -1;
-  }
-
   .principles-list-item-title-container {
     width: 100%;
     padding: 0;
