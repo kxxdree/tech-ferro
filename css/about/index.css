@@ -327,6 +327,11 @@
   object-fit: cover;
 }
 
+.principles-list-item-title-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .principles-list-item-title-container {
   display: flex;
   justify-content: flex-start;
@@ -412,10 +417,17 @@
   }
 
   .principles-list-item {
-    flex-direction: column;
-    align-items: flex-start;
     height: auto;
     gap: 1rem;
+  }
+
+  .principles-list-item-title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start !important;
+    width: 24.063rem;
+    gap: 1rem;
+    padding: 0 2.5rem;
   }
 
   .principles-list-item-title-container {
@@ -424,10 +436,10 @@
   }
 
   .principles-list-item-title {
-    width: 100%;
+    max-width: 16.75rem;
   }
 
   .principles-list-item-description {
-    width: 100%;
+    max-width: 21.563rem;
   }
 }
