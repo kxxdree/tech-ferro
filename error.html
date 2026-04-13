@@ -5,38 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Техферро — Страница не найдена</title>
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/error.css" />
+    <link rel="stylesheet" href="css/error/index.css" />
   </head>
   <body>
     <header class="header">
       <div class="header__container">
         <div class="header__logo">
-          <img src="assets/icons/logo-colored.svg" alt="Логотип" />
+          <img src="/assets/icons/logo-colored.svg" alt="Логотип" />
         </div>
+
         <nav class="header__nav">
           <ul class="header__menu">
-            <li><a href="/">Главная</a></li>
-            <li><a href="#">Каталог</a></li>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Контакты</a></li>
-            <li><a href="#">+7 (952) 500-50-50</a></li>
+            <li class="header__menu-item">
+              <a href="/">Главная</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="/catalog.html">Каталог</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="/about.html">О нас</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="/contacts.html">Контакты</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="tel:+79525005050">+7 (952) 500-50-50</a>
+            </li>
           </ul>
         </nav>
+
         <div class="header__buttons">
-          <div class="header__buttons-wrapper">
-            <img class="header__cart" src="assets/icons/search.svg" alt="Поиск" />
-          </div>
-          <div class="header__buttons-wrapper">
-            <img class="header__search" src="assets/icons/cart.svg" alt="Корзина" />
-          </div>
-          <div class="header__buttons-wrapper burger-wrapper">
+          <button class="header__icon-btn" id="search-button" aria-label="Поиск">
+            <img src="assets/icons/search.svg" alt="Поиск" />
+          </button>
+          <button class="header__icon-btn header__cart-btn" aria-label="Корзина">
+            <img src="assets/icons/cart.svg" alt="Корзина" />
+            <span class="header__cart-count">0</span>
+          </button>
+          <button class="header__icon-btn header__burger-btn" aria-label="Меню">
             <img class="header__burger" src="assets/icons/burger.svg" alt="Меню" />
-          </div>
+          </button>
         </div>
       </div>
     </header>
+
+    <!-- Мейн  -->
+
     <main class="main">
-      <section class="error-section container">
+      <section class="error-section">
         <div class="error-section__text-container">
           <p class="error-404">404</p>
           <div class="error-section__title-container">
