@@ -226,7 +226,7 @@
 }
 
 .category__header-filters li:hover {
-  border: 1px solid #ffffff4d;
+  border: 1px solid black;
   cursor: pointer;
 }
 
