@@ -1129,8 +1129,9 @@
 }
 
 .best__title-link svg {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.25rem;
 }
 
 .best__title-link svg path {
@@ -1380,6 +1381,7 @@ h3 {
 .offer-link svg {
   width: 1rem;
   height: 1rem;
+  margin-top: 0.25rem;
 }
 
 .offer-link svg path {
