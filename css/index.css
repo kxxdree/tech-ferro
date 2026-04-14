@@ -574,6 +574,7 @@
   left: 50%;
   transform: translateX(-50%);
   background-color: #fcf7f3;
+  border: 1px solid #6b68684d !important;
   display: flex;
   justify-content: space-between;
   align-items: center;
