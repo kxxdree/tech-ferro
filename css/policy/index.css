@@ -1,0 +1,182 @@
+.header {
+  width: 100%;
+  z-index: 100;
+  background-color: transparent;
+  padding: 1rem 3rem;
+  transition: all 0.3s ease;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 3.75rem;
+}
+
+.header__logo img {
+  height: 3.375rem;
+  width: 9.375rem;
+}
+
+.header__menu {
+  display: flex;
+  gap: 4px;
+  list-style: none;
+}
+
+.header__menu-item a {
+  color: #000000;
+  font-weight: 300;
+  font-size: 1.315rem;
+  line-height: 1.5;
+  letter-spacing: -0.05em;
+  padding: 0.625rem 2rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.header__menu-item a:hover {
+  border-color: #000000;
+}
+
+.header__buttons {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+}
+
+.header__icon-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+
+.header__icon-btn:hover {
+  border-color: #000000;
+}
+
+.header__icon-btn img {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  object-fit: contain;
+  filter: invert(1);
+}
+
+.header__cart-btn {
+  position: relative;
+}
+
+.header__cart-count {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background-color: #e64410;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  width: 20px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__burger-btn {
+  display: none;
+}
+
+.header__burger {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  filter: invert(1);
+}
+
+@media (max-width: 960px) {
+  .header {
+    border-bottom: 1px solid #0000004d;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__burger-btn {
+    display: flex;
+  }
+
+  .header {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__logo img {
+    height: 2.5rem;
+    width: 6.938rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .header {
+    padding: 1rem;
+  }
+}
+
+/* Основной контент  */
+
+.main {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 5.25rem 3rem 20.5rem 3rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 55rem;
+  margin: auto;
+}
+
+.content h2 {
+  font-size: 3.5rem;
+  letter-spacing: -0.08em;
+}
+
+.content p,
+.content section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  letter-spacing: -0.05em;
+}
+
+.content section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.content section h3 {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: -0.05em;
+}
