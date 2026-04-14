@@ -79,3 +79,7 @@ li {
 input {
   font-family: "Gotham Pro", sans-serif;
 }
+
+h2 {
+  font-weight: 400;
+}

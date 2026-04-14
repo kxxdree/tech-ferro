@@ -170,6 +170,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  border-bottom: 1px solid #0000004d;
 }
 
 .category__header-nav {
@@ -196,4 +197,41 @@
 .main-link:hover {
   color: black;
   cursor: pointer;
+}
+
+.category__header-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 0;
+}
+
+.category__header-title h2 {
+  font-size: 3.5rem;
+  letter-spacing: -0.05em;
+}
+
+.category__header-filters {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.category__header-filters li {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  color: #121011;
+  transition: all 0.2s ease;
+}
+
+.category__header-filters li:hover {
+  color: #e64410 !important;
+  border: 1px solid #e64410;
+  cursor: pointer;
+}
+
+.active-category {
+  color: #e64410 !important;
+  border: 1px solid #e64410 !important;
 }
