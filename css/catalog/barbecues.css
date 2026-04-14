@@ -163,6 +163,7 @@
   display: flex;
   flex-direction: column;
   margin: auto;
+  gap: 1.5rem;
   padding: 0.875rem 3rem 6.25rem 3rem;
 }
 
@@ -271,4 +272,16 @@
 
 .price-option {
   margin-left: auto;
+}
+
+.catalog__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.catalog__list li img {
+  width: 19.813rem;
+  height: 23.125rem;
+  object-fit: cover;
 }
