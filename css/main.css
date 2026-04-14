@@ -38,7 +38,7 @@ html {
   list-style-type: none;
   font-size: 16px;
   /* font-size: calc(16 * (100vw / 1920)); */
-/* 
+  /* 
   @media (max-width: 1440px) {
     font-size: calc(16 * (100vw / 1440));
   }
@@ -81,6 +81,9 @@ input {
   font-family: "Gotham Pro", sans-serif;
 }
 
-h2 {
+h1,
+h2,
+h3,
+h4 {
   font-weight: 400;
 }
