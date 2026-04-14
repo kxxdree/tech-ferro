@@ -122,7 +122,10 @@
   width: 1.5rem;
   height: 1.5rem;
   display: block;
-  filter: invert(1);
+}
+
+.header__burger-btn .header__burger {
+  filter: none;
 }
 
 @media (max-width: 960px) {
