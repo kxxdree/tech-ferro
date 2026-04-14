@@ -1961,7 +1961,7 @@ h4 {
 .market-links {
   width: 100%;
   position: relative;
-  min-height: 54.167rem;
+  height: 54.167rem;
 }
 
 .market-links__container {
@@ -2043,8 +2043,8 @@ h4 {
 
 .market-links__content-image {
   display: block;
-  width: auto;
-  max-height: 41.667rem;
+  width: 100%;
+  height: 41.667rem;
   object-fit: cover;
 }
 
