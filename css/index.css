@@ -1629,11 +1629,12 @@ h3 {
 
 .application__container-text h2 {
   font-size: 6.667rem;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.08em;
 }
 
 .application__container-text h3 {
-  font-size: 1.25rem;
+  font-size: 1.667rem;
+  font-weight: 300;
   line-height: 1.2;
   letter-spacing: -0.05em;
   max-width: 35.917rem;
@@ -1647,16 +1648,17 @@ h3 {
   width: fit-content;
   margin: auto;
   border-bottom: 1.33px solid white;
-  transition: border-bottom-color 0.3s ease;
+  transition: border-bottom-color 0.2s ease;
 }
 
 .application-link-button {
   color: white;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: 300;
   line-height: 1.1;
   letter-spacing: -0.05em;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.2s ease;
   background: none;
   border: none;
   display: flex;
@@ -1667,10 +1669,11 @@ h3 {
 .application-link svg {
   width: 1rem;
   height: 1rem;
+  margin-top: 0.25rem;
 }
 
 .application-link svg path {
-  transition: stroke 0.3s ease;
+  transition: stroke 0.2s ease;
 }
 
 .application-link:hover {
