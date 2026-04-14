@@ -213,7 +213,7 @@ topProducts.forEach((product) => {
   bestListTop.insertAdjacentHTML("beforeend", productCardHTML);
 });
 
-const bestListBottom = document.querySelector(".best__list.best__list-bottom");
+const bestListBottom = document.querySelector(".best__list-bottom");
 
 const bottomProducts = [
   {
