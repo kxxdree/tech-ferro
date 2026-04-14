@@ -700,34 +700,107 @@
 
 .hero__catalog-link {
   position: absolute;
-  min-width: 26.167rem;
-  min-height: 26.333rem;
-  bottom: 2.4rem;
+  width: 26.167rem;
+  height: 26.333rem;
+  bottom: 4.083rem;
   right: 10.625rem;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  border: 1.33px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
-  padding: 42.67px;
+  padding: 2rem;
   backdrop-filter: blur(4px);
-  background: rgba(255, 255, 255, 0.1);
-  opacity: 1;
-  transition: all 0.3s ease;
+  border: 1.33px solid rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+  isolation: isolate;
 }
 
-.hero__catalog-link a {
+.hero__catalog-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease-out;
+  z-index: -1;
+}
+
+.hero__catalog-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(255, 255, 255, 0.7) 30%,
+    rgba(255, 255, 255, 0.3) 60%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+  z-index: -1;
+}
+
+.hero__catalog-link:hover::after {
+  opacity: 1;
+}
+
+.hero__catalog-link:hover::before {
+  background: transparent;
+}
+
+.hero__catalog-link {
+  transition:
+    backdrop-filter 0.2s ease-out,
+    border 0.2s ease-out;
+}
+
+.hero__catalog-link:hover {
+  backdrop-filter: blur(6px);
+  border: 1.33px solid rgba(255, 255, 255, 0.6);
+}
+
+.hero__catalog-link > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid white;
+  transition: all 0.2s ease-out;
+  position: relative;
+  z-index: 1;
+}
+
+.hero__catalog-link span {
   text-wrap: nowrap;
   color: white;
   font-size: 2rem;
   font-weight: 300;
+  transition: color 0.2s ease-out;
 }
 
-.hero__catalog-link:hover {
-  cursor: pointer;
-  opacity: 0.8;
-  transition: all 0.3s;
+.hero__catalog-link img {
+  transition: filter 0.2s ease-out;
+  margin-top: 0.5rem;
+}
+
+.hero__catalog-link:hover span {
+  color: black;
+}
+
+.hero__catalog-link:hover > div {
+  border-bottom-color: black;
+}
+
+.hero__catalog-link:hover img {
+  filter: brightness(0) invert(0);
 }
 
 /* Качество */
@@ -2357,6 +2430,8 @@ h4 {
 .footer__info-block-info a:hover {
   color: #e64410;
 }
+
+/* Адаптив  */
 
 @media (max-width: 1440px) {
   .hero__title-wrapper {
