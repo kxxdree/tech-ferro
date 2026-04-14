@@ -6,6 +6,7 @@
     <title>ТехФерро - Мангалы и барбекю</title>
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/catalog/barbecues.css" />
+    <script src="../js/barbecues.js" defer></script>
   </head>
   <body>
     <!-- Шапка  -->
@@ -61,7 +62,7 @@
         </nav>
         <div class="category__header-title">
           <h2>Мангалы и барбекю</h2>
-          <ul class="category__header-filters">
+          <ul class="category__header-types">
             <li class="active-category">Все</li>
             <li>Мангалы</li>
             <li>Гриль-барбекю</li>
@@ -69,8 +70,8 @@
             <li>Стол-гриль</li>
           </ul>
         </div>
-        <div class="category__header-sorting">
-          <ul class="sorting-options">
+        <div class="category__header-filters">
+          <ul class="filters-options">
             <li class="width-option">
               <span>Ширина, см</span>
               <img src="../assets/icons/chevron-down.svg" />
@@ -96,25 +97,7 @@
       </header>
 
       <section class="catalog__container">
-        <ul class="catalog__list">
-          <li>
-            <a href="#">
-              <div class="catalog__list-image-wrapper">
-                <img src="../assets/images/catalog/item-photo.png" alt="Фото товара" />
-                <button class="catalog__list-cart-btn" aria-label="Добавить в корзину">
-                  <img src="../assets/icons/cart.svg" alt="Корзина" />
-                </button>
-              </div>
-              <div class="list-item__content">
-                <div class="list-item__product-info">
-                  <h4>Костровая чаша</h4>
-                  <h3>Fire Cube</h3>
-                </div>
-                <p class="list-item__price">3 590 ₽</p>
-              </div>
-            </a>
-          </li>
-        </ul>
+        <ul class="catalog__list"></ul>
       </section>
     </main>
   </body>
