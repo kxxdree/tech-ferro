@@ -252,6 +252,8 @@
   transform: translateY(-2px);
 }
 
+/* Адаптив  */
+
 @media (max-width: 1440px) {
   .catalog__list li {
     flex: 1;
@@ -261,7 +263,7 @@
   .catalog__list li::after {
     bottom: 1rem;
     left: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .catalog__link {
@@ -272,9 +274,15 @@
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1280px) {
   .catalog__list {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .catalog__list li::after {
+    font-size: 1rem;
   }
 }
 
