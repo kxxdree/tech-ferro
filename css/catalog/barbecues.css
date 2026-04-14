@@ -275,6 +275,12 @@
   margin-left: auto;
 }
 
+.catalog__container {
+  display: flex;
+  flex-direction: column;
+  gap: 4.5rem;
+}
+
 .catalog__list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -393,4 +399,79 @@
 .list-item__product-info h3,
 .list-item__price {
   font-size: 1.5rem;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.pagination img {
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.75rem;
+  filter: invert(1);
+}
+
+.pagination img:first-child {
+  transform: rotate(180deg);
+}
+
+.pagination img:hover {
+  border: 1px solid rgba(170, 170, 170, 0.171);
+}
+
+.pagination img:first-child:hover {
+  transform: rotate(180deg) scale(1.05);
+}
+
+.pagination ul {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.pagination ul li button {
+  background-color: #fcf7f3;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: black;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination ul li button:hover {
+  border: 1px solid #0000001a;
+}
+
+.pagination ul li button.active {
+  border: 1px solid #0000004d;
+}
+
+.pagination__dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: black;
+  font-size: 1rem;
+}
+
+.pagination__arrow.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  pointer-events: none;
 }
