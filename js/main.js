@@ -164,3 +164,60 @@ const closeCookies = () => {
 if (cookiesButton) {
   cookiesButton.addEventListener("click", closeCookies);
 }
+
+// Лучшее
+
+const bestListTop = document.querySelector(".best__list.best__list-top");
+
+const products = [
+  {
+    img: "assets/images/main-page/best-section/best-photo.png",
+    category: "Костровая чаша",
+    name: "Fire Cube",
+    price: "3 590 ₽",
+  },
+  {
+    img: "assets/images/main-page/best-section/best-photo.png",
+    category: "Костровая чаша",
+    name: "Fire Cube",
+    price: "3 590 ₽",
+  },
+  {
+    img: "assets/images/main-page/best-section/best-photo-2.png",
+    category: "Костровая чаша",
+    name: "Fire Cube",
+    price: "3 590 ₽",
+  },
+];
+
+products.forEach((product) => {
+  const productCardHTML = `
+    <li class="best__list-product-card">
+      <a href="#">
+        <div class="best__list-product-card-image-wrapper">
+          <img src="${product.img}" alt="Карточка товара" />
+          <button class="best__list-product-card-cart" aria-label="Добавить в корзину">
+            <img src="assets/icons/cart.svg" alt="Корзина" />
+          </button>
+        </div>
+        <div class="best__list-product-card-content">
+          <div class="best__list-product-card-info">
+            <h4>${product.category}</h4>
+            <h3>${product.name}</h3>
+          </div>
+          <p>${product.price}</p>
+        </div>
+      </a>
+    </li>
+  `;
+  bestListTop.insertAdjacentHTML("beforeend", productCardHTML);
+});
+
+const cartButtons = document.querySelectorAll(".best__list-product-card-cart");
+
+cartButtons.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+  });
+});
