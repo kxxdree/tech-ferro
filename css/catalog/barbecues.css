@@ -52,7 +52,7 @@
   content: "";
   position: absolute;
   left: 10.67px;
-  top: 47%;
+  top: 50%;
   transform: translateY(-50%);
   width: 10.67px;
   height: 10.67px;
@@ -284,8 +284,7 @@
 .catalog__list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  column-gap: 1.5rem;
-  row-gap: 4rem;
+  gap: 4rem 1.5rem !important;
 }
 
 .catalog__list-item {
