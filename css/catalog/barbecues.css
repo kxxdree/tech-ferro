@@ -282,7 +282,11 @@
 }
 
 .active-filter {
-  background-color: #F1EBE6;
+  background-color: #f1ebe6;
+}
+
+.width-option {
+  position: relative;
 }
 
 .price-option {
@@ -490,6 +494,59 @@
   opacity: 0.3;
   cursor: not-allowed;
   pointer-events: none;
+}
+
+/* Дропдауны  */
+
+.width-filter-dropdown {
+  position: absolute;
+  top: 2.5rem;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 19.25rem;
+  height: 8.625rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 10px 0px #7a7a7a1a;
+  box-shadow: 0px 0px 10px 0px #b9b9b940;
+  background-color: #fcf7f3;
+}
+
+.filter-title-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-title {
+  font-size: 1rem;
+  line-height: 1.4;
+  letter-spacing: -0.05em;
+}
+
+.filter-close-btn {
+  width: 0.95rem;
+  height: 0.95rem;
+}
+
+.filter-values-block {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.filter-value-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #0000004d;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  width: 7.5rem;
+  height: 2.375rem;
 }
 
 /* Адаптив  */
