@@ -45,51 +45,55 @@ cartButtons.forEach((button) => {
   });
 });
 
+// Дропдауны
+
 const widthFilterButton = document.querySelector("#width-filter");
-const heightFilterButton = document.querySelector("#height-filter");
 const depthFilterButton = document.querySelector("#depth-filter");
+const heightFilterButton = document.querySelector("#height-filter");
 
 const widthFilterDropDown = document.querySelector(".width-filter-dropdown");
-const heightFilterDropDown = document.querySelector(".height-filter-dropdown");
 const depthFilterDropDown = document.querySelector(".depth-filter-dropdown");
+const heightFilterDropDown = document.querySelector(".height-filter-dropdown");
 
-function closeAllDropdowns(exceptDropdown = null) {
-  const allDropdowns = [widthFilterDropDown, depthFilterDropDown, heightFilterDropDown];
-  allDropdowns.forEach((dropdown) => {
-    if (dropdown && dropdown !== exceptDropdown) {
-      dropdown.classList.remove("width-filter-dropdown--open");
-      dropdown.classList.remove("height-filter-dropdown--open");
-      dropdown.classList.remove("depth-filter-dropdown--open");
-    }
-  });
+const dropdowns = [
+  { element: widthFilterDropDown, openClass: "width-filter-dropdown--open", button: widthFilterButton },
+  { element: depthFilterDropDown, openClass: "depth-filter-dropdown--open", button: depthFilterButton },
+  { element: heightFilterDropDown, openClass: "height-filter-dropdown--open", button: heightFilterButton },
+];
+
+function closeDropdown(dropdown) {
+  if (!dropdown) return;
+  dropdown.classList.remove("width-filter-dropdown--open", "depth-filter-dropdown--open", "height-filter-dropdown--open");
 }
 
-function toggleDropdown(button, dropdown, openClass = "width-filter-dropdown--open") {
-  if (!button || !dropdown) return;
+function closeAllDropdowns() {
+  dropdowns.forEach(({ element }) => closeDropdown(element));
+}
+
+function openDropdown(targetDropdown, targetClass) {
+  closeAllDropdowns();
+  targetDropdown?.classList.add(targetClass);
+}
+
+dropdowns.forEach(({ element, openClass, button }) => {
+  if (!button || !element) return;
 
   button.addEventListener("click", (event) => {
     event.stopPropagation();
+    const isOpen = element.classList.contains(openClass);
 
-    const isOpen = dropdown.classList.contains(openClass);
-
-    if (!isOpen) {
-      closeAllDropdowns(dropdown);
-      dropdown.classList.add(openClass);
+    if (isOpen) {
+      closeDropdown(element);
     } else {
-      dropdown.classList.remove(openClass);
+      openDropdown(element, openClass);
     }
   });
-}
+});
 
-toggleDropdown(widthFilterButton, widthFilterDropDown, "width-filter-dropdown--open");
-toggleDropdown(depthFilterButton, depthFilterDropDown, "depth-filter-dropdown--open");
-toggleDropdown(heightFilterButton, heightFilterDropDown, "height-filter-dropdown--open");
-
-document.addEventListener("click", (event) => {
-  const isClickInsideButton = event.target.closest("#width-filter, #depth-filter, #height-filter");
-  const isClickInsideDropdown = event.target.closest(".width-filter-dropdown, .depth-filter-dropdown, .height-filter-dropdown");
-
-  if (!isClickInsideButton && !isClickInsideDropdown) {
-    closeAllDropdowns();
-  }
+document.querySelectorAll(".filter-close-btn").forEach((closeBtn) => {
+  closeBtn.addEventListener("click", (event) => {
+    event.stopPropagation();
+    const dropdown = closeBtn.closest(".width-filter-dropdown, .depth-filter-dropdown, .height-filter-dropdown");
+    closeDropdown(dropdown);
+  });
 });
