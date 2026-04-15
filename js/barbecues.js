@@ -44,3 +44,10 @@ cartButtons.forEach((button) => {
     event.stopPropagation();
   });
 });
+
+const widthFilterButton = document.querySelector("#width-filter");
+const widthFilterDropDown = document.querySelector(".width-filter-dropdown");
+
+widthFilterButton.addEventListener("click", () => {
+  widthFilterDropDown.classList.toggle("width-filter-dropdown--open");
+});
