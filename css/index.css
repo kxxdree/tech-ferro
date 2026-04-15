@@ -283,9 +283,10 @@ html {
 }
 
 .search__success {
-  display: none;
+  display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  width: 100%;
 }
 
 .search__success-header {
@@ -313,15 +314,16 @@ html {
 
 .search__success-list {
   display: flex;
-  align-items: center;
   gap: 1.5rem;
+  overflow-x: auto;
 }
 
 .search__success-list-item {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  width: 19.813rem;
+  min-width: 19.813rem;
+  max-width: 19.813rem;
   height: 30.688rem;
   text-decoration: none;
   cursor: pointer;
@@ -380,6 +382,8 @@ html {
 .list-item__info-price {
   font-size: 1.5rem;
 }
+
+/* Поиск адаптив  */
 
 @media (max-width: 1440px) {
   .search__message-line {
