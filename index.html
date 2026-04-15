@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/index.css" />
     <script src="js/main.js" defer></script>
+    <script src="js/search.js" defer></script>
   </head>
   <body>
     <!-- Шапка  -->
@@ -81,56 +82,7 @@
               <span class="success-header-count">Найдено 24 товара</span>
               <a class="success-header-link" href="#">Показать всё</a>
             </div>
-            <ul class="search__success-list">
-              <li class="search__success-list-item list__item">
-                <a href="/product/fire-cube" class="list__item-link">
-                  <img class="list__item-image" src="assets/images/search/search-item-photo.png" alt="Фото товара" />
-                  <div class="list-item__info">
-                    <div class="list-item__info-title">
-                      <h4>Костровая чаша</h4>
-                      <h3>Fire Cube</h3>
-                    </div>
-                    <p class="list-item__info-price"><b>3 590</b> ₽</p>
-                  </div>
-                </a>
-              </li>
-              <li class="search__success-list-item list__item">
-                <a href="/product/fire-cube-2" class="list__item-link">
-                  <img class="list__item-image" src="assets/images/search/search-item-photo.png" alt="Фото товара" />
-                  <div class="list-item__info">
-                    <div class="list-item__info-title">
-                      <h4>Костровая чаша</h4>
-                      <h3>Fire Cube</h3>
-                    </div>
-                    <p class="list-item__info-price"><b>3 590</b> ₽</p>
-                  </div>
-                </a>
-              </li>
-              <li class="search__success-list-item list__item">
-                <a href="/product/fire-cube-3" class="list__item-link">
-                  <img class="list__item-image" src="assets/images/search/search-item-photo.png" alt="Фото товара" />
-                  <div class="list-item__info">
-                    <div class="list-item__info-title">
-                      <h4>Костровая чаша</h4>
-                      <h3>Fire Cube</h3>
-                    </div>
-                    <p class="list-item__info-price"><b>3 590</b> ₽</p>
-                  </div>
-                </a>
-              </li>
-              <li class="search__success-list-item list__item">
-                <a href="/product/fire-cube-4" class="list__item-link">
-                  <img class="list__item-image" src="assets/images/search/search-item-photo.png" alt="Фото товара" />
-                  <div class="list-item__info">
-                    <div class="list-item__info-title">
-                      <h4>Костровая чаша</h4>
-                      <h3>Fire Cube</h3>
-                    </div>
-                    <p class="list-item__info-price"><b>3 590</b> ₽</p>
-                  </div>
-                </a>
-              </li>
-            </ul>
+            <ul class="search__success-list"></ul>
           </div>
         </div>
       </div>
@@ -180,6 +132,7 @@
     <!-- Основной контент -->
 
     <main class="main">
+      <!-- Хиро секция  -->
       <section class="hero">
         <div class="hero__container">
           <div class="hero__title-wrapper">
@@ -193,21 +146,29 @@
           <div class="hero__subtitle-wrapper">
             <h2 class="hero__description">становится уютом</h2>
           </div>
+          <a href="/catalog.html" class="hero__catalog-link">
+            <div>
+              <span>Смотреть каталог</span>
+              <img src="assets/icons/link-icon.svg" />
+            </div>
+          </a>
         </div>
-        <a href="/catalog.html" class="hero__catalog-link">
-          <div>
-            <span>Смотреть каталог</span>
-            <img src="assets/icons/link-icon.svg" />
-          </div>
-        </a>
       </section>
 
       <!-- Качество -->
 
       <section class="quality">
-        <img class="quality-image quality-image-one" src="assets/images/main-page/quality-section/quality-section-1.png" alt="Фото" />
-        <img class="quality-image quality-image-two" src="assets/images/main-page/quality-section/quality-section-2.png" alt="Фото" />
-        <div class="quality__container container">
+        <div class="quality__container">
+          <img class="quality-image quality-image-one" src="assets/images/main-page/quality-section/quality-section-1.png" alt="Фото" />
+          <img class="quality-image quality-image-two" src="assets/images/main-page/quality-section/quality-section-2.png" alt="Фото" />
+
+          <!-- Фоновые линии  -->
+          <div class="quality-vertical-line quality-vertical-line--left"></div>
+          <div class="quality-vertical-line quality-vertical-line--center-left"></div>
+          <div class="quality-vertical-line quality-vertical-line--center-right"></div>
+          <div class="quality-vertical-line quality-vertical-line--right"></div>
+
+          <!-- Текст  -->
           <div class="quality__container-text-block quality__container-text-block--left">
             <h2>Качество,</h2>
             <p class="quality__container-text-block--left-span">
@@ -251,7 +212,7 @@
           </div>
           <ul class="categories-list">
             <li data-title="Мангалы и барбекю">
-              <a href="#">
+              <a href="/catalog/barbecues.html">
                 <img src="assets/images/main-page/categories-section/categories-section-photo-1.png" alt="Мангалы и барбекю" />
               </a>
             </li>
@@ -596,7 +557,7 @@
                 <nav>
                   <a href="#">О нас</a>
                   <a href="#">Контакты</a>
-                  <a href="#">Политика конфиденциальности</a>
+                  <a href="/policy.html">Политика конфиденциальности</a>
                 </nav>
               </div>
             </div>

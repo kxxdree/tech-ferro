@@ -31,7 +31,7 @@
   line-height: 1.5;
   letter-spacing: -0.05em;
   padding: 0.625rem 2rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   border: 1px solid transparent;
   transition: all 0.3s ease;
   text-decoration: none;
@@ -70,8 +70,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
+  width: 3rem;
+  height: 3rem;
   background: transparent;
   border: 1px solid transparent;
   border-radius: 8px;
@@ -127,6 +127,7 @@
 @media (max-width: 960px) {
   .header {
     border-bottom: 1px solid #0000004d;
+    padding: 1rem 2rem;
   }
 
   .header__nav {
@@ -135,10 +136,6 @@
 
   .header__burger-btn {
     display: flex;
-  }
-
-  .header {
-    padding: 1rem 2rem;
   }
 }
 
@@ -273,6 +270,7 @@
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  overflow-x: auto;
 }
 
 .about__about-section-gallery img {
@@ -355,6 +353,12 @@
 }
 
 /* Адаптив  */
+
+@media (min-width: 1440px) and (max-width: 1700px) {
+  .main {
+    padding: 5.25rem 10rem 12.5rem 10rem;
+  }
+}
 
 @media (max-width: 1280px) {
   .about__intro-section {
