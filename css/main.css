@@ -36,9 +36,10 @@ html {
   scroll-behavior: smooth;
   scrollbar-width: 0.3rem;
   list-style-type: none;
-  font-size: 16px;
-  /* font-size: calc(16 * (100vw / 1920)); */
-  /* 
+  /* font-size: 16px; */
+
+  font-size: calc(16 * (100vw / 1920));
+
   @media (max-width: 1440px) {
     font-size: calc(16 * (100vw / 1440));
   }
@@ -57,7 +58,7 @@ html {
 
   @media (max-width: 360px) {
     font-size: calc(16 * (100vw / 360));
-  } */
+  }
 }
 
 body {
