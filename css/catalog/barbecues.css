@@ -213,13 +213,22 @@
   letter-spacing: -0.05em;
 }
 
+.category__header-buttons {
+  display: none;
+}
+
 .category__header-types {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.category__header-types li {
+.category__header-types-mobile {
+  display: none;
+}
+
+.category__header-types li,
+.category__header-types-mobile li {
   padding: 0.5rem 1rem;
   border-radius: 8px;
   border: 1px solid transparent;
@@ -227,7 +236,8 @@
   transition: all 0.2s ease;
 }
 
-.category__header-types li:hover {
+.category__header-types li:hover,
+.category__header-types-mobile li:hover {
   border: 1px solid #cccccc;
   cursor: pointer;
 }
@@ -483,6 +493,7 @@
 @media (max-width: 960px) {
   .main {
     padding: 0.875rem 1.5rem 4rem 1.5rem;
+    gap: 0;
   }
 
   .category__header-nav {
@@ -500,46 +511,51 @@
     font-size: 2rem;
   }
 
+  .category__header-types {
+    display: none;
+  }
+
+  .category__header-types-mobile {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: -0.5rem;
+  }
+
+  .category__header-types-mobile li {
+    padding: 0.25rem 1rem;
+  }
+
+  .category__header-buttons {
+    display: flex;
+    width: 18.375rem;
+    gap: 1rem;
+  }
+
+  .btn-categories,
+  .btn-filters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #fcf7f3;
+    transition: all 0.2s ease;
+    flex: 1;
+  }
+
+  .category__header-buttons span {
+    font-size: 1rem;
+    line-height: 1.4;
+    letter-spacing: -0.05em;
+    color: #121011;
+  }
+
   .category__header-filters {
     display: flex;
     gap: 1rem;
     justify-content: space-between;
-  }
-
-  .btn-categories {
-    content: "Категории";
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.75rem 1rem;
-    border-radius: 8px;
-    border: 1px solid #cccccc;
-    background-color: white;
-    font-size: 1rem;
-    line-height: 1.4;
-    letter-spacing: -0.05em;
-    color: #121011;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    flex: 1;
-  }
-
-  .btn-filters {
-    content: "Фильтры";
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.75rem 1rem;
-    border-radius: 8px;
-    border: 1px solid #cccccc;
-    background-color: white;
-    font-size: 1rem;
-    line-height: 1.4;
-    letter-spacing: -0.05em;
-    color: #121011;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    flex: 1;
   }
 
   .filters-options {
@@ -595,7 +611,6 @@
   }
 }
 
-
 @media (max-width: 480px) {
   .main {
     padding: 0.875rem 1rem 3rem 1rem;
@@ -604,7 +619,6 @@
   .category__header-title h2 {
     font-size: 1.5rem;
   }
-
 
   .catalog__list {
     grid-template-columns: repeat(2, 1fr) !important;

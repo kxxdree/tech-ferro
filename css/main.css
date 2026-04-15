@@ -78,7 +78,8 @@ li {
   list-style-type: none;
 }
 
-input {
+input,
+span {
   font-family: "Gotham Pro", sans-serif;
 }
 
