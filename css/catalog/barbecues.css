@@ -281,6 +281,10 @@
   filter: invert(47%) sepia(91%) saturate(1576%) hue-rotate(350deg) brightness(97%) contrast(93%);
 }
 
+.active-filter {
+  background-color: #F1EBE6;
+}
+
 .price-option {
   margin-left: auto;
 }
