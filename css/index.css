@@ -921,7 +921,7 @@
   max-width: 19.167rem;
   max-height: 16.667rem;
   position: absolute;
-  z-index: 0;
+  z-index: 2;
 }
 
 .quality-image-one {
@@ -932,6 +932,31 @@
 .quality-image-two {
   left: 4rem;
   bottom: 12.333rem;
+}
+
+.quality-vertical-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1.33px;
+  background-color: rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+}
+
+.quality-vertical-line--left {
+  left: 21.95rem;
+}
+
+.quality-vertical-line--center-left {
+  left: 47.917rem;
+}
+
+.quality-vertical-line--center-right {
+  right: 40rem;
+}
+
+.quality-vertical-line--right {
+  right: 3rem;
 }
 
 /* Категории  */
