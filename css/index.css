@@ -1,26 +1,14 @@
-/* html {
+html {
   font-size: calc(16 * (100vw / 1920)) !important;
 
   @media (max-width: 1440px) {
-    font-size: calc(16 * (100vw / 1440)) !important;
+    font-size: calc(16 * (100vw / 1920)) !important;
   }
 
-  @media (max-width: 960px) {
-    font-size: calc(16 * (100vw / 960)) !important;
+  @media (max-width: 1280px) {
+    font-size: calc(16 * (100vw / 1920)) !important;
   }
-
-  @media (max-width: 768px) {
-    font-size: calc(16 * (100vw / 768)) !important;
-  }
-
-  @media (max-width: 480px) {
-    font-size: calc(16 * (100vw / 480)) !important;
-  }
-
-  @media (max-width: 360px) {
-    font-size: calc(16 * (100vw / 360)) !important;
-  }
-} */
+}
 
 .header {
   position: absolute;
@@ -152,16 +140,17 @@
 }
 
 @media (max-width: 960px) {
+  .header {
+    padding: 1rem 3rem;
+    max-height: 10rem;
+  }
+
   .header__nav {
     display: none;
   }
 
   .header__burger-btn {
     display: flex;
-  }
-
-  .header {
-    padding: 1rem 2rem;
   }
 }
 
@@ -819,6 +808,8 @@
 .hero__catalog-link img {
   transition: filter 0.2s ease-out;
   margin-top: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .hero__catalog-link:hover span {
@@ -835,46 +826,9 @@
 
 /* Адаптив Хиро  */
 
-@media (min-width: 1440px) and (max-width: 1919px) {
-  .hero {
-    height: 56.25rem;
-  }
-
-  .hero__title-wrapper {
-    justify-content: center;
-  }
-  .hero__title {
-    font-size: 1.25rem;
-    min-width: 25rem;
-  }
-  .hero__description {
-    font-size: 8.75rem;
-  }
-
-  .hero__subtitle-wrapper {
-    justify-content: center;
-  }
-
-  .hero__catalog-link {
-    position: absolute;
-    width: 19.625rem;
-    height: 19.625rem;
-    bottom: 3.063rem;
-    right: 3.063rem;
-  }
-
-  .hero__catalog-link > div {
-    gap: 0.75rem;
-  }
-
-  .hero__catalog-link span {
-    font-size: 1.5rem;
-    line-height: 1.1;
-  }
-
-  .hero__catalog-link img {
-    transition: filter 0.2s ease-out;
-    margin-top: 0;
+@media (max-width: 960px) {
+  .hero__container {
+    margin-top: 12rem;
   }
 }
 
@@ -969,8 +923,8 @@
   top: 0;
   bottom: 0;
   margin: auto 0;
-  width: 21.33px;
-  height: 21.33px;
+  width: 1.333rem;
+  height: 1.333rem;
   background-color: #e64410;
   border-radius: 50%;
 }
@@ -2436,9 +2390,11 @@ h4 {
   position: absolute;
   right: 0;
   bottom: 0;
-  padding: 1.25rem;
+  width: 3em;
+  height: 3rem;
+  padding: 1rem;
   background-color: #ffffff1a;
-  border-radius: 16px;
+  border-radius: 1rem;
   cursor: pointer;
   transition: opacity 0.2s ease;
 }
@@ -2534,7 +2490,7 @@ h4 {
 
 /* Адаптив  */
 
-@media (max-width: 1440px) {
+/* @media (max-width: 1440px) {
   .hero__title-wrapper {
     padding: 0 3rem;
   }
@@ -2594,15 +2550,6 @@ h4 {
     padding: 0 2rem;
   }
 
-  .cookies {
-    min-width: 90%;
-    width: 90%;
-    gap: 2rem;
-    padding: 1rem;
-    flex-direction: column;
-    text-align: center;
-  }
-
   .hero__catalog-link {
     min-width: 20rem;
     min-height: 20rem;
@@ -2619,4 +2566,4 @@ h4 {
   .hero__title {
     min-width: auto;
   }
-}
+} */
