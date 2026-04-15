@@ -599,6 +599,10 @@
     font-size: 1rem;
   }
 
+  .catalog__list li a {
+    gap: 1rem;
+  }
+
   .pagination {
     flex-wrap: wrap;
     justify-content: center;
