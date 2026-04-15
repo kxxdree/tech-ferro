@@ -268,12 +268,12 @@
   transition: all 0.2s ease;
 }
 
-.filters-options li:hover {
+.filter-item:hover {
   color: #e64410;
   cursor: pointer;
 }
 
-.filters-options li img {
+.filter-item img {
   transition: all 0.2s ease;
 }
 
@@ -285,7 +285,9 @@
   background-color: #f1ebe6;
 }
 
-.width-option {
+.width-option,
+.height-option,
+.depth-option {
   position: relative;
 }
 
@@ -498,7 +500,9 @@
 
 /* Дропдауны  */
 
-.width-filter-dropdown {
+.width-filter-dropdown,
+.height-filter-dropdown,
+.depth-filter-dropdown {
   position: absolute;
   top: 2.5rem;
   left: 0;
@@ -516,7 +520,9 @@
   background-color: #fcf7f3;
 }
 
-.width-filter-dropdown--open {
+.width-filter-dropdown--open,
+.height-filter-dropdown--open,
+.depth-filter-dropdown--open {
   display: flex;
   flex-direction: column;
 }

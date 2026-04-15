@@ -89,7 +89,7 @@
         </div>
         <div class="category__header-filters">
           <ul class="filters-options">
-            <li class="width-option active-filter" id="width-filter">
+            <li class="width-option active-filter filter-item" id="width-filter">
               <span>Ширина, см</span>
               <img src="../assets/icons/chevron-down.svg" />
 
@@ -118,15 +118,61 @@
                 </div>
               </div>
             </li>
-            <li class="height-option active-filter">
+            <li class="height-option filter-item" id="height-filter">
               <span>Высота, см</span>
               <img src="../assets/icons/chevron-down.svg" />
+              <div class="height-filter-dropdown">
+                <div class="filter-title-block">
+                  <span class="filter-title">Высота, см</span>
+                  <img class="filter-close-btn" src="/assets/icons/close-icon.svg" alt="Закрыть" />
+                </div>
+                <div class="filter-values-block">
+                  <div class="filter-value-item">
+                    <span>от</span>
+                    <span>1см</span>
+                  </div>
+                  <span class="filter-value-item--divider">—</span>
+                  <div class="filter-value-item">
+                    <span>до</span>
+                    <span>256см</span>
+                  </div>
+                </div>
+                <div class="slider-container">
+                  <div class="slider-track"></div>
+                  <div class="slider-track-filled"></div>
+                  <input type="range" id="minSlider" min="1" max="256" value="1" step="1" />
+                  <input type="range" id="maxSlider" min="1" max="256" value="256" step="1" />
+                </div>
+              </div>
             </li>
-            <li class="depth-option">
+            <li class="depth-option filter-item" id="depth-filter">
               <span>Глубина, см</span>
               <img src="../assets/icons/chevron-down.svg" />
+              <div class="depth-filter-dropdown">
+                <div class="filter-title-block">
+                  <span class="filter-title">Глубина, см</span>
+                  <img class="filter-close-btn" src="/assets/icons/close-icon.svg" alt="Закрыть" />
+                </div>
+                <div class="filter-values-block">
+                  <div class="filter-value-item">
+                    <span>от</span>
+                    <span>1см</span>
+                  </div>
+                  <span class="filter-value-item--divider">—</span>
+                  <div class="filter-value-item">
+                    <span>до</span>
+                    <span>3356см</span>
+                  </div>
+                </div>
+                <div class="slider-container">
+                  <div class="slider-track"></div>
+                  <div class="slider-track-filled"></div>
+                  <input type="range" id="minSlider" min="1" max="3356" value="1" step="1" />
+                  <input type="range" id="maxSlider" min="1" max="3356" value="3356" step="1" />
+                </div>
+              </div>
             </li>
-            <li class="form-option">
+            <li class="form-option filter-item">
               <span>Форма</span>
               <img src="../assets/icons/chevron-down.svg" />
             </li>

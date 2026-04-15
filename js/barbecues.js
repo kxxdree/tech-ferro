@@ -46,8 +46,50 @@ cartButtons.forEach((button) => {
 });
 
 const widthFilterButton = document.querySelector("#width-filter");
-const widthFilterDropDown = document.querySelector(".width-filter-dropdown");
+const heightFilterButton = document.querySelector("#height-filter");
+const depthFilterButton = document.querySelector("#depth-filter");
 
-widthFilterButton.addEventListener("click", () => {
-  widthFilterDropDown.classList.toggle("width-filter-dropdown--open");
+const widthFilterDropDown = document.querySelector(".width-filter-dropdown");
+const heightFilterDropDown = document.querySelector(".height-filter-dropdown");
+const depthFilterDropDown = document.querySelector(".depth-filter-dropdown");
+
+function closeAllDropdowns(exceptDropdown = null) {
+  const allDropdowns = [widthFilterDropDown, depthFilterDropDown, heightFilterDropDown];
+  allDropdowns.forEach((dropdown) => {
+    if (dropdown && dropdown !== exceptDropdown) {
+      dropdown.classList.remove("width-filter-dropdown--open");
+      dropdown.classList.remove("height-filter-dropdown--open");
+      dropdown.classList.remove("depth-filter-dropdown--open");
+    }
+  });
+}
+
+function toggleDropdown(button, dropdown, openClass = "width-filter-dropdown--open") {
+  if (!button || !dropdown) return;
+
+  button.addEventListener("click", (event) => {
+    event.stopPropagation();
+
+    const isOpen = dropdown.classList.contains(openClass);
+
+    if (!isOpen) {
+      closeAllDropdowns(dropdown);
+      dropdown.classList.add(openClass);
+    } else {
+      dropdown.classList.remove(openClass);
+    }
+  });
+}
+
+toggleDropdown(widthFilterButton, widthFilterDropDown, "width-filter-dropdown--open");
+toggleDropdown(depthFilterButton, depthFilterDropDown, "depth-filter-dropdown--open");
+toggleDropdown(heightFilterButton, heightFilterDropDown, "height-filter-dropdown--open");
+
+document.addEventListener("click", (event) => {
+  const isClickInsideButton = event.target.closest("#width-filter, #depth-filter, #height-filter");
+  const isClickInsideDropdown = event.target.closest(".width-filter-dropdown, .depth-filter-dropdown, .height-filter-dropdown");
+
+  if (!isClickInsideButton && !isClickInsideDropdown) {
+    closeAllDropdowns();
+  }
 });
