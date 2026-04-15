@@ -108,7 +108,7 @@
   filter: invert(1);
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1280px) {
   .header {
     border-bottom: 1px solid #0000004d;
   }
@@ -193,4 +193,114 @@
   left: 0.5rem;
   color: inherit;
   font-size: 1rem;
+}
+
+/* Адаптив  */
+
+@media (max-width: 960px) {
+  .main {
+    padding: 5.25rem 3rem 20.5rem 3rem;
+  }
+
+  .content {
+    width: 100%;
+    max-width: 53.938rem;
+    gap: 2.5rem;
+  }
+
+  .content h2 {
+    font-size: 3.5rem;
+  }
+
+  .content section h3 {
+    font-size: 1.5rem;
+  }
+
+  .content p,
+  .content section p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .list-item {
+    padding-left: 1.25rem;
+  }
+
+  .list-item::before {
+    left: 0.25rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding: 5.25rem 1rem 12.5rem 1rem;
+  }
+
+  .content {
+    gap: 2.5rem;
+  }
+
+  .content h2 {
+    font-size: 2.5rem;
+  }
+
+  .content section {
+    gap: 1.5rem;
+  }
+
+  .content section h3 {
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .content p,
+  .content section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    letter-spacing: -0.05em;
+  }
+
+  .list-item {
+    padding-left: 1.125rem;
+  }
+
+  .list-item::before {
+    left: 0;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .main {
+    padding: 5.25rem 1rem 6.25rem 1rem;
+  }
+
+  .content {
+    gap: 2.5rem;
+  }
+
+  .content h2 {
+    font-size: 2rem;
+  }
+
+  .content section h3 {
+    font-size: 1.5rem;
+  }
+
+  .content p,
+  .content section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    letter-spacing: -0.05em;
+  }
+
+  .list-item {
+    padding-left: 1rem;
+  }
+
+  .list-item::before {
+    left: 0;
+    font-size: 0.875rem;
+  }
 }
