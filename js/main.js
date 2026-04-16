@@ -270,6 +270,6 @@ cartButtons.forEach((button) => {
 
 // Текущий год
 
-const currentYear = new Date().getFullYear();
-const yearElement = document.querySelector(".footer__meta-info--year");
-yearElement.textContent = currentYear;
+// const currentYear = new Date().getFullYear();
+// const yearElement = document.querySelector(".footer__meta-info--year");
+// yearElement.textContent = currentYear;
