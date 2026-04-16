@@ -2491,11 +2491,11 @@ h4 {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 4em;
-  height: 4rem;
-  padding: 1.5rem;
+  width: 3.75rem;
+  height: 3.75rem;
+  padding: 1.375rem;
   background-color: #ffffff1a;
-  border-radius: 1.5rem;
+  border-radius: 1.25rem;
   cursor: pointer;
   transition: opacity 0.2s ease;
 }
@@ -2614,21 +2614,48 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-end;
   margin-left: auto;
 }
 
 .footer__info-block-socials {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.75rem;
 }
 
 .footer__info-block-socials img {
   width: 4rem;
   height: 4rem;
-  padding: 1rem;
+  padding: 0.8rem;
   border: 1px solid white;
   border-radius: 0.5rem;
+}
+
+.tg-link {
+  padding: 1rem !important;
+}
+
+.footer__info-block--up-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.625rem;
+  height: 4.625rem;
+  border: none;
+  border-radius: 50%;
+  background-color: #ffffff1a;
+  transition: all 0.2s ease;
+}
+
+.footer__info-block--up-button img {
+  width: 1.125rem;
+  height: 1.125rem;
+  transform: rotate(-45deg);
+}
+
+.footer__info-block--up-button:hover {
+  opacity: 0.7;
 }
 
 .footer__meta-info {
