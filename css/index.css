@@ -1787,6 +1787,15 @@ h3 {
   pointer-events: none;
 }
 
+.application-horizontal-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1.33px;
+  background-color: #ffffff4d;
+  pointer-events: none;
+}
+
 .application-vertical-line--left {
   left: 4rem;
 }
@@ -1803,20 +1812,24 @@ h3 {
   right: 4rem;
 }
 
+.application-horizontal-line--center-bottom {
+  bottom: 28rem;
+}
+
 .application-diagonal-lines {
   position: absolute;
   left: 21.95rem;
   top: 0;
   width: calc(47.917rem - 21.95rem);
   height: 31.6rem;
-  background-image: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1.33px, transparent 0.125rem, transparent 1.5rem);
+  background-image: repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) 1.33px, transparent 0.125rem, transparent 1.5rem);
   pointer-events: none;
   z-index: 0;
 }
 
-.application__container-text {
+/* .application__container-text {
   border-left: none;
-}
+} */
 
 .application-diagonal-lines-bottom {
   position: absolute;
@@ -1824,7 +1837,7 @@ h3 {
   bottom: 0;
   width: 36rem;
   height: 20rem;
-  background-image: repeating-linear-gradient(125deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1.33px, transparent 0.125rem, transparent 1.5rem);
+  background-image: repeating-linear-gradient(125deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) 1.33px, transparent 0.125rem, transparent 1.5rem);
   pointer-events: none;
   z-index: 0;
 }
