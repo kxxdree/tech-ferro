@@ -7,7 +7,6 @@
 }
 
 /* Круг */
-
 .footer::before {
   content: "";
   position: absolute;
@@ -284,8 +283,7 @@
   color: white;
 }
 
-/* Фоновые линии  */
-
+/* Фоновые линии */
 .footer-vertical-line {
   position: absolute;
   top: 0;
@@ -322,4 +320,340 @@
 
 .footer-horizontal-line--center-bottom {
   bottom: 29rem;
+}
+
+/* Адаптив */
+
+@media (max-width: 1440px) {
+  .footer__subscription-block {
+    gap: 6rem;
+    padding: 4rem 3rem;
+  }
+
+  .footer__subscription-block h2 {
+    font-size: 2.8rem;
+  }
+
+  .footer__info-block {
+    gap: 5rem;
+    padding: 1rem 3rem 1.5rem 3rem;
+  }
+
+  .footer__info-block-contacts {
+    min-width: 30rem;
+  }
+
+  .footer__info-block-contacts-phone,
+  .footer__info-block-contacts-email {
+    font-size: 2.8rem;
+  }
+
+  .footer__info-block-links {
+    gap: 4rem;
+  }
+
+  .footer-vertical-line--center-left {
+    left: 40rem;
+  }
+
+  .footer-vertical-line--center-right {
+    right: 18rem;
+  }
+
+  .footer-vertical-line--left {
+    left: 3rem;
+  }
+
+  .footer-vertical-line--right {
+    right: 3rem;
+  }
+
+  .footer__meta-info {
+    padding: 0 3rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .footer {
+    min-height: auto;
+  }
+
+  .footer::before {
+    display: none;
+  }
+
+  .footer__subscription-block {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 2rem;
+  }
+
+  .footer__subscription-block h2 {
+    font-size: 2.5rem;
+    padding-left: 0;
+  }
+
+  .footer__subscription-block-mailing {
+    max-width: 100%;
+    margin-top: 0;
+  }
+
+  .footer__subscription-block-mailing div {
+    max-width: 100%;
+  }
+
+  .footer__subscription-block-mailing div input {
+    max-width: 85%;
+  }
+
+  .footer__info-block {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem 2rem;
+  }
+
+  .footer__info-block-contacts {
+    min-width: auto;
+    height: auto;
+    gap: 2rem;
+  }
+
+  .footer__info-block-contacts-logo {
+    margin-top: 0;
+  }
+
+  .footer__info-block-contacts-phone,
+  .footer__info-block-contacts-email {
+    font-size: 2.5rem;
+  }
+
+  .footer__info-block-links {
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+
+  .footer__info-block-buttons {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 0;
+    gap: 2rem;
+  }
+
+  .footer__info-block-socials {
+    order: 1;
+  }
+
+  .footer__info-block--up-button {
+    order: 2;
+  }
+
+  .footer__meta-info {
+    text-align: center;
+    padding: 2rem 2rem;
+  }
+
+  .footer-vertical-line--center-left,
+  .footer-vertical-line--center-right {
+    display: none;
+  }
+
+  .footer-vertical-line--left,
+  .footer-vertical-line--right {
+    display: none;
+  }
+
+  .footer-horizontal-line--center-bottom {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__subscription-block {
+    padding: 2rem 1.5rem;
+  }
+
+  .footer__subscription-block h2 {
+    font-size: 1.75rem;
+  }
+
+  .footer__subscription-block-mailing p {
+    font-size: 1rem;
+  }
+
+  .footer__subscription-block-mailing div input {
+    font-size: 1rem;
+    padding: 0.875rem 0;
+  }
+
+  .footer__subscription-block-mailing div input::placeholder {
+    font-size: 1rem;
+  }
+
+  .footer__subscription-block-mailing div img {
+    position: static;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.875rem;
+  }
+
+  .footer__info-block {
+    padding: 1.5rem;
+  }
+
+  .footer__info-block-contacts-phone,
+  .footer__info-block-contacts-email {
+    font-size: 1.5rem;
+  }
+
+  .footer__info-block-contacts-logo {
+    width: 10rem;
+  }
+
+  .footer__info-block-links {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer__info-block-catalog h3,
+  .footer__info-block-info h3 {
+    font-size: 1.125rem;
+  }
+
+  .footer__info-block-catalog a,
+  .footer__info-block-info a,
+  .footer__info-block-catalog span,
+  .footer__info-block-info span {
+    font-size: 1rem;
+  }
+
+  .footer__info-block-catalog nav {
+    margin-bottom: 1rem;
+  }
+
+  .footer__info-block-info nav {
+    margin-bottom: 1rem;
+  }
+
+  .footer__info-block-socials {
+    justify-content: center;
+  }
+
+  .footer__info-block--up-button {
+    align-self: center;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .footer__info-block--up-button img {
+    width: 0.875rem;
+    height: 0.875rem;
+  }
+
+  .footer__info-block-socials-link {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .footer__info-block-socials-link img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .tg-link {
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+  }
+
+  .footer__meta-info {
+    padding: 1.5rem;
+  }
+
+  .footer__meta-info p {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .footer__subscription-block {
+    padding: 1.5rem 1rem;
+  }
+
+  .footer__subscription-block h2 {
+    font-size: 1.5rem;
+  }
+
+  .footer__subscription-block-mailing p {
+    font-size: 0.875rem;
+  }
+
+  .footer__subscription-block-mailing div input {
+    font-size: 0.875rem;
+  }
+
+  .footer__subscription-block-mailing div input::placeholder {
+    font-size: 0.875rem;
+  }
+
+  .footer__info-block {
+    padding: 1rem;
+  }
+
+  .footer__info-block-contacts-phone,
+  .footer__info-block-contacts-email {
+    font-size: 1.25rem;
+    word-break: break-word;
+  }
+
+  .footer__info-block-contacts-logo {
+    width: 8rem;
+  }
+
+  .footer__info-block-links {
+    gap: 1.5rem;
+  }
+
+  .footer__info-block-catalog h3,
+  .footer__info-block-info h3 {
+    font-size: 1rem;
+  }
+
+  .footer__info-block-catalog a,
+  .footer__info-block-info a,
+  .footer__info-block-catalog span,
+  .footer__info-block-info span {
+    font-size: 0.875rem;
+  }
+
+  .footer__info-block-socials {
+    gap: 0.5rem;
+  }
+
+  .footer__info-block-socials-link {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .footer__info-block-socials-link img {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .tg-link {
+    width: 1rem !important;
+    height: 1rem !important;
+  }
+
+  .footer__info-block--up-button {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .footer__meta-info {
+    padding: 1rem;
+  }
+
+  .footer__meta-info p {
+    font-size: 0.75rem;
+  }
 }
