@@ -2534,12 +2534,7 @@ h4 {
   font-size: 3.333rem;
   color: white;
   letter-spacing: -0.05em;
-  text-decoration: none;
-  transition: opacity 0.2s ease;
-  cursor: default;
-  display: block;
   width: fit-content;
-  pointer-events: none;
 }
 
 /* 
@@ -2624,16 +2619,30 @@ h4 {
   gap: 0.75rem;
 }
 
-.footer__info-block-socials img {
+.footer__info-block-socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 4rem;
   height: 4rem;
-  padding: 0.8rem;
-  border: 1px solid white;
+  padding: 0.833rem;
   border-radius: 0.5rem;
+  border: 1px solid white;
+  transition: all 0.2s ease;
+}
+
+.footer__info-block-socials-link:hover {
+  opacity: 0.7;
+}
+
+.footer__info-block-socials-link img {
+  width: 2.313rem;
+  height: 2.313rem;
 }
 
 .tg-link {
-  padding: 1rem !important;
+  width: 1.75rem !important;
+  height: 1.75rem !important;
 }
 
 .footer__info-block--up-button {
