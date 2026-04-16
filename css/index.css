@@ -2507,7 +2507,7 @@ h4 {
 .footer__info-block {
   display: flex;
   gap: 9.667rem;
-  padding: 1rem 4rem 5rem 4rem;
+  padding: 1rem 4rem 1.5rem 4rem;
 }
 
 .footer__info-block-contacts {
@@ -2526,7 +2526,7 @@ h4 {
 .footer__info-block-contacts-details {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .footer__info-block-contacts-phone,
@@ -2572,11 +2572,11 @@ h4 {
 }
 
 .footer__info-block-catalog nav {
-  margin-bottom: 2.625rem;
+  margin-bottom: 2.25rem;
 }
 
 .footer__info-block-info nav {
-  margin-bottom: 5.4rem;
+  margin-bottom: 5rem;
 }
 
 .footer__info-block-catalog a,
@@ -2603,6 +2603,20 @@ h4 {
   font-size: 1.333rem;
   line-height: 1.4;
   letter-spacing: -0.05em;
+}
+
+.footer__meta-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4rem;
+}
+
+.footer__meta-info p {
+  font-size: 1.333rem;
+  line-height: 1.1;
+  letter-spacing: -0.05em;
+  color: white;
 }
 
 /* Адаптив  */

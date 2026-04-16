@@ -267,3 +267,9 @@ cartButtons.forEach((button) => {
     event.stopPropagation();
   });
 });
+
+// Текущий год
+
+const currentYear = new Date().getFullYear();
+const yearElement = document.querySelector(".footer__meta-info--year");
+yearElement.textContent = currentYear;
