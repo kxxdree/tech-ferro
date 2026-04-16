@@ -224,6 +224,20 @@
   font-style: normal;
 }
 
+/* Адаптив  */
+
+@media (min-width: 2120px) {
+  .main {
+    max-width: 1920px;
+  }
+}
+
+@media (min-width: 1439px) and (max-width: 1700px) {
+  .main {
+    padding: 5.25rem 5rem 12.5rem 5rem;
+  }
+}
+
 @media (max-width: 640px) {
   .main {
     padding: 3rem 1rem 6.25rem 1rem;
