@@ -2491,17 +2491,17 @@ h4 {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 3em;
-  height: 3rem;
-  padding: 1rem;
+  width: 4em;
+  height: 4rem;
+  padding: 1.5rem;
   background-color: #ffffff1a;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   cursor: pointer;
   transition: opacity 0.2s ease;
 }
 
 .footer__subscription-block-mailing div img:hover {
-  opacity: 0.9;
+  opacity: 0.7;
 }
 
 .footer__info-block {
@@ -2608,6 +2608,27 @@ h4 {
   font-size: 1.333rem;
   line-height: 1.4;
   letter-spacing: -0.05em;
+}
+
+.footer__info-block-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: auto;
+}
+
+.footer__info-block-socials {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer__info-block-socials img {
+  width: 4rem;
+  height: 4rem;
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 0.5rem;
 }
 
 .footer__meta-info {
