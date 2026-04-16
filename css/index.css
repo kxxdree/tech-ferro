@@ -586,7 +586,7 @@ html {
   min-width: 75rem;
   min-height: 8.542rem;
   position: fixed;
-  z-index: 20;
+  z-index: 110;
   bottom: 2.5rem;
   left: 50%;
   transform: translateX(-50%);
@@ -1635,7 +1635,7 @@ h3 {
 
 .application__container-img {
   position: absolute;
-  z-index: 10;
+  z-index: 100;
   max-width: 11.917rem;
   max-height: 11.667rem;
 }
@@ -1774,6 +1774,59 @@ h3 {
 
 .application-link:hover svg path {
   stroke: #e64410;
+}
+
+/* Фоновые линии  */
+
+.application-vertical-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1.33px;
+  background-color: #ffffff4d;
+  pointer-events: none;
+}
+
+.application-vertical-line--left {
+  left: 4rem;
+}
+
+.application-vertical-line--center-left {
+  left: 28.5rem;
+}
+
+.application-vertical-line--center-right {
+  right: 28.5rem;
+}
+
+.application-vertical-line--right {
+  right: 4rem;
+}
+
+.application-diagonal-lines {
+  position: absolute;
+  left: 21.95rem;
+  top: 0;
+  width: calc(47.917rem - 21.95rem);
+  height: 31.6rem;
+  background-image: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1.33px, transparent 0.125rem, transparent 1.5rem);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.application__container-text {
+  border-left: none;
+}
+
+.application-diagonal-lines-bottom {
+  position: absolute;
+  right: 3rem;
+  bottom: 0;
+  width: 36rem;
+  height: 20rem;
+  background-image: repeating-linear-gradient(125deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1.33px, transparent 0.125rem, transparent 1.5rem);
+  pointer-events: none;
+  z-index: 0;
 }
 
 /* Модальное окно заявки  */
