@@ -2412,10 +2412,12 @@ h4 {
   position: relative;
 }
 
+/* Круг */
+
 .footer::before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 49.75%;
   left: 20.5%;
   transform: translate(-50%, -50%);
   width: 53.643rem;
@@ -2686,6 +2688,46 @@ h4 {
   line-height: 1.1;
   letter-spacing: -0.05em;
   color: white;
+}
+
+/* Фоновые линии  */
+
+.footer-vertical-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1.33px;
+  background-color: #ffffff4d;
+  pointer-events: none;
+}
+
+.footer-horizontal-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1.33px;
+  background-color: #ffffff4d;
+  pointer-events: none;
+}
+
+.footer-vertical-line--left {
+  left: 4rem;
+}
+
+.footer-vertical-line--center-left {
+  left: 51.25rem;
+}
+
+.footer-vertical-line--center-right {
+  right: 24.625rem;
+}
+
+.footer-vertical-line--right {
+  right: 4rem;
+}
+
+.footer-horizontal-line--center-bottom {
+  bottom: 29rem;
 }
 
 /* Адаптив  */
