@@ -354,9 +354,15 @@
 
 /* Адаптив  */
 
-@media (min-width: 1440px) and (max-width: 1700px) {
+@media (min-width: 2120px) {
   .main {
-    padding: 5.25rem 10rem 12.5rem 10rem;
+    max-width: 1920px;
+  }
+}
+
+@media (min-width: 1439px) and (max-width: 1700px) {
+  .main {
+    padding: 5.25rem 5rem 12.5rem 5rem;
   }
 }
 
