@@ -2536,12 +2536,17 @@ h4 {
   letter-spacing: -0.05em;
   text-decoration: none;
   transition: opacity 0.2s ease;
+  cursor: default;
+  display: block;
+  width: fit-content;
+  pointer-events: none;
 }
 
+/* 
 .footer__info-block-contacts-phone:hover,
 .footer__info-block-contacts-email:hover {
   opacity: 0.8;
-}
+} */
 
 .footer__info-block-links {
   display: flex;
