@@ -1818,11 +1818,11 @@ h3 {
 
 .application-diagonal-lines {
   position: absolute;
-  left: 21.95rem;
-  top: 0;
-  width: calc(47.917rem - 21.95rem);
-  height: 31.6rem;
-  background-image: repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) 1.33px, transparent 0.125rem, transparent 1.5rem);
+  left: 4rem;
+  top: 6.81rem;
+  width: 24.5rem;
+  height: 40.1rem;
+  background-image: repeating-linear-gradient(130deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5) 1.33px, transparent 0.125rem, transparent 1.5rem);
   pointer-events: none;
   z-index: 0;
 }
