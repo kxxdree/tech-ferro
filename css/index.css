@@ -1160,6 +1160,10 @@ html {
   pointer-events: none;
 }
 
+.categories-lines {
+  border: 1.33px solid #ffffff33;
+}
+
 /* Лучшее */
 
 .best {
