@@ -985,7 +985,7 @@ html {
 }
 
 .quality-vertical-line--center-right {
-  right: 40rem;
+  right: 39rem;
 }
 
 .quality-vertical-line--right {
@@ -1005,6 +1005,17 @@ html {
 
 .quality__container-text-block--center {
   border-left: none;
+}
+
+.quality-diagonal-lines-bottom {
+  position: absolute;
+  right: 3rem;
+  bottom: 0;
+  width: 36rem;
+  height: 20rem;
+  background-image: repeating-linear-gradient(125deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1.33px, transparent 0.125rem, transparent 1.5rem);
+  pointer-events: none;
+  z-index: 0;
 }
 
 /* Категории  */
