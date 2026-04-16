@@ -2537,12 +2537,6 @@ h4 {
   width: fit-content;
 }
 
-/* 
-.footer__info-block-contacts-phone:hover,
-.footer__info-block-contacts-email:hover {
-  opacity: 0.8;
-} */
-
 .footer__info-block-links {
   display: flex;
   gap: 6rem;
