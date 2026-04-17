@@ -111,6 +111,7 @@ document.querySelectorAll(".filter-close-btn").forEach((closeBtn) => {
 });
 
 // Обработка выбора
+
 const priceFilterItemText = document.querySelector(".price-option span");
 
 document.querySelectorAll(".price-filter-list li").forEach((item) => {
