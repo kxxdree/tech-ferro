@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ТехФерро - Мангалы и барбекю</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/catalog/barbecues.css" />
+    <link rel="stylesheet" href="../components/footer/footer.css" />
+    <script src="../js/barbecues.js" defer></script>
+    <script src="../js/footer.js"></script>
+  </head>
+  <body>
+    <!-- Шапка  -->
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo">
+          <img src="../assets/icons/logo-colored.svg" alt="Логотип" />
+        </div>
+
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="header__menu-item">
+              <a href="/">Главная</a>
+            </li>
+            <li class="header__menu-item active-link">
+              <a href="/catalog.html">Каталог</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="/about.html">О нас</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="/contacts.html">Контакты</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="tel:+79525005050">+7 (952) 500-50-50</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__buttons">
+          <button class="header__icon-btn" id="search-button" aria-label="Поиск">
+            <img src="/assets/icons/search.svg" alt="Поиск" />
+          </button>
+          <button class="header__icon-btn header__cart-btn" aria-label="Корзина">
+            <img src="/assets/icons/cart.svg" alt="Корзина" />
+            <span class="header__cart-count">0</span>
+          </button>
+          <button class="header__icon-btn header__burger-btn" aria-label="Меню">
+            <img class="header__burger" src="/assets/icons/burger.svg" alt="Меню" />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Дропдауны  -->
+
+    <!-- Ширина -->
+    <div class="width-filter-dropdown">
+      <div class="filter-title-block">
+        <span class="filter-title">Ширина, см</span>
+        <img class="filter-close-btn" src="/assets/icons/close-icon.svg" alt="Закрыть" />
+      </div>
+      <div class="filter-values-block">
+        <div class="filter-value-item">
+          <span>от</span>
+          <span>1</span>см
+        </div>
+        <span class="filter-value-item--divider">—</span>
+        <div class="filter-value-item">
+          <span>до</span>
+          <span>3356см</span>
+        </div>
+      </div>
+      <div class="slider-container">
+        <div class="slider-track"></div>
+        <div class="slider-track-filled"></div>
+        <input type="range" id="minSlider" min="1" max="3356" value="1" step="1" />
+        <input type="range" id="maxSlider" min="1" max="3356" value="3356" step="1" />
+      </div>
+    </div>
+
+    <!-- Высота -->
+    <div class="height-filter-dropdown">
+      <div class="filter-title-block">
+        <span class="filter-title">Высота, см</span>
+        <img class="filter-close-btn" src="/assets/icons/close-icon.svg" alt="Закрыть" />
+      </div>
+      <div class="filter-values-block">
+        <div class="filter-value-item">
+          <span>от</span>
+          <span>1см</span>
+        </div>
+        <span class="filter-value-item--divider">—</span>
+        <div class="filter-value-item">
+          <span>до</span>
+          <span>256см</span>
+        </div>
+      </div>
+      <div class="slider-container">
+        <div class="slider-track"></div>
+        <div class="slider-track-filled"></div>
+        <input type="range" id="minSlider" min="1" max="256" value="1" step="1" />
+        <input type="range" id="maxSlider" min="1" max="256" value="256" step="1" />
+      </div>
+    </div>
+
+    <!-- Глубина -->
+    <div class="depth-filter-dropdown">
+      <div class="filter-title-block">
+        <span class="filter-title">Глубина, см</span>
+        <img class="filter-close-btn" src="/assets/icons/close-icon.svg" alt="Закрыть" />
+      </div>
+      <div class="filter-values-block">
+        <div class="filter-value-item">
+          <span>от</span>
+          <span>1см</span>
+        </div>
+        <span class="filter-value-item--divider">—</span>
+        <div class="filter-value-item">
+          <span>до</span>
+          <span>3356см</span>
+        </div>
+      </div>
+      <div class="slider-container">
+        <div class="slider-track"></div>
+        <div class="slider-track-filled"></div>
+        <input type="range" id="minSlider" min="1" max="3356" value="1" step="1" />
+        <input type="range" id="maxSlider" min="1" max="3356" value="3356" step="1" />
+      </div>
+    </div>
+
+    <!-- Форма -->
+    <div class="form-filter-dropdown">
+      <div class="filter-title-block">
+        <span class="filter-title">Форма</span>
+        <img class="filter-close-btn" src="/assets/icons/close-icon.svg" alt="Закрыть" />
+      </div>
+      <ul class="form-filter-list">
+        <li>Круглая</li>
+        <li>Квадратная</li>
+        <li>Овальная</li>
+        <li>Квадратная</li>
+        <li>Треугольная</li>
+        <li>Овальная</li>
+        <li>Круглая</li>
+        <li>Треугольная</li>
+      </ul>
+    </div>
+
+    <!-- Сортировка по цене  -->
+
+    <div class="price-filter-dropdown">
+      <div class="filter-title-block">
+        <span class="filter-title">Сортировка</span>
+        <img class="filter-close-btn" src="/assets/icons/close-icon.svg" alt="Закрыть" />
+      </div>
+      <ul class="price-filter-list">
+        <li>По возрастанию цены</li>
+        <li>По убыванию цены</li>
+      </ul>
+    </div>
+
+    <main class="main">
+      <header class="category__header">
+        <nav class="category__header-nav">
+          <a class="main-link link" href="/">Главная</a>
+          <span>/</span>
+          <a class="main-link link" href="/catalog.html">Каталог</a>
+          <span>/</span>
+          <span class="current-link link">Комплексы и печи</span>
+        </nav>
+        <div class="category__header-title">
+          <h2>Комплексы и печи</h2>
+          <ul class="category__header-types">
+            <li class="active-category">Все</li>
+            <li>Мангальные комплексы</li>
+            <li>Печь под казан с мангалом</li>
+          </ul>
+        </div>
+        <ul class="category__header-types-mobile">
+          <li class="active-category">Все</li>
+          <li>Мангалы</li>
+          <li>Гриль-барбекю</li>
+          <li>Барбекю</li>
+          <li>Стол-гриль</li>
+        </ul>
+        <div class="category__header-filters">
+          <ul class="filters-options">
+            <li class="width-option active-filter filter-item" id="width-filter">
+              <span>Ширина, см</span>
+              <img src="../assets/icons/chevron-down.svg" />
+            </li>
+            <li class="height-option filter-item" id="height-filter">
+              <span>Высота, см</span>
+              <img src="../assets/icons/chevron-down.svg" />
+            </li>
+            <li class="depth-option filter-item" id="depth-filter">
+              <span>Глубина, см</span>
+              <img src="../assets/icons/chevron-down.svg" />
+            </li>
+            <li class="form-option filter-item" id="form-filter">
+              <span>Форма</span>
+              <img src="../assets/icons/chevron-down.svg" />
+            </li>
+            <li class="price-option filter-item" id="price-filter">
+              <span>По возрастанию цены</span>
+              <img src="../assets/icons/chevron-down.svg" />
+            </li>
+          </ul>
+        </div>
+        <div class="category__header-filters-mobile">
+          <button class="mobile-filters-btn">
+            <img src="/assets/icons/filter-icon.svg" />
+            <span>Фильтры</span>
+          </button>
+          <button class="mobile-price-option-btn" id="price-filter-mobile">
+            <span>По возрастанию цены</span>
+            <img src="../assets/icons/chevron-down.svg" />
+          </button>
+        </div>
+      </header>
+
+      <section class="catalog__container">
+        <!-- Список товаров  -->
+        <ul class="catalog__list"></ul>
+
+        <!-- Пагинация  -->
+        <div class="pagination">
+          <img class="pagination__arrow" src="/assets/icons/chevron-right.svg" alt="Предыдущая страница" />
+          <ul>
+            <li>
+              <button class="active">1</button>
+            </li>
+            <li>
+              <button>2</button>
+            </li>
+            <li>
+              <button>3</button>
+            </li>
+            <li>
+              <span class="pagination__dots">...</span>
+            </li>
+            <li>
+              <button>10</button>
+            </li>
+          </ul>
+          <img class="pagination__arrow" src="/assets/icons/chevron-right.svg" alt="Следующая страница" />
+        </div>
+      </section>
+    </main>
+
+    <!-- Мобильные фильтры  -->
+    <div class="mobile-filters-modal">
+      <div class="mobile-filters-modal__overlay"></div>
+      <div class="mobile-filters-modal__container">
+        <div class="mobile-filters-modal__header">
+          <h3 class="mobile-filters-modal__title">Фильтры</h3>
+          <button class="mobile-filters-modal__close" aria-label="Закрыть">
+            <img src="../assets/icons/close-icon.svg" alt="Закрыть" />
+          </button>
+        </div>
+
+        <div class="mobile-filters-modal__content">
+          <!-- Высота -->
+          <div class="mobile-filter-group">
+            <div class="mobile-filter-group__header">
+              <span class="mobile-filter-group__title">Высота, см</span>
+            </div>
+            <div class="mobile-filter-group__content">
+              <div class="filter-values-block">
+                <div class="filter-value-item">
+                  <div>
+                    <span>от</span>
+                    <span id="mobile-min-height">1см</span>
+                  </div>
+                  <span>см</span>
+                </div>
+                <span class="filter-value-item--divider">—</span>
+                <div class="filter-value-item">
+                  <div>
+                    <span>до</span>
+                    <span id="mobile-max-height">256</span>
+                  </div>
+                  <span>см</span>
+                </div>
+              </div>
+              <div class="slider-container mobile-slider-container">
+                <div class="slider-track"></div>
+                <div class="slider-track-filled" id="mobile-height-track-filled"></div>
+                <input type="range" id="mobile-min-height-slider" min="1" max="256" value="1" step="1" />
+                <input type="range" id="mobile-max-height-slider" min="1" max="256" value="256" step="1" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Ширина -->
+          <div class="mobile-filter-group">
+            <div class="mobile-filter-group__header">
+              <span class="mobile-filter-group__title">Ширина, см</span>
+            </div>
+            <div class="mobile-filter-group__content">
+              <div class="filter-values-block">
+                <div class="filter-value-item">
+                  <div>
+                    <span>от</span>
+                    <span id="mobile-min-width">1</span>
+                  </div>
+                  <span>см</span>
+                </div>
+                <span class="filter-value-item--divider">—</span>
+                <div class="filter-value-item">
+                  <div>
+                    <span>до</span>
+                    <span id="mobile-max-width">3356</span>
+                  </div>
+                  <span>см</span>
+                </div>
+              </div>
+              <div class="slider-container mobile-slider-container">
+                <div class="slider-track"></div>
+                <div class="slider-track-filled" id="mobile-width-track-filled"></div>
+                <input type="range" id="mobile-min-width-slider" min="1" max="3356" value="1" step="1" />
+                <input type="range" id="mobile-max-width-slider" min="1" max="3356" value="3356" step="1" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Глубина -->
+          <div class="mobile-filter-group">
+            <div class="mobile-filter-group__header">
+              <span class="mobile-filter-group__title">Глубина, см</span>
+            </div>
+            <div class="mobile-filter-group__content">
+              <div class="filter-values-block">
+                <div class="filter-value-item">
+                  <div>
+                    <span>от</span>
+                    <span id="mobile-min-depth">1</span>
+                  </div>
+                  <span>см</span>
+                </div>
+                <span class="filter-value-item--divider">—</span>
+                <div class="filter-value-item">
+                  <div>
+                    <span>до</span>
+                    <span id="mobile-max-depth">3356</span>
+                  </div>
+                  <span>см</span>
+                </div>
+              </div>
+              <div class="slider-container mobile-slider-container">
+                <div class="slider-track"></div>
+                <div class="slider-track-filled" id="mobile-depth-track-filled"></div>
+                <input type="range" id="mobile-min-depth-slider" min="1" max="3356" value="1" step="1" />
+                <input type="range" id="mobile-max-depth-slider" min="1" max="3356" value="3356" step="1" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Форма -->
+          <div class="mobile-filter-group">
+            <div class="mobile-filter-group__header">
+              <span class="mobile-filter-group__title">Форма</span>
+            </div>
+            <div class="mobile-filter-group__content">
+              <ul class="form-filter-list">
+                <li>Круглая</li>
+                <li>Квадратная</li>
+                <li>Овальная</li>
+                <li>Треугольная</li>
+                <li>Круглая</li>
+                <li>Квадратная</li>
+                <li>Овальная</li>
+                <li>Треугольная</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <button class="mobile-filters-modal__submit">Показать товары</button>
+      </div>
+    </div>
+
+    <!-- Мобильное модальное окно сортировки -->
+    <div class="mobile-sort-modal">
+      <div class="mobile-sort-modal__overlay"></div>
+      <div class="mobile-sort-modal__container">
+        <div class="mobile-sort-modal__header">
+          <h3 class="mobile-sort-modal__title">Сортировка</h3>
+          <button class="mobile-sort-modal__close" aria-label="Закрыть">
+            <img src="../assets/icons/close-icon.svg" alt="Закрыть" />
+          </button>
+        </div>
+
+        <div class="mobile-sort-modal__content">
+          <ul class="mobile-sort-list">
+            <li class="mobile-sort-item active-sort" data-sort="asc">По возрастанию цены</li>
+            <li class="mobile-sort-item" data-sort="desc">По убыванию цены</li>
+          </ul>
+        </div>
+
+        <button class="mobile-sort-modal__submit">Применить</button>
+      </div>
+    </div>
+
+    <!-- Футер  -->
+    <div id="footer-placeholder"></div>
+  </body>
+</html>
