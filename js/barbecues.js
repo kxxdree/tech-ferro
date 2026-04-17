@@ -1,3 +1,5 @@
+// Выбор типа
+
 const itemTypes = document.querySelectorAll(".category__header-types li");
 
 itemTypes.forEach((item) => {
@@ -6,6 +8,19 @@ itemTypes.forEach((item) => {
     item.classList.add("active-category");
   });
 });
+
+// Выбор типа в мобильной версии
+
+const itemTypesMobile = document.querySelectorAll(".category__header-types-mobile li");
+
+itemTypesMobile.forEach((item) => {
+  item.addEventListener("click", () => {
+    document.querySelectorAll(".category__header-types-mobile li").forEach((li) => li.classList.remove("active-category"));
+    item.classList.add("active-category");
+  });
+});
+
+// Отрисовка карточек циклом
 
 const catalogList = document.querySelector(".catalog__list");
 
