@@ -36,7 +36,7 @@ html {
 
 .header__menu {
   display: flex;
-  gap: 4px;
+  gap: 0.25rem;
   list-style: none;
 }
 
@@ -66,11 +66,11 @@ html {
 .active-link::before {
   content: "";
   position: absolute;
-  left: 10.67px;
+  left: 0.667rem;
   top: 50%;
   transform: translateY(-50%);
-  width: 10.67px;
-  height: 10.67px;
+  width: 0.667rem;
+  height: 0.667rem;
   background-color: #e64410;
   border-radius: 50%;
 }
