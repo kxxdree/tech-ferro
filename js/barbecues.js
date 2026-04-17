@@ -100,3 +100,12 @@ document.querySelectorAll(".filter-close-btn").forEach((closeBtn) => {
     closeDropdown(dropdown);
   });
 });
+
+const formTypes = document.querySelectorAll(".form-filter-list li");
+
+formTypes.forEach((item) => {
+  item.addEventListener("click", () => {
+    document.querySelectorAll(".form-filter-list li").forEach((li) => li.classList.remove("active-category"));
+    item.classList.add("active-category");
+  });
+});
