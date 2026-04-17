@@ -51,18 +51,18 @@
 .active-link::before {
   content: "";
   position: absolute;
-  left: 10.67px;
+  left: 0.667rem;
   top: 50%;
   transform: translateY(-50%);
-  width: 10.67px;
-  height: 10.67px;
+  width: 0.667rem;
+  height: 0.667rem;
   background-color: #e64410;
   border-radius: 50%;
 }
 
 .header__buttons {
   display: flex;
-  gap: 0.7rem;
+  gap: 1rem;
   align-items: center;
 }
 
@@ -71,11 +71,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
+  width: 3.5rem;
+  height: 3.5rem;
   background: transparent;
   border: 1px solid transparent;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   cursor: pointer;
   padding: 0;
   transition: all 0.3s ease;
@@ -100,14 +100,14 @@
 
 .header__cart-count {
   position: absolute;
-  top: 4px;
-  right: 4px;
+  top: 0.25rem;
+  right: 0.25rem;
   background-color: #e64410;
   color: #fff;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: bold;
-  width: 20px;
-  height: 18px;
+  width: 1.125rem;
+  height: 1.125rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
