@@ -50,23 +50,32 @@ cartButtons.forEach((button) => {
 const widthFilterButton = document.querySelector("#width-filter");
 const depthFilterButton = document.querySelector("#depth-filter");
 const heightFilterButton = document.querySelector("#height-filter");
-const formFilterButton = document.querySelector("#form-filter"); // Добавлено
+const formFilterButton = document.querySelector("#form-filter");
+const priceFilterButton = document.querySelector("#price-filter");
 
 const widthFilterDropDown = document.querySelector(".width-filter-dropdown");
 const depthFilterDropDown = document.querySelector(".depth-filter-dropdown");
 const heightFilterDropDown = document.querySelector(".height-filter-dropdown");
 const formFilterDropDown = document.querySelector(".form-filter-dropdown");
+const priceFilterDropDown = document.querySelector(".price-filter-dropdown");
 
 const dropdowns = [
   { element: widthFilterDropDown, openClass: "width-filter-dropdown--open", button: widthFilterButton },
   { element: depthFilterDropDown, openClass: "depth-filter-dropdown--open", button: depthFilterButton },
   { element: heightFilterDropDown, openClass: "height-filter-dropdown--open", button: heightFilterButton },
   { element: formFilterDropDown, openClass: "form-filter-dropdown--open", button: formFilterButton },
+  { element: priceFilterDropDown, openClass: "price-filter-dropdown--open", button: priceFilterButton },
 ];
 
 function closeDropdown(dropdown) {
   if (!dropdown) return;
-  dropdown.classList.remove("width-filter-dropdown--open", "depth-filter-dropdown--open", "height-filter-dropdown--open", "form-filter-dropdown--open");
+  dropdown.classList.remove(
+    "width-filter-dropdown--open",
+    "depth-filter-dropdown--open",
+    "height-filter-dropdown--open",
+    "form-filter-dropdown--open",
+    "price-filter-dropdown--open",
+  );
 }
 
 function closeAllDropdowns() {
@@ -96,10 +105,25 @@ dropdowns.forEach(({ element, openClass, button }) => {
 document.querySelectorAll(".filter-close-btn").forEach((closeBtn) => {
   closeBtn.addEventListener("click", (event) => {
     event.stopPropagation();
-    const dropdown = closeBtn.closest(".width-filter-dropdown, .depth-filter-dropdown, .height-filter-dropdown, .form-filter-dropdown");
+    const dropdown = closeBtn.closest(".width-filter-dropdown, .depth-filter-dropdown, .height-filter-dropdown, .form-filter-dropdown, .price-filter-dropdown");
     closeDropdown(dropdown);
   });
 });
+
+// Обработка выбора
+const priceFilterItemText = document.querySelector(".price-option span");
+
+document.querySelectorAll(".price-filter-list li").forEach((item) => {
+  item.addEventListener("click", (event) => {
+    event.stopPropagation();
+    const selectedValue = item.textContent;
+    priceFilterItemText.textContent = selectedValue;
+    const dropdown = item.closest(".price-filter-dropdown");
+    closeDropdown(dropdown);
+  });
+});
+
+// Выбор типа формы
 
 const formTypes = document.querySelectorAll(".form-filter-list li");
 
