@@ -150,7 +150,6 @@ formTypes.forEach((item) => {
   });
 });
 
-
 // Мобильное модальное окно фильтров
 const mobileFiltersBtn = document.querySelector(".mobile-filters-btn");
 const mobileFiltersModal = document.querySelector(".mobile-filters-modal");
@@ -300,3 +299,86 @@ mobileFormTypes.forEach((item) => {
     item.classList.add("active-category");
   });
 });
+
+// Мобильное модальное окно сортировки
+const mobileSortBtn = document.getElementById("price-filter-mobile");
+const mobileSortModal = document.querySelector(".mobile-sort-modal");
+const mobileSortClose = document.querySelector(".mobile-sort-modal__close");
+const mobileSortOverlay = document.querySelector(".mobile-sort-modal__overlay");
+const mobileSortSubmit = document.querySelector(".mobile-sort-modal__submit");
+const mobileSortItems = document.querySelectorAll(".mobile-sort-item");
+const mobileSortBtnSpan = document.querySelector("#price-filter-mobile span");
+
+if (mobileSortBtn) {
+  mobileSortBtn.addEventListener("click", (event) => {
+    event.stopPropagation();
+    mobileSortModal.classList.add("mobile-sort-modal--open");
+    document.body.style.overflow = "hidden";
+  });
+}
+
+function closeMobileSortModal() {
+  mobileSortModal.classList.remove("mobile-sort-modal--open");
+  document.body.style.overflow = "";
+}
+
+if (mobileSortClose) {
+  mobileSortClose.addEventListener("click", closeMobileSortModal);
+}
+
+if (mobileSortOverlay) {
+  mobileSortOverlay.addEventListener("click", closeMobileSortModal);
+}
+
+let selectedSort = "asc";
+
+mobileSortItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    mobileSortItems.forEach((li) => li.classList.remove("active-sort"));
+    item.classList.add("active-sort");
+
+    const sortValue = item.getAttribute("data-sort");
+    if (sortValue === "asc") {
+      selectedSort = "asc";
+    } else if (sortValue === "desc") {
+      selectedSort = "desc";
+    }
+  });
+});
+
+// Применение сортировки
+if (mobileSortSubmit) {
+  mobileSortSubmit.addEventListener("click", () => {
+    const selectedText = document.querySelector(".mobile-sort-item.active-sort")?.textContent || "По возрастанию цены";
+    if (mobileSortBtnSpan) {
+      mobileSortBtnSpan.textContent = selectedText;
+    }
+
+    const desktopPriceFilter = document.querySelector(".price-option span");
+    if (desktopPriceFilter) {
+      desktopPriceFilter.textContent = selectedText;
+    }
+
+    closeMobileSortModal();
+  });
+}
+
+function updateMobileSortActiveState() {
+  const currentSortText = mobileSortBtnSpan?.textContent || "По возрастанию цены";
+
+  mobileSortItems.forEach((item) => {
+    if (item.textContent === currentSortText) {
+      item.classList.add("active-sort");
+      selectedSort = item.getAttribute("data-sort");
+    } else {
+      item.classList.remove("active-sort");
+    }
+  });
+}
+
+if (mobileSortBtn) {
+  const originalClickListener = mobileSortBtn.onclick;
+  mobileSortBtn.addEventListener("click", () => {
+    updateMobileSortActiveState();
+  });
+}

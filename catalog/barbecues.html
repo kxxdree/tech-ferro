@@ -384,6 +384,28 @@
       </div>
     </div>
 
+    <!-- Мобильное модальное окно сортировки -->
+    <div class="mobile-sort-modal">
+      <div class="mobile-sort-modal__overlay"></div>
+      <div class="mobile-sort-modal__container">
+        <div class="mobile-sort-modal__header">
+          <h3 class="mobile-sort-modal__title">Сортировка</h3>
+          <button class="mobile-sort-modal__close" aria-label="Закрыть">
+            <img src="../assets/icons/close-icon.svg" alt="Закрыть" />
+          </button>
+        </div>
+
+        <div class="mobile-sort-modal__content">
+          <ul class="mobile-sort-list">
+            <li class="mobile-sort-item active-sort" data-sort="asc">По возрастанию цены</li>
+            <li class="mobile-sort-item" data-sort="desc">По убыванию цены</li>
+          </ul>
+        </div>
+
+        <button class="mobile-sort-modal__submit">Применить</button>
+      </div>
+    </div>
+
     <!-- Футер  -->
     <div id="footer-placeholder"></div>
   </body>
