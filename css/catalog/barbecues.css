@@ -1133,7 +1133,7 @@
 
   .mobile-filters-modal__container {
     min-height: 51.25rem;
-    max-height: 51.25rem;
+    max-height: auto;
   }
 
   .mobile-filters-modal__header {
@@ -1144,13 +1144,17 @@
     padding: 0 1rem;
   }
 
+  .mobile-filter-group__content ul li {
+    font-size: 1rem !important;
+  }
+
   .mobile-filters-modal__submit {
     width: calc(100% - 2rem);
     margin: 1rem 1rem 1.5rem 1rem;
   }
 
   .mobile-filters-modal__content .filter-value-item {
-    max-width: 6rem;
+    width: 50% !important;
     padding: 0.375rem;
   }
 
