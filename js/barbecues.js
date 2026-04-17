@@ -149,3 +149,154 @@ formTypes.forEach((item) => {
     item.classList.add("active-category");
   });
 });
+
+
+// Мобильное модальное окно фильтров
+const mobileFiltersBtn = document.querySelector(".mobile-filters-btn");
+const mobileFiltersModal = document.querySelector(".mobile-filters-modal");
+const mobileFiltersClose = document.querySelector(".mobile-filters-modal__close");
+const mobileFiltersOverlay = document.querySelector(".mobile-filters-modal__overlay");
+const mobileFiltersSubmit = document.querySelector(".mobile-filters-modal__submit");
+
+// Открытие модального окна
+if (mobileFiltersBtn) {
+  mobileFiltersBtn.addEventListener("click", () => {
+    mobileFiltersModal.classList.add("mobile-filters-modal--open");
+    document.body.style.overflow = "hidden";
+  });
+}
+
+// Закрытие модального окна
+function closeMobileFiltersModal() {
+  mobileFiltersModal.classList.remove("mobile-filters-modal--open");
+  document.body.style.overflow = "";
+}
+
+if (mobileFiltersClose) {
+  mobileFiltersClose.addEventListener("click", closeMobileFiltersModal);
+}
+
+if (mobileFiltersOverlay) {
+  mobileFiltersOverlay.addEventListener("click", closeMobileFiltersModal);
+}
+
+// Показать товары
+if (mobileFiltersSubmit) {
+  mobileFiltersSubmit.addEventListener("click", () => {
+    closeMobileFiltersModal();
+  });
+}
+
+// Синхронизация слайдеров ширины в модальном окне
+const mobileMinWidthSlider = document.getElementById("mobile-min-width-slider");
+const mobileMaxWidthSlider = document.getElementById("mobile-max-width-slider");
+const mobileMinWidthSpan = document.getElementById("mobile-min-width");
+const mobileMaxWidthSpan = document.getElementById("mobile-max-width");
+const mobileWidthTrackFilled = document.getElementById("mobile-width-track-filled");
+
+if (mobileMinWidthSlider && mobileMaxWidthSlider) {
+  function updateMobileWidthSliders() {
+    let minVal = parseInt(mobileMinWidthSlider.value);
+    let maxVal = parseInt(mobileMaxWidthSlider.value);
+
+    if (minVal > maxVal) {
+      [minVal, maxVal] = [maxVal, minVal];
+      mobileMinWidthSlider.value = minVal;
+      mobileMaxWidthSlider.value = maxVal;
+    }
+
+    mobileMinWidthSpan.textContent = minVal;
+    mobileMaxWidthSpan.textContent = maxVal;
+
+    const percentMin = ((minVal - 1) / (3356 - 1)) * 100;
+    const percentMax = ((maxVal - 1) / (3356 - 1)) * 100;
+
+    if (mobileWidthTrackFilled) {
+      mobileWidthTrackFilled.style.left = percentMin + "%";
+      mobileWidthTrackFilled.style.width = percentMax - percentMin + "%";
+    }
+  }
+
+  mobileMinWidthSlider.addEventListener("input", updateMobileWidthSliders);
+  mobileMaxWidthSlider.addEventListener("input", updateMobileWidthSliders);
+  updateMobileWidthSliders();
+}
+
+// Синхронизация слайдеров высоты в модальном окне
+const mobileMinHeightSlider = document.getElementById("mobile-min-height-slider");
+const mobileMaxHeightSlider = document.getElementById("mobile-max-height-slider");
+const mobileMinHeightSpan = document.getElementById("mobile-min-height");
+const mobileMaxHeightSpan = document.getElementById("mobile-max-height");
+const mobileHeightTrackFilled = document.getElementById("mobile-height-track-filled");
+
+if (mobileMinHeightSlider && mobileMaxHeightSlider) {
+  function updateMobileHeightSliders() {
+    let minVal = parseInt(mobileMinHeightSlider.value);
+    let maxVal = parseInt(mobileMaxHeightSlider.value);
+
+    if (minVal > maxVal) {
+      [minVal, maxVal] = [maxVal, minVal];
+      mobileMinHeightSlider.value = minVal;
+      mobileMaxHeightSlider.value = maxVal;
+    }
+
+    mobileMinHeightSpan.textContent = minVal;
+    mobileMaxHeightSpan.textContent = maxVal;
+
+    const percentMin = ((minVal - 1) / (256 - 1)) * 100;
+    const percentMax = ((maxVal - 1) / (256 - 1)) * 100;
+
+    if (mobileHeightTrackFilled) {
+      mobileHeightTrackFilled.style.left = percentMin + "%";
+      mobileHeightTrackFilled.style.width = percentMax - percentMin + "%";
+    }
+  }
+
+  mobileMinHeightSlider.addEventListener("input", updateMobileHeightSliders);
+  mobileMaxHeightSlider.addEventListener("input", updateMobileHeightSliders);
+  updateMobileHeightSliders();
+}
+
+// Синхронизация слайдеров глубины в модальном окне
+const mobileMinDepthSlider = document.getElementById("mobile-min-depth-slider");
+const mobileMaxDepthSlider = document.getElementById("mobile-max-depth-slider");
+const mobileMinDepthSpan = document.getElementById("mobile-min-depth");
+const mobileMaxDepthSpan = document.getElementById("mobile-max-depth");
+const mobileDepthTrackFilled = document.getElementById("mobile-depth-track-filled");
+
+if (mobileMinDepthSlider && mobileMaxDepthSlider) {
+  function updateMobileDepthSliders() {
+    let minVal = parseInt(mobileMinDepthSlider.value);
+    let maxVal = parseInt(mobileMaxDepthSlider.value);
+
+    if (minVal > maxVal) {
+      [minVal, maxVal] = [maxVal, minVal];
+      mobileMinDepthSlider.value = minVal;
+      mobileMaxDepthSlider.value = maxVal;
+    }
+
+    mobileMinDepthSpan.textContent = minVal;
+    mobileMaxDepthSpan.textContent = maxVal;
+
+    const percentMin = ((minVal - 1) / (3356 - 1)) * 100;
+    const percentMax = ((maxVal - 1) / (3356 - 1)) * 100;
+
+    if (mobileDepthTrackFilled) {
+      mobileDepthTrackFilled.style.left = percentMin + "%";
+      mobileDepthTrackFilled.style.width = percentMax - percentMin + "%";
+    }
+  }
+
+  mobileMinDepthSlider.addEventListener("input", updateMobileDepthSliders);
+  mobileMaxDepthSlider.addEventListener("input", updateMobileDepthSliders);
+  updateMobileDepthSliders();
+}
+
+const mobileFormTypes = document.querySelectorAll(".mobile-filters-modal__content .form-filter-list li");
+
+mobileFormTypes.forEach((item) => {
+  item.addEventListener("click", () => {
+    mobileFormTypes.forEach((li) => li.classList.remove("active-category"));
+    item.classList.add("active-category");
+  });
+});

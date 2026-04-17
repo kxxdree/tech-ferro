@@ -64,7 +64,7 @@
       <div class="filter-values-block">
         <div class="filter-value-item">
           <span>от</span>
-          <span>1см</span>
+          <span>1</span>см
         </div>
         <span class="filter-value-item--divider">—</span>
         <div class="filter-value-item">
@@ -251,6 +251,138 @@
         </div>
       </section>
     </main>
+
+    <!-- Мобильные фильтры  -->
+    <div class="mobile-filters-modal">
+      <div class="mobile-filters-modal__overlay"></div>
+      <div class="mobile-filters-modal__container">
+        <div class="mobile-filters-modal__header">
+          <h3 class="mobile-filters-modal__title">Фильтры</h3>
+          <button class="mobile-filters-modal__close" aria-label="Закрыть">
+            <img src="../assets/icons/close-icon.svg" alt="Закрыть" />
+          </button>
+        </div>
+
+        <div class="mobile-filters-modal__content">
+          <!-- Высота -->
+          <div class="mobile-filter-group">
+            <div class="mobile-filter-group__header">
+              <span class="mobile-filter-group__title">Высота, см</span>
+            </div>
+            <div class="mobile-filter-group__content">
+              <div class="filter-values-block">
+                <div class="filter-value-item">
+                  <div>
+                    <span>от</span>
+                    <span id="mobile-min-height">1см</span>
+                  </div>
+                  <span>см</span>
+                </div>
+                <span class="filter-value-item--divider">—</span>
+                <div class="filter-value-item">
+                  <div>
+                    <span>до</span>
+                    <span id="mobile-max-height">256</span>
+                  </div>
+                  <span>см</span>
+                </div>
+              </div>
+              <div class="slider-container mobile-slider-container">
+                <div class="slider-track"></div>
+                <div class="slider-track-filled" id="mobile-height-track-filled"></div>
+                <input type="range" id="mobile-min-height-slider" min="1" max="256" value="1" step="1" />
+                <input type="range" id="mobile-max-height-slider" min="1" max="256" value="256" step="1" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Ширина -->
+          <div class="mobile-filter-group">
+            <div class="mobile-filter-group__header">
+              <span class="mobile-filter-group__title">Ширина, см</span>
+            </div>
+            <div class="mobile-filter-group__content">
+              <div class="filter-values-block">
+                <div class="filter-value-item">
+                  <div>
+                    <span>от</span>
+                    <span id="mobile-min-width">1</span>
+                  </div>
+                  <span>см</span>
+                </div>
+                <span class="filter-value-item--divider">—</span>
+                <div class="filter-value-item">
+                  <div>
+                    <span>до</span>
+                    <span id="mobile-max-width">3356</span>
+                  </div>
+                  <span>см</span>
+                </div>
+              </div>
+              <div class="slider-container mobile-slider-container">
+                <div class="slider-track"></div>
+                <div class="slider-track-filled" id="mobile-width-track-filled"></div>
+                <input type="range" id="mobile-min-width-slider" min="1" max="3356" value="1" step="1" />
+                <input type="range" id="mobile-max-width-slider" min="1" max="3356" value="3356" step="1" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Глубина -->
+          <div class="mobile-filter-group">
+            <div class="mobile-filter-group__header">
+              <span class="mobile-filter-group__title">Глубина, см</span>
+            </div>
+            <div class="mobile-filter-group__content">
+              <div class="filter-values-block">
+                <div class="filter-value-item">
+                  <div>
+                    <span>от</span>
+                    <span id="mobile-min-depth">1</span>
+                  </div>
+                  <span>см</span>
+                </div>
+                <span class="filter-value-item--divider">—</span>
+                <div class="filter-value-item">
+                  <div>
+                    <span>до</span>
+                    <span id="mobile-max-depth">3356</span>
+                  </div>
+                  <span>см</span>
+                </div>
+              </div>
+              <div class="slider-container mobile-slider-container">
+                <div class="slider-track"></div>
+                <div class="slider-track-filled" id="mobile-depth-track-filled"></div>
+                <input type="range" id="mobile-min-depth-slider" min="1" max="3356" value="1" step="1" />
+                <input type="range" id="mobile-max-depth-slider" min="1" max="3356" value="3356" step="1" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Форма -->
+          <div class="mobile-filter-group">
+            <div class="mobile-filter-group__header">
+              <span class="mobile-filter-group__title">Форма</span>
+            </div>
+            <div class="mobile-filter-group__content">
+              <ul class="form-filter-list">
+                <li>Круглая</li>
+                <li>Квадратная</li>
+                <li>Овальная</li>
+                <li>Треугольная</li>
+                <li>Круглая</li>
+                <li>Квадратная</li>
+                <li>Овальная</li>
+                <li>Треугольная</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <button class="mobile-filters-modal__submit">Показать товары</button>
+      </div>
+    </div>
 
     <!-- Футер  -->
     <div id="footer-placeholder"></div>
