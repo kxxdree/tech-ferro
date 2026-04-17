@@ -502,10 +502,11 @@
 
 .width-filter-dropdown,
 .height-filter-dropdown,
-.depth-filter-dropdown {
+.depth-filter-dropdown,
+.form-filter-dropdown {
   position: absolute;
-
   z-index: 50;
+  top: 20rem;
   display: none;
   gap: 1rem;
   width: 19.25rem;
@@ -520,25 +521,51 @@
 }
 
 .width-filter-dropdown {
-  top: 20rem;
   left: 3rem;
 }
 
 .height-filter-dropdown {
-  top: 20rem;
   left: 12rem;
 }
 
 .depth-filter-dropdown {
-  top: 20rem;
   left: 20.25rem;
+}
+
+.form-filter-dropdown {
+  width: 25rem !important;
+  left: 29rem;
 }
 
 .width-filter-dropdown--open,
 .height-filter-dropdown--open,
-.depth-filter-dropdown--open {
+.depth-filter-dropdown--open,
+.form-filter-dropdown--open {
   display: flex;
   flex-direction: column;
+}
+
+.form-filter-list {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  flex-wrap: wrap;
+}
+
+.form-filter-list li {
+  font-size: 1rem;
+  line-height: 1.4;
+  letter-spacing: -0.05em;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  padding: 0.25rem 1rem;
+  transition: all 0.2s ease;
+}
+
+.form-filter-list li:hover {
+  color: #e64410;
+  border: 1px solid #e64410;
+  cursor: pointer;
 }
 
 .filter-title-block {
