@@ -983,10 +983,12 @@
     gap: 0.5rem;
     align-items: center;
     margin-top: -0.5rem;
+    overflow-x: auto;
   }
 
   .category__header-types-mobile li {
     padding: 0.25rem 1rem;
+    min-width: fit-content;
   }
 
   .category__header-buttons {
