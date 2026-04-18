@@ -64,6 +64,17 @@
   width: 100%;
   min-height: 11.25rem;
   max-height: 11.25rem;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.card-gallery--list-item:hover {
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+
+.list-item--active {
+  border: 1px solid #000000;
 }
 
 .card-gallery--list-item img {
