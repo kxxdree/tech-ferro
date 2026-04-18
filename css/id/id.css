@@ -138,7 +138,14 @@
   color: black;
 }
 
-.card-price-container button {
+.card-price-container div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.add-to-cart-btn {
   width: 100%;
   padding: 1rem 1.5rem;
   color: white;
@@ -151,6 +158,128 @@
   transition: all 0.2s ease;
 }
 
-.card-price-container button:hover {
+.add-to-cart-btn:hover {
   background-color: black;
+}
+
+.card-quantitiy {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 0.2rem;
+  max-height: 100%;
+  max-width: 8.313rem;
+}
+
+.card-quantitiy button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: transparent;
+  transition: all 0.2s ease;
+}
+
+.card-quantitiy button:hover {
+  opacity: 0.7;
+}
+
+.card-quantitiy img {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.card-description-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.discount-info-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  border: none;
+  border-radius: 0.2rem;
+  background-color: #f1ebe6;
+  width: 100%;
+  color: #121011;
+}
+
+.discount-info-container h3 {
+  font-size: 1.125rem;
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+}
+
+.discount-tiers-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.discount-tiers-list--item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #667085;
+}
+
+.discount-info-note {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  letter-spacing: -0.05em;
+  color: black;
+}
+
+.card-description {
+  font-size: 1rem;
+  line-height: 1.4;
+  letter-spacing: -0.05em;
+}
+
+.dimensions-container,
+.specifications-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+
+.dimensions--title {
+  font-size: 1.125rem;
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+  color: #121011;
+}
+
+.dimensions--list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.dimensions--list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eaecf0;
+  padding: 0.75rem 0;
+}
+
+.dimensions--list-item span {
+  font-size: 1rem;
+  line-height: 1.4;
+  letter-spacing: -0.05em;
+  color: #121011;
+}
+
+.dimensions--list-item span:first-child {
+  color: #475467;
 }
