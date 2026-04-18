@@ -53,6 +53,13 @@
   letter-spacing: -0.05em;
 }
 
+.category__header-title span {
+  font-size: 1rem;
+  line-height: 1.4;
+  letter-spacing: -0.05em;
+  color: #667085;
+}
+
 .category__header-buttons {
   display: none;
 }
