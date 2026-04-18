@@ -457,7 +457,11 @@
     padding: 2rem 2rem;
   }
 
-  .footer-vertical-line--center-left,
+  .footer-vertical-line--center-left {
+    left: 45%;
+  }
+
+
   .footer-vertical-line--center-right {
     display: none;
   }
@@ -468,7 +472,7 @@
   }
 
   .footer-horizontal-line--center-bottom {
-    display: none;
+    bottom: 50%;
   }
 }
 
