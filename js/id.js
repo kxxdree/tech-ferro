@@ -26,6 +26,33 @@ for (let i = 0; i < 12; i++) {
   relatedProductsList.insertAdjacentHTML("beforeend", listItemHTML);
 }
 
+const cartButtons = document.querySelectorAll(".related-products__cart-btn");
+
+function updateCartCounter(change) {
+  let cartCounter = document.querySelector(".header__cart-count");
+
+  if (!cartCounter) return;
+
+  let currentCount = parseInt(cartCounter.textContent) || 0;
+  let newCount = currentCount + change;
+
+  if (newCount <= 0) {
+    cartCounter.textContent = "0";
+    cartCounter.style.display = "none";
+  } else {
+    cartCounter.textContent = newCount;
+    cartCounter.style.display = "flex";
+  }
+}
+
+cartButtons.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    updateCartCounter(1);
+  });
+});
+
 const updateButtonsVisibility = () => {
   const scrollLeft = relatedProductsList.scrollLeft;
   const maxScrollLeft = relatedProductsList.scrollWidth - relatedProductsList.clientWidth;
