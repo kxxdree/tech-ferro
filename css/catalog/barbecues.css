@@ -158,6 +158,14 @@
   gap: 4rem 1.5rem !important;
 }
 
+.catalog__list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 30.688rem;
+  position: relative;
+}
+
 .catalog__list-link {
   display: flex;
   flex-direction: column;
@@ -170,14 +178,6 @@
 
 .catalog__list-link:hover {
   color: #e64410;
-}
-
-.catalog__list-item {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  height: 30.688rem;
-  position: relative;
 }
 
 .catalog__list-image-wrapper {

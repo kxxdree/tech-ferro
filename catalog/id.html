@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/components/footer/footer.css" />
     <script src="/js/header.js" defer></script>
     <script src="/js/footer.js" defer></script>
+    <script src="/js/id.js" defer></script>
   </head>
   <body>
     <!-- Шапка  -->
@@ -136,28 +137,10 @@
         </section>
         <section class="related-products">
           <h2>Вас могут заинтересовать</h2>
-          <ul class="catalog__list">
-            <li class="catalog__list-item">
-              <div class="catalog__list-image-wrapper">
-                <a href="/catalog/id.html" class="catalog__list-image-link">
-                  <img src="/assets/images/catalog/item-photo.png" alt="Фото товара" />
-                </a>
-                <button class="catalog__list-cart-btn" aria-label="Добавить в корзину">
-                  <img src="/assets/icons/cart.svg" alt="Корзина" />
-                </button>
-              </div>
-
-              <div class="list-item__content">
-                <a href="#" class="catalog__list-content-link">
-                  <div class="list-item__product-info">
-                    <h4>Костровая чаша</h4>
-                    <h3>Fire Cube</h3>
-                  </div>
-                  <p class="list-item__price">3 590 ₽</p>
-                </a>
-              </div>
-            </li>
-          </ul>
+          <ul class="related-products__list"></ul>
+          <button class="related-products__list--slider-btn">
+            <img src="/assets/icons/chevron-right.svg" alt="Далее" />
+          </button>
         </section>
       </div>
     </main>
