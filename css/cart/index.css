@@ -77,7 +77,12 @@
   color: #667085;
 }
 
-.catalog__list {
+.cart__content {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.cart__list {
   display: flex;
   flex-direction: column;
   gap: 2rem;
