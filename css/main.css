@@ -79,7 +79,8 @@ li {
 }
 
 input,
-span {
+span,
+button {
   font-family: "Gotham Pro", sans-serif;
 }
 
