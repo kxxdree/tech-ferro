@@ -1,0 +1,41 @@
+.header {
+  width: 100%;
+  padding: 1rem 3rem;
+  border-bottom: 1px solid #0000004d;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 3.75rem;
+}
+
+.header__container a {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  pad: 0.5rem 0;
+  transition: all 0.2s ease;
+}
+
+.header__container a:hover {
+  opacity: 0.7;
+}
+
+.header__container span,
+.header__container p {
+  line-height: 1.4;
+  letter-spacing: -0.05em;
+  color: #121011;
+}
+
+.back-icon {
+  filter: invert(1);
+  transform: rotate(180deg);
+}
+
+.header__logo img {
+  height: 3.375rem;
+  width: 9.375rem;
+}
