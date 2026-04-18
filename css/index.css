@@ -2059,17 +2059,17 @@ h4 {
 .policy-checkbox-label {
   display: flex;
   align-items: flex-start;
-  gap: 12px;
+  gap: 0.75rem;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.4;
   color: #1a1f2e;
 }
 
 .policy-checkbox {
-  width: 18px;
-  height: 18px;
-  margin-top: 2px;
+  width: 1.125rem;
+  height: 1.125rem;
+  margin-top: 0.125rem;
   flex-shrink: 0;
   cursor: pointer;
   accent-color: black;
@@ -2086,6 +2086,11 @@ h4 {
 .policy-text-link {
   text-decoration: underline;
   color: #121011;
+  transition: all 0.2s ease;
+}
+
+.policy-text-link:hover {
+  color: #e64410;
 }
 
 .policy-submit-button {

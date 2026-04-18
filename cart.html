@@ -99,13 +99,32 @@
                 </div>
               </div>
             </div>
-            <div class="cart__form--data-container"></div>
+            <div class="cart__form--data-container">
+              <div class="user-type-row">
+                <button class="active-type">Физическое лицо</button>
+                <button>Юридическое лицо</button>
+              </div>
+              <div class="data-input-fields">
+                <input type="text" name="name" id="name" placeholder="Введите ваше имя" />
+                <input type="tel" name="phone" id="phone" placeholder="Введите ваш телефон" />
+                <input type="text" name="address" id="address" placeholder="Введите ваш адрес" />
+              </div>
+              <div class="policy-row">
+                <label class="policy-checkbox-label">
+                  <input type="checkbox" class="policy-checkbox" />
+                  <span class="policy-text"
+                    >Я ознакомлен(а) с <a class="policy-text-link" href="/policy.html" target="_blank">Политикой конфиденциальности</a> и даю согласие на
+                    обработку моих персональных данных</span
+                  >
+                </label>
+              </div>
+            </div>
           </form>
         </div>
       </section>
     </main>
 
     <!-- Футер  -->
-    <!-- <div id="footer-placeholder"></div> -->
+    <div id="footer-placeholder"></div>
   </body>
 </html>
