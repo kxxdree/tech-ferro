@@ -27,7 +27,7 @@ const catalogList = document.querySelector(".catalog__list");
 const listItemHTML = `
   <li class="catalog__list-item">
     <div class="catalog__list-image-wrapper">
-      <a href="#" class="catalog__list-image-link">
+      <a href="/catalog/id.html" class="catalog__list-image-link">
         <img src="../assets/images/catalog/item-photo.png" alt="Фото товара" />
       </a>
       <button class="catalog__list-cart-btn" aria-label="Добавить в корзину">
