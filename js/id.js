@@ -1,4 +1,6 @@
 const relatedProductsList = document.querySelector(".related-products__list");
+const prevBtn = document.querySelector(".prev-btn");
+const nextBtn = document.querySelector(".next-btn");
 
 const listItemHTML = `
   <li class="related-products__item">
@@ -23,3 +25,55 @@ const listItemHTML = `
 for (let i = 0; i < 12; i++) {
   relatedProductsList.insertAdjacentHTML("beforeend", listItemHTML);
 }
+
+const updateButtonsVisibility = () => {
+  const scrollLeft = relatedProductsList.scrollLeft;
+  const maxScrollLeft = relatedProductsList.scrollWidth - relatedProductsList.clientWidth;
+
+  if (scrollLeft <= 5) {
+    prevBtn.style.opacity = "0";
+    prevBtn.style.visibility = "hidden";
+    prevBtn.style.cursor = "default";
+  } else {
+    prevBtn.style.opacity = "1";
+    prevBtn.style.visibility = "visible";
+    prevBtn.style.cursor = "pointer";
+  }
+
+  if (scrollLeft >= maxScrollLeft - 5) {
+    nextBtn.style.opacity = "0";
+    nextBtn.style.visibility = "hidden";
+    nextBtn.style.cursor = "default";
+  } else {
+    nextBtn.style.opacity = "1";
+    nextBtn.style.visibility = "visible";
+    nextBtn.style.cursor = "pointer";
+  }
+};
+
+const scrollList = (direction) => {
+  const scrollAmount = 300;
+
+  if (direction === "left") {
+    relatedProductsList.scrollBy({
+      left: -scrollAmount,
+      behavior: "smooth",
+    });
+  } else if (direction === "right") {
+    relatedProductsList.scrollBy({
+      left: scrollAmount,
+      behavior: "smooth",
+    });
+  }
+
+  setTimeout(updateButtonsVisibility, 300);
+};
+
+prevBtn.addEventListener("click", () => scrollList("left"));
+nextBtn.addEventListener("click", () => scrollList("right"));
+
+relatedProductsList.addEventListener("scroll", updateButtonsVisibility);
+
+window.addEventListener("resize", updateButtonsVisibility);
+
+setTimeout(updateButtonsVisibility, 100);

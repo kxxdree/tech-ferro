@@ -422,7 +422,6 @@
 
 .related-products__list--slider-btn {
   position: absolute;
-  right: -1.5rem;
   top: 50%;
   z-index: 20;
   transform: translateY(-50%);
@@ -436,6 +435,18 @@
   justify-content: center;
   cursor: pointer;
   transition: all 0.2s ease;
+}
+
+.prev-btn {
+  left: -1.5rem;
+}
+
+.prev-btn img {
+  transform: rotate(180deg);
+}
+
+.next-btn {
+  right: -1.5rem;
 }
 
 .related-products__list--slider-btn img {
