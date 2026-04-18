@@ -1,6 +1,11 @@
 const relatedProductsList = document.querySelector(".related-products__list");
 const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
+const addToCartBtn = document.querySelector(".add-to-cart-btn");
+const cardQuantityDiv = document.querySelector(".card-quantitiy");
+const quantityNumber = document.querySelector(".card-quantitiy--number");
+const minusBtn = document.querySelector(".card-quantitiy button:first-child");
+const plusBtn = document.querySelector(".card-quantitiy button:last-child");
 
 const listItemHTML = `
   <li class="related-products__item">
@@ -27,6 +32,9 @@ for (let i = 0; i < 12; i++) {
 }
 
 const cartButtons = document.querySelectorAll(".related-products__cart-btn");
+let currentProductCount = 1;
+
+// Функция обновления счётчика в корзине
 
 function updateCartCounter(change) {
   let cartCounter = document.querySelector(".header__cart-count");
@@ -45,11 +53,60 @@ function updateCartCounter(change) {
   }
 }
 
+function updateCardUI() {
+  if (currentProductCount > 0) {
+    addToCartBtn.textContent = "В корзине";
+    cardQuantityDiv.style.display = "flex";
+    quantityNumber.textContent = currentProductCount;
+    addToCartBtn.textContent = "В корзине";
+  } else {
+    addToCartBtn.style.display = "block";
+    cardQuantityDiv.style.display = "none";
+    addToCartBtn.textContent = "В корзину";
+  }
+}
+
+function addToCart() {
+  currentProductCount = 1;
+  updateCardUI();
+  updateCartCounter(1);
+}
+
+function increaseQuantity() {
+  currentProductCount++;
+  quantityNumber.textContent = currentProductCount;
+  updateCartCounter(1);
+}
+
+function decreaseQuantity() {
+  if (currentProductCount > 1) {
+    currentProductCount--;
+    quantityNumber.textContent = currentProductCount;
+    updateCartCounter(-1);
+  } else if (currentProductCount === 1) {
+    currentProductCount = 0;
+    updateCardUI();
+    updateCartCounter(-1);
+  }
+}
+
+addToCartBtn.addEventListener("click", addToCart);
+minusBtn.addEventListener("click", decreaseQuantity);
+plusBtn.addEventListener("click", increaseQuantity);
+
+cardQuantityDiv.style.display = "none";
+
 cartButtons.forEach((button) => {
   button.addEventListener("click", (event) => {
     event.preventDefault();
     event.stopPropagation();
     updateCartCounter(1);
+
+    // Анимация кнопки
+    button.classList.add("added");
+    setTimeout(() => {
+      button.classList.remove("added");
+    }, 200);
   });
 });
 
@@ -102,7 +159,5 @@ prevBtn.addEventListener("click", () => scrollList("left"));
 nextBtn.addEventListener("click", () => scrollList("right"));
 
 relatedProductsList.addEventListener("scroll", updateButtonsVisibility);
-
 window.addEventListener("resize", updateButtonsVisibility);
-
 setTimeout(updateButtonsVisibility, 100);
