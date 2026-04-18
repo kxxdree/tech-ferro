@@ -53,6 +53,8 @@ cartButtons.forEach((button) => {
   });
 });
 
+// Related слайдер
+
 const updateButtonsVisibility = () => {
   const scrollLeft = relatedProductsList.scrollLeft;
   const maxScrollLeft = relatedProductsList.scrollWidth - relatedProductsList.clientWidth;
