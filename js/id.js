@@ -7,6 +7,10 @@ const quantityNumber = document.querySelector(".card-quantitiy--number");
 const minusBtn = document.querySelector(".card-quantitiy button:first-child");
 const plusBtn = document.querySelector(".card-quantitiy button:last-child");
 
+const cartNotification = document.querySelector(".cart-notification");
+const notificationCloseBtn = document.querySelector(".cart-notification--close-btn");
+let notificationTimeout = null;
+
 const listItemHTML = `
   <li class="related-products__item">
     <a href="/catalog/id.html" class="related-products__link">
@@ -34,7 +38,36 @@ for (let i = 0; i < 12; i++) {
 const cartButtons = document.querySelectorAll(".related-products__cart-btn");
 let currentProductCount = 1;
 
-// Функция обновления счётчика в корзине
+function showNotification() {
+  if (!cartNotification) return;
+
+  if (notificationTimeout) {
+    clearTimeout(notificationTimeout);
+  }
+
+  cartNotification.style.display = "block";
+  cartNotification.style.opacity = "0";
+  cartNotification.style.visibility = "visible";
+
+  setTimeout(() => {
+    cartNotification.style.transition = "opacity 0.3s ease";
+    cartNotification.style.opacity = "1";
+  }, 10);
+
+  notificationTimeout = setTimeout(() => {
+    hideNotification();
+  }, 3000);
+}
+
+function hideNotification() {
+  if (!cartNotification) return;
+
+  cartNotification.style.opacity = "0";
+  setTimeout(() => {
+    cartNotification.style.display = "none";
+    cartNotification.style.visibility = "hidden";
+  }, 300);
+}
 
 function updateCartCounter(change) {
   let cartCounter = document.querySelector(".header__cart-count");
@@ -70,12 +103,14 @@ function addToCart() {
   currentProductCount = 1;
   updateCardUI();
   updateCartCounter(1);
+  showNotification();
 }
 
 function increaseQuantity() {
   currentProductCount++;
   quantityNumber.textContent = currentProductCount;
   updateCartCounter(1);
+  //   showNotification();
 }
 
 function decreaseQuantity() {
@@ -94,15 +129,28 @@ addToCartBtn.addEventListener("click", addToCart);
 minusBtn.addEventListener("click", decreaseQuantity);
 plusBtn.addEventListener("click", increaseQuantity);
 
+if (notificationCloseBtn) {
+  notificationCloseBtn.addEventListener("click", () => {
+    hideNotification();
+    if (notificationTimeout) {
+      clearTimeout(notificationTimeout);
+    }
+  });
+}
+
 cardQuantityDiv.style.display = "none";
+if (cartNotification) {
+  cartNotification.style.display = "none";
+  cartNotification.style.visibility = "hidden";
+}
 
 cartButtons.forEach((button) => {
   button.addEventListener("click", (event) => {
     event.preventDefault();
     event.stopPropagation();
     updateCartCounter(1);
+    showNotification();
 
-    // Анимация кнопки
     button.classList.add("added");
     setTimeout(() => {
       button.classList.remove("added");
