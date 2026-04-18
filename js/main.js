@@ -193,7 +193,7 @@ const topProducts = [
 topProducts.forEach((product) => {
   const productCardHTML = `
     <li class="best__list-product-card">
-      <a href="#">
+      <a href="/catalog/id.html">
         <div class="best__list-product-card-image-wrapper">
           <img src="${product.img}" alt="Карточка товара" />
           <button class="best__list-product-card-cart" aria-label="Добавить в корзину">
@@ -239,7 +239,7 @@ const bottomProducts = [
 bottomProducts.forEach((product) => {
   const productCardHTML = `
     <li class="best__list-product-card">
-      <a href="#">
+     <a href="/catalog/id.html">
         <div class="best__list-product-card-image-wrapper">
           <img src="${product.img}" alt="Карточка товара" />
           <button class="best__list-product-card-cart" aria-label="Добавить в корзину">
