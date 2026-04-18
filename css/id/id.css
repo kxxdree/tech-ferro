@@ -103,3 +103,54 @@
   align-items: flex-start;
   width: 34.313rem;
 }
+
+.card-title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #121011;
+}
+
+.card-title-container h1,
+.card-title-container h2 {
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+}
+
+.card-title-container h2 {
+  font-size: 1rem;
+}
+
+.card-title-container h1 {
+  font-size: 1.5rem;
+}
+
+.card-price-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.card-price-container p {
+  font-size: 2rem;
+  letter-spacing: -0.05em;
+  color: black;
+}
+
+.card-price-container button {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.4;
+  letter-spacing: -0.03em;
+  background-color: #252324;
+  border: none;
+  border-radius: 0.25rem;
+  transition: all 0.2s ease;
+}
+
+.card-price-container button:hover {
+  background-color: black;
+}
