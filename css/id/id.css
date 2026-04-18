@@ -34,9 +34,16 @@
   cursor: pointer;
 }
 
-.card__details {
+.card-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.card-details {
+  display: flex;
+  gap: 2.5rem;
   max-height: 60rem;
 }
 
@@ -87,4 +94,12 @@
   width: 37.625rem;
   height: 100%;
   object-fit: cover;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: flex-start;
+  width: 34.313rem;
 }
