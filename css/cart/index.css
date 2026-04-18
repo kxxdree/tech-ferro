@@ -202,3 +202,13 @@
   color: #121011;
   border-bottom: 1px solid #121011;
 }
+
+.cart__form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 1.5rem;
+  width: 27rem;
+  height: 37.625rem;
+  background-color: #f2ebe6;
+}
