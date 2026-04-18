@@ -25,26 +25,23 @@ itemTypesMobile.forEach((item) => {
 const catalogList = document.querySelector(".catalog__list");
 
 const listItemHTML = `
-  <li class="catalog__list-item">
+<li class="catalog__list-item">
+  <a href="/catalog/id.html" class="catalog__list-link">
     <div class="catalog__list-image-wrapper">
-      <a href="/catalog/id.html" class="catalog__list-image-link">
-        <img src="../assets/images/catalog/item-photo.png" alt="Фото товара" />
-      </a>
-      <button class="catalog__list-cart-btn" aria-label="Добавить в корзину">
-        <img src="../assets/icons/cart.svg" alt="Корзина" />
-      </button>
+      <img src="/assets/images/catalog/item-photo.png" alt="Фото товара" />
     </div>
-    
     <div class="list-item__content">
-      <a href="#" class="catalog__list-content-link">
-        <div class="list-item__product-info">
-          <h4>Костровая чаша</h4>
-          <h3>Fire Cube</h3>
-        </div>
-        <p class="list-item__price">3 590 ₽</p>
-      </a>
+      <div class="list-item__product-info">
+        <h4>Костровая чаша</h4>
+        <h3>Fire Cube</h3>
+      </div>
+      <p class="list-item__price">3 590 ₽</p>
     </div>
-  </li>
+  </a>
+  <button class="catalog__list-cart-btn" aria-label="Добавить в корзину">
+    <img src="/assets/icons/cart.svg" alt="Корзина" />
+  </button>
+</li>
 `;
 
 for (let i = 0; i < 12; i++) {
