@@ -38,9 +38,8 @@
   gap: 2.5rem;
 }
 
-.catalog__container h2 {
+.catalog__container h1 {
   font-size: 5rem;
-  font-weight: 400;
   letter-spacing: -0.08em;
   border-bottom: 1px solid #0000004d;
 }
