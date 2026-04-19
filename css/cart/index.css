@@ -305,10 +305,16 @@
   line-height: 1.5;
   letter-spacing: -0.05em;
   border-bottom: 1px solid #0000004d;
+  transition: all 0.2s ease;
 }
 
 .data-input-fields input::placeholder {
   color: #667085;
+}
+
+.data-input-fields input:hover,
+.data-input-fields input:focus {
+  border-bottom: 1px solid black;
 }
 
 .policy-row {
