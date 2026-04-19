@@ -43,19 +43,25 @@
 /* Мейн */
 
 .main {
-  max-width: 1440px;
-  /* width: 100%; */
+  width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
   gap: 1.5rem;
   padding: 2.5rem 3rem 16.75rem 3rem;
 }
 
 .cart__container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Корзина с товарами  */
+
+.cart__container-with-products {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  display: none;
 }
 
 .cart__container--header {
@@ -368,4 +374,33 @@
 
 .cart__form-submit-btn:hover {
   background-color: #000000;
+}
+
+/* Пустая корзина  */
+
+.cart__container-empty {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 34.125rem;
+  height: 11.063rem;
+  margin: auto;
+  text-align: center;
+}
+
+.cart__container-empty h2 {
+  font-size: 3.5rem;
+  letter-spacing: -0.05em;
+  color: black;
+}
+
+.cart__container-empty h3 {
+  font-size: 1rem;
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+  color: #121011;
+}
+
+.cart__form-submit-btn a {
+  color: white;
 }

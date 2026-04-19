@@ -24,103 +24,113 @@
     </header>
 
     <main class="main">
+      <!-- Корзина с товарами  -->
       <section class="cart__container">
-        <header class="cart__container--header">
-          <h1>Корзина</h1>
-          <span>2 товара</span>
-        </header>
-        <div class="cart__content">
-          <ul class="cart__list">
-            <li class="cart__list-item">
-              <img class="cart__list-item--photo" src="/assets/images/catalog/item-photo.png" alt="Фото товара" />
-              <div class="cart__list-item--details">
-                <div class="details--title-container">
-                  <h3>Барбекю</h3>
-                  <h2>Барбекю</h2>
-                </div>
-                <div class="details--price-container">
-                  <div class="price-row">
-                    <p>0 000 ₽</p>
-                    <span>0 000 ₽</span>
+        <div class="cart__container-with-products">
+          <header class="cart__container--header">
+            <h1>Корзина</h1>
+            <span>2 товара</span>
+          </header>
+          <div class="cart__content">
+            <ul class="cart__list">
+              <li class="cart__list-item">
+                <img class="cart__list-item--photo" src="/assets/images/catalog/item-photo.png" alt="Фото товара" />
+                <div class="cart__list-item--details">
+                  <div class="details--title-container">
+                    <h3>Барбекю</h3>
+                    <h2>Барбекю</h2>
                   </div>
-                  <div class="cart-quantitiy">
-                    <button>
-                      <img src="/assets/icons/minus-icon.svg" alt="Убрать товар" />
-                    </button>
-                    <span class="card-quantitiy--number">2</span>
-                    <button>
-                      <img src="/assets/icons/plus-icon.svg" alt="Добавить товар" />
-                    </button>
+                  <div class="details--price-container">
+                    <div class="price-row">
+                      <p>0 000 ₽</p>
+                      <span>0 000 ₽</span>
+                    </div>
+                    <div class="cart-quantitiy">
+                      <button>
+                        <img src="/assets/icons/minus-icon.svg" alt="Убрать товар" />
+                      </button>
+                      <span class="card-quantitiy--number">2</span>
+                      <button>
+                        <img src="/assets/icons/plus-icon.svg" alt="Добавить товар" />
+                      </button>
+                    </div>
+                    <button class="details--delete-btn">Удалить</button>
                   </div>
-                  <button class="details--delete-btn">Удалить</button>
                 </div>
-              </div>
-            </li>
-            <li class="cart__list-item">
-              <img class="cart__list-item--photo" src="/assets/images/catalog/item-photo-2.png" alt="Фото товара" />
-              <div class="cart__list-item--details">
-                <div class="details--title-container">
-                  <h3>Стол-гриль</h3>
-                  <h2>Восьмигранный V2</h2>
-                </div>
-                <div class="details--price-container">
-                  <div class="price-row">
-                    <p>0 000 ₽</p>
-                    <span>0 000 ₽</span>
+              </li>
+              <li class="cart__list-item">
+                <img class="cart__list-item--photo" src="/assets/images/catalog/item-photo-2.png" alt="Фото товара" />
+                <div class="cart__list-item--details">
+                  <div class="details--title-container">
+                    <h3>Стол-гриль</h3>
+                    <h2>Восьмигранный V2</h2>
                   </div>
-                  <div class="cart-quantitiy">
-                    <button>
-                      <img src="/assets/icons/minus-icon.svg" alt="Убрать товар" />
-                    </button>
-                    <span class="card-quantitiy--number">2</span>
-                    <button>
-                      <img src="/assets/icons/plus-icon.svg" alt="Добавить товар" />
-                    </button>
+                  <div class="details--price-container">
+                    <div class="price-row">
+                      <p>0 000 ₽</p>
+                      <span>0 000 ₽</span>
+                    </div>
+                    <div class="cart-quantitiy">
+                      <button>
+                        <img src="/assets/icons/minus-icon.svg" alt="Убрать товар" />
+                      </button>
+                      <span class="card-quantitiy--number">2</span>
+                      <button>
+                        <img src="/assets/icons/plus-icon.svg" alt="Добавить товар" />
+                      </button>
+                    </div>
+                    <button class="details--delete-btn">Удалить</button>
                   </div>
-                  <button class="details--delete-btn">Удалить</button>
+                </div>
+              </li>
+            </ul>
+            <form class="cart__form">
+              <div class="cart__form--total-container">
+                <div class="total-row">
+                  <span>Итого</span>
+                  <span>0 000 ₽</span>
+                </div>
+                <div class="total--details-row">
+                  <div class="items-row">
+                    <span>3 товара на сумму</span>
+                    <span>0 000 ₽ </span>
+                  </div>
+                  <div class="discount-row">
+                    <span>Ваша скидка</span>
+                    <span>- 0 000 ₽ </span>
+                  </div>
                 </div>
               </div>
-            </li>
-          </ul>
-          <form class="cart__form">
-            <div class="cart__form--total-container">
-              <div class="total-row">
-                <span>Итого</span>
-                <span>0 000 ₽</span>
-              </div>
-              <div class="total--details-row">
-                <div class="items-row">
-                  <span>3 товара на сумму</span>
-                  <span>0 000 ₽ </span>
+              <div class="cart__form--data-container">
+                <div class="user-type-row">
+                  <button class="active-type" type="button">Физическое лицо</button>
+                  <button type="button">Юридическое лицо</button>
                 </div>
-                <div class="discount-row">
-                  <span>Ваша скидка</span>
-                  <span>- 0 000 ₽ </span>
+                <div class="data-input-fields">
+                  <input type="text" name="name" id="name" placeholder="Введите ваше имя" />
+                  <input type="tel" name="phone" id="phone" placeholder="Введите ваш телефон" />
+                  <input type="text" name="address" id="address" placeholder="Введите ваш адрес" />
                 </div>
+                <div class="policy-row">
+                  <label class="policy-checkbox-label">
+                    <input type="checkbox" class="policy-checkbox" />
+                    <span class="policy-text"
+                      >Я ознакомлен(а) с <a class="policy-text-link" href="/policy.html" target="_blank">Политикой конфиденциальности</a> и даю согласие на
+                      обработку моих персональных данных</span
+                    >
+                  </label>
+                </div>
+                <button class="cart__form-submit-btn">Оформить заказ</button>
               </div>
-            </div>
-            <div class="cart__form--data-container">
-              <div class="user-type-row">
-                <button class="active-type" type="button">Физическое лицо</button>
-                <button type="button">Юридическое лицо</button>
-              </div>
-              <div class="data-input-fields">
-                <input type="text" name="name" id="name" placeholder="Введите ваше имя" />
-                <input type="tel" name="phone" id="phone" placeholder="Введите ваш телефон" />
-                <input type="text" name="address" id="address" placeholder="Введите ваш адрес" />
-              </div>
-              <div class="policy-row">
-                <label class="policy-checkbox-label">
-                  <input type="checkbox" class="policy-checkbox" />
-                  <span class="policy-text"
-                    >Я ознакомлен(а) с <a class="policy-text-link" href="/policy.html" target="_blank">Политикой конфиденциальности</a> и даю согласие на
-                    обработку моих персональных данных</span
-                  >
-                </label>
-              </div>
-              <button class="cart__form-submit-btn">Оформить заказ</button>
-            </div>
-          </form>
+            </form>
+          </div>
+        </div>
+        <div class="cart__container-empty">
+          <h2>Оформление заказа</h2>
+          <h3>В вашей корзине нет товаров</h3>
+          <button class="cart__form-submit-btn">
+            <a href="/catalog.html">Перейти к покупкам</a>
+          </button>
         </div>
       </section>
     </main>
