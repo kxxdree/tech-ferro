@@ -387,9 +387,9 @@
 
         <!-- Модальное окно заявки  -->
 
-        <form class="application-modal" id="applicationModal">
-          <div class="application-modal-content">
-            <button class="application-modal-close-button" aria-label="Закрыть окно">
+        <div class="application-modal" id="applicationModal">
+          <form class="application-modal-content">
+            <button type="button" class="application-modal-close-button" aria-label="Закрыть окно">
               <img src="assets/icons/close-icon.svg" alt="Закрыть окно" />
             </button>
             <div class="application-modal-content-header">
@@ -407,7 +407,7 @@
                   <div class="application-modal__dropzone-wrapper-text">
                     <p>Выберите файлы или переместите их в эту область</p>
                     <span>Поддерживаются форматы PDF, DOC, JPEG и PNG, размером до 25 МБ.</span>
-                    <button>Выбрать файл</button>
+                    <button type="button">Выбрать файл</button>
                   </div>
                 </div>
                 <div class="application-modal__dropzone-file">
@@ -429,11 +429,11 @@
                     обработку моих персональных данных</span
                   >
                 </label>
-                <button class="policy-submit-button">Оставить заявку</button>
+                <button type="submit" class="policy-submit-button">Оставить заявку</button>
               </div>
             </div>
-          </div>
-        </form>
+          </form>
+        </в>
       </section>
 
       <!-- Маркетплейсы  -->
