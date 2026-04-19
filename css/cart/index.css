@@ -61,7 +61,6 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  display: none;
 }
 
 .cart__container--header {
@@ -379,7 +378,7 @@
 /* Пустая корзина  */
 
 .cart__container-empty {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 1.5rem;
   width: 34.125rem;
@@ -403,4 +402,9 @@
 
 .cart__form-submit-btn a {
   color: white;
+}
+
+.main {
+  transition: height 0.3s ease;
+  position: relative;
 }
