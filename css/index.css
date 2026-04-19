@@ -320,6 +320,10 @@ html {
   overflow-x: auto;
 }
 
+/* .search__success-list::-webkit-scrollbar {
+  display: none;
+} */
+
 .search__success-list-item {
   display: flex;
   flex-direction: column;
