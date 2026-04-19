@@ -19,3 +19,21 @@ if (isCartEmpty) {
   main.style.height = "auto";
   cartContainer.style.margin = "0 auto";
 }
+
+// Кнопки формы
+
+const individualBtn = document.querySelector(".user-type-row button:first-child");
+const legalBtn = document.querySelector(".user-type-row button:last-child");
+
+function switchToIndividual() {
+  individualBtn.classList.add("active-type");
+  legalBtn.classList.remove("active-type");
+}
+
+function switchToLegal() {
+  legalBtn.classList.add("active-type");
+  individualBtn.classList.remove("active-type");
+}
+
+individualBtn.addEventListener("click", switchToIndividual);
+legalBtn.addEventListener("click", switchToLegal);
