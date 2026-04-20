@@ -512,6 +512,10 @@
     gap: 4rem;
   }
 
+  .cart__list-item {
+    width: 100%;
+  }
+
   .cart__form {
     width: 100%;
   }
