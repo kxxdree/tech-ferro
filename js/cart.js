@@ -5,7 +5,7 @@ const cartContainer = document.querySelector(".cart__container");
 
 // Изменение состояния корзины
 
-const isCartEmpty = true; // true false
+const isCartEmpty = false; // true false
 
 if (isCartEmpty) {
   cartWithProducts.style.display = "none";
