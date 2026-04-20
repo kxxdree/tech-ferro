@@ -18,10 +18,10 @@ fetch("/components/header/header.html")
     });
 
     initSearch();
+    initMenu();
   });
 
 // Открытие поиска
-
 function initSearch() {
   const searchButton = document.getElementById("search-button");
   const searchOverlay = document.getElementById("mainSearch");
@@ -75,8 +75,8 @@ function initSearch() {
 
   if (searchInput && searchItemsList) {
     const listItemHTML = `
-     <li class="search__success-list-item list__item">
-  <a href="/catalog/id.html" class="list__item-link">
+    <li class="search__success-list-item list__item">
+    <a href="/catalog/id.html" class="list__item-link">
     <img class="list__item-image" src="/assets/images/search/search-item-photo.png" alt="Фото товара" />
     <div class="list-item__info">
       <div class="list-item__info-title">
@@ -85,11 +85,11 @@ function initSearch() {
       </div>
       <p class="list-item__info-price">3 590 ₽</p>
     </div>
-  </a>
-  <button class="list-item__cart-btn" aria-label="Добавить в корзину">
-    <img src="/assets/icons/cart.svg" alt="Корзина" />
-  </button>
-</li>
+    </a>
+    <button class="list-item__cart-btn" aria-label="Добавить в корзину">
+      <img src="/assets/icons/cart.svg" alt="Корзина" />
+    </button>
+    </li>
     `;
 
     for (let i = 0; i < 12; i++) {
@@ -114,5 +114,65 @@ function initSearch() {
         }
       });
     }
+  }
+}
+
+// Открытие меню
+
+function initMenu() {
+  const burgerButton = document.querySelector(".header__burger-btn");
+  const menuOverlay = document.getElementById("mainMenu");
+  const closeMenuBtn = document.querySelector(".icon-btn--close");
+  const menuLinks = document.querySelectorAll(".menu__content-list li a");
+
+  if (!burgerButton || !menuOverlay) return;
+
+  burgerButton.addEventListener("click", () => {
+    menuOverlay.classList.add("menu--open");
+    document.body.style.overflow = "hidden";
+    document.body.style.paddingRight = "15px";
+  });
+
+  function closeMenu() {
+    menuOverlay.classList.remove("menu--open");
+    document.body.style.overflow = "unset";
+    document.body.style.paddingRight = "0px";
+  }
+
+  if (closeMenuBtn) {
+    closeMenuBtn.addEventListener("click", closeMenu);
+  }
+
+  menuOverlay.addEventListener("click", (e) => {
+    if (e.target === menuOverlay) {
+      closeMenu();
+    }
+  });
+
+  menuLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      closeMenu();
+    });
+  });
+
+  const menuSearchBtn = document.querySelector(".icon-btn--search");
+  const mainSearchButton = document.getElementById("search-button");
+
+  if (menuSearchBtn && mainSearchButton) {
+    menuSearchBtn.addEventListener("click", () => {
+      closeMenu();
+      setTimeout(() => {
+        mainSearchButton.click();
+      }, 300);
+    });
+  }
+
+  const menuCartBtn = document.querySelector(".icon-btn--cart");
+  const mainCartBtn = document.querySelector(".header__cart-btn");
+
+  if (menuCartBtn && mainCartBtn) {
+    menuCartBtn.addEventListener("click", () => {
+      closeMenu();
+    });
   }
 }
