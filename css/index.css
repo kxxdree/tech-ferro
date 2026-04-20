@@ -2025,6 +2025,27 @@ h4 {
   padding: 0.5rem 1rem;
 }
 
+.application-modal__upload-label {
+  color: #475467;
+  font-size: 1rem;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  text-decoration: underline;
+  transition: all 0.2s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.application-modal__upload-label:hover {
+  color: #121011;
+}
+
+.application-modal__file-input {
+  display: none;
+}
+
 .dropzone-file__info {
   display: flex;
   align-items: center;
