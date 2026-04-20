@@ -502,6 +502,10 @@
     padding: 2.5rem 3rem 12.125rem 3rem;
   }
 
+  .cart__container {
+    margin: 0 !important;
+  }
+
   .cart__content {
     display: flex;
     flex-direction: column;
