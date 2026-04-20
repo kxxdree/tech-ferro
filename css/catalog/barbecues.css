@@ -1044,7 +1044,6 @@
 
   .catalog__list-image-wrapper img {
     height: 23.125rem;
-    aspect-ratio: 1 / 1;
   }
 
   .catalog__list-cart-btn {
@@ -1097,6 +1096,15 @@
   .catalog__list {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 1rem !important;
+  }
+
+  .catalog__list-item {
+    height: 22.5rem;
+    gap: 1rem;
+  }
+
+  .catalog__list-image-wrapper img {
+    height: 14.938rem;
   }
 
   .list-item__product-info h3,
