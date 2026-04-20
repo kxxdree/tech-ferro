@@ -2402,8 +2402,6 @@ h4 {
 }
 
 .delivery__content-image {
-  /* flex-shrink: 0;
-  width: 50rem; */
   min-height: 50rem;
 }
 
