@@ -3,7 +3,7 @@ const searchItemsList = document.querySelector(".search__success-list");
 const listItemHTML = `
 <li class="search__success-list-item list__item">
     <a href="/catalog/id.html" class="list__item-link">
-        <img class="list__item-image" src="assets/images/search/search-item-photo.png" alt="Фото товара" />
+        <img class="list__item-image" src="/assets/images/search/search-item-photo.png" alt="Фото товара" />
         <div class="list-item__info">
             <div class="list-item__info-title">
                 <h4>Костровая чаша</h4>

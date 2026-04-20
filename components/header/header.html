@@ -28,7 +28,7 @@
       <button class="header__icon-btn" id="search-button" aria-label="Поиск">
         <img src="/assets/icons/search.svg" alt="Поиск" />
       </button>
-      <a href="/cart.html" class="header__icon-btn header__cart-btn" aria-label="Корзина">
+      <a class="header__icon-btn header__cart-btn" href="/cart.html" aria-label="Корзина">
         <img src="/assets/icons/cart.svg" alt="Корзина" />
         <span class="header__cart-count">0</span>
       </a>
@@ -37,4 +37,40 @@
       </button>
     </div>
   </div>
+
+  <!-- Поиск -->
+
+  <search class="search" id="mainSearch">
+    <div class="search__container">
+      <div class="search__content">
+        <div class="search__search-bar">
+          <div class="search-bar__input">
+            <div class="search-bar__input-icon">
+              <img src="/assets/icons/search.svg" alt="Поиск" />
+            </div>
+            <input type="text" name="search" placeholder="Что ищем?" />
+          </div>
+          <div class="search-bar__close-icon">
+            <img src="/assets/icons/close-icon.svg" alt="Закрыть" />
+          </div>
+        </div>
+        <div class="search__description">
+          <div class="search__message search__message--empty">
+            <div class="search__message-line">Начните что‑нибудь вводить</div>
+            <div class="search__message-line search__message-line--secondary">
+              Начните писать запрос в поисковой строке выше, а здесь появятся результаты поиска
+            </div>
+          </div>
+        </div>
+        <!-- Результаты поиска  -->
+        <div class="search__success">
+          <div class="search__success-header">
+            <span class="success-header-count">Найдено 24 товара</span>
+            <a class="success-header-link" href="/search-results.html">Показать всё</a>
+          </div>
+          <ul class="search__success-list"></ul>
+        </div>
+      </div>
+    </div>
+  </search>
 </header>
