@@ -154,6 +154,7 @@
   line-height: 1.2;
   letter-spacing: -0.05em;
   color: #475467;
+  text-decoration: line-through;
 }
 
 .cart-quantitiy {
