@@ -5,14 +5,13 @@ const cartContainer = document.querySelector(".cart__container");
 
 // Изменение состояния корзины
 
-const isCartEmpty = false; // true false
+const isCartEmpty = true; // true false
 
 if (isCartEmpty) {
   cartWithProducts.style.display = "none";
   cartEmpty.style.display = "flex";
   main.style.height = "70vh";
   cartContainer.style.margin = "auto";
-  cartEmpty.style.paddingTop = "3rem";
 } else {
   cartWithProducts.style.display = "flex";
   cartEmpty.style.display = "none";

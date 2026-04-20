@@ -665,12 +665,10 @@
 
   .cart__container-empty {
     width: 100%;
-    height: auto;
-    padding: 2rem 1rem;
   }
 
   .cart__container-empty h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .cart__container-empty h3 {
