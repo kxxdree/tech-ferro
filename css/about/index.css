@@ -317,12 +317,16 @@
     padding: 2rem 1rem 4rem 1rem;
   }
 
+  .about__container {
+    padding: 0;
+  }
+
   .about__intro-section {
-    gap: 2rem;
+    gap: 5rem;
   }
 
   .about-title {
-    font-size: 2.5rem;
+    font-size: 4.375rem;
     max-width: 100%;
   }
 
