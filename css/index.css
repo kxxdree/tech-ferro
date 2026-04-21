@@ -2218,8 +2218,8 @@ h3 {
 .application__container-img {
   position: absolute;
   z-index: 100;
-  max-width: 11.917rem;
-  max-height: 11.667rem;
+  max-width: 16.625rem;
+  max-height: 16.625rem;
 }
 
 .application__container-img:nth-child(2) {
@@ -2230,8 +2230,8 @@ h3 {
 .application__container-img:nth-child(3) {
   top: 4rem;
   right: 4rem;
-  max-width: 16.667rem;
-  max-height: 16.667rem;
+  width: 16.625rem;
+  height: 16.625rem;
 }
 
 .application__container-img:nth-child(4) {
@@ -2242,8 +2242,8 @@ h3 {
 .application__container-img:nth-child(5) {
   bottom: 14.333rem;
   right: 14.077rem;
-  max-width: 16.667rem;
-  max-height: 16.667rem;
+  width: 16.625rem;
+  height: 16.625rem;
 }
 
 .application__container-img:nth-child(6) {
@@ -2265,8 +2265,8 @@ h3 {
 .application__container-img:nth-child(9) {
   bottom: 29.167rem;
   left: 4rem;
-  max-width: 16.667rem;
-  max-height: 16.667rem;
+  width: 16.625rem;
+  height: 16.625rem;
 }
 
 .application__container::before {
@@ -2976,6 +2976,48 @@ h4 {
   object-fit: cover;
 }
 
+/* Маркетплейсы адаптив*/
+
+@media (max-width: 960px) {
+  .market-links {
+    height: auto;
+  }
+
+  .market-links__container {
+    padding: 9.375rem 3rem 0;
+  }
+
+  .market-links__content-links {
+    max-width: 100%;
+    max-height: none;
+    padding: 2rem;
+  }
+
+  .market-links__content-links-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .market-links__content-links-text p {
+    font-size: 1rem;
+  }
+
+  .market-links__content-links-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .market-links__content-links-buttons a {
+    width: 100%;
+    min-width: auto;
+    font-size: 1.2rem;
+  }
+
+  .market-links__content-image {
+    height: 20rem;
+  }
+}
+
 /* Отзывы  */
 
 .reviews {
@@ -3181,49 +3223,6 @@ h4 {
 /* Адаптив  */
 
 @media (max-width: 960px) {
-  /* Маркетплейсы */
-  .market-links {
-    height: auto;
-  }
-
-  .market-links__container {
-    padding: 3rem 2rem;
-  }
-
-  .market-links__content {
-    flex-direction: column;
-  }
-
-  .market-links__content-links {
-    max-width: 100%;
-    max-height: none;
-    padding: 2rem;
-  }
-
-  .market-links__content-links-text h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .market-links__content-links-text p {
-    font-size: 1rem;
-  }
-
-  .market-links__content-links-buttons {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .market-links__content-links-buttons a {
-    width: 100%;
-    min-width: auto;
-    font-size: 1.2rem;
-  }
-
-  .market-links__content-image {
-    height: 20rem;
-  }
-
   /* Отзывы */
   .reviews__container {
     padding: 4rem 2rem;
