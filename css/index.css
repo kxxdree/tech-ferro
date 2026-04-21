@@ -1805,24 +1805,92 @@ html {
     font-size: 1.5rem;
   }
 
+  .best__list-container {
+    gap: 2rem;
+  }
+
   .best__list {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
   }
 
-  .best__list-top.best__list-product-card:not(:first-child) {
-    height: 30.688rem;
-    width: 26.25rem;
+  .best__list-top,
+  .best__list-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
   }
 
-  .best__list-top .best__list-product-card:nth-child(3) a img,
-  .best__list-bottom .best__list-product-card:nth-child(1) a img {
+  .best__list-top .best__list-product-card:not(:nth-child(3)),
+  .best__list-bottom .best__list-product-card:not(:nth-child(1)) {
+    width: calc(50% - 0.75rem);
+    height: 30.625rem;
+  }
+
+  .best__list-top .best__list-product-card:nth-child(3),
+  .best__list-bottom .best__list-product-card:nth-child(1) {
+    width: 41.125rem;
+    height: 40.063rem;
+  }
+
+  .best__list-top .best__list-product-card:not(:nth-child(3)) .best__list-product-card-image-wrapper img,
+  .best__list-bottom .best__list-product-card:not(:nth-child(1)) .best__list-product-card-image-wrapper img {
+    height: 23.125rem;
+    min-height: auto;
+    max-height: none;
+    object-fit: cover;
+  }
+
+  .best__list-top .best__list-product-card:nth-child(3) .best__list-product-card-image-wrapper img,
+  .best__list-bottom .best__list-product-card:nth-child(1) .best__list-product-card-image-wrapper img {
     height: 32.5rem;
+    min-height: auto;
+    max-height: none;
+    object-fit: cover;
+  }
+
+  .best__list-product-card {
+    width: auto;
   }
 
   .best__list-product-card a img {
-    height: 20rem;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .best__list-product-card-cart {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    width: 2.5rem;
+    height: 2.5rem;
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  .best__list-product-card-cart img {
+    max-width: 1.25rem;
+    max-height: 1.25rem;
+    object-fit: contain !important;
+  }
+
+  .best__list-product-card-content {
+    margin-top: 1.5rem;
+    gap: 1rem;
+  }
+
+  .best__list-product-card-info h3 {
+    font-size: 1.5rem;
+  }
+
+  .best__list-product-card-info h4 {
+    font-size: 1rem;
+  }
+
+  .best__list-product-card-content p {
+    font-size: 1.5rem;
   }
 }
 
