@@ -2011,8 +2011,9 @@ h3 {
   }
 
   .offer-link svg {
-    width: 0.75rem;
-    height: 0.75rem;
+    width: 1rem;
+    height: 0.85rem;
+    margin-bottom: 0.1rem;
   }
 }
 
