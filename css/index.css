@@ -3277,7 +3277,7 @@ h4 {
 }
 
 .delivery__content-image {
-  min-height: 50rem;
+  height: 50rem;
 }
 
 .delivery__content-image img {
@@ -3286,26 +3286,25 @@ h4 {
   object-fit: cover;
 }
 
-/* Адаптив  */
+/* Доставка адаптив */
 
 @media (max-width: 960px) {
-  /* Доставка */
   .delivery__container {
-    padding: 0 2rem 4rem;
+    padding: 0 3rem 12.5rem;
   }
 
   .delivery__content {
     flex-direction: column;
-    gap: 2rem;
+    gap: 2.5rem;
   }
 
   .delivery__content-text h2 {
-    font-size: 4rem;
+    font-size: 6.25rem;
   }
 
   .delivery__content-text-list h3 {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
   }
 
   .delivery__content-text-list li {
@@ -3315,10 +3314,10 @@ h4 {
 
   .delivery__content-text-list li span,
   .delivery__content-text-list li p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .delivery__content-image {
-    min-height: 20rem;
+    height: 37.5rem;
   }
 }
