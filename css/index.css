@@ -2454,26 +2454,63 @@ h3 {
   }
 
   .application__container-text {
-    max-width: 100%;
-    padding: 3rem 1rem;
+    max-width: 49.563rem;
+    gap: 2rem;
   }
 
   .application__container-text h2 {
-    font-size: 2.5rem;
+    font-size: 4.375rem;
   }
 
   .application__container-text h3 {
-    font-size: 1rem;
+    font-size: 1.25rem;
+  }
+
+  .application-link {
+    padding-top: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
   .application-link-button {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
-  .application-vertical-line,
-  .application-diagonal-lines,
-  .application-diagonal-lines-bottom {
-    display: none;
+  .application-vertical-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #ffffff4d;
+    pointer-events: none;
+  }
+
+  .application-horizontal-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #ffffff4d;
+    pointer-events: none;
+  }
+
+  .application-vertical-line--left {
+    left: 2rem;
+  }
+
+  .application-vertical-line--center-left {
+    left: 14.5rem;
+  }
+
+  .application-vertical-line--center-right {
+    right: 14.5rem;
+  }
+
+  .application-vertical-line--right {
+    right: 2rem;
+  }
+
+  .application-horizontal-line--center-bottom {
+    bottom: 21.25rem;
   }
 }
 
