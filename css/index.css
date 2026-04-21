@@ -3540,111 +3540,88 @@ h4 {
     bottom: 0;
     left: 0;
     right: 0;
-    top: 5rem; /* Отступ от верхней точки экрана 5rem */
-    width: 100%; /* На всю ширину экрана */
+    top: 5rem;
+    width: 100%;
     max-width: 100%;
     gap: 1.5rem;
     padding: 1.5rem;
     background-color: #f2ebe6;
-    border-radius: 0; /* Убираем скругления, если они были */
-    overflow: hidden; /* Скрываем переполнение у основного контейнера */
+    border-radius: 1.5rem 1.5rem 0 0;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
   }
 
-  /* Обертка для основного контента, который будет скроллиться */
   .application-modal-content-main {
     flex: 1;
-    overflow-y: auto; /* Включаем вертикальную прокрутку */
-    gap: 1.5rem;
+    overflow-y: auto;
+    gap: 2.5rem;
     padding-bottom: 0.5rem;
   }
 
-  /* Кастомизация скроллбара (опционально) */
-  .application-modal-content-main::-webkit-scrollbar {
-    width: 4px;
-  }
-
-  .application-modal-content-main::-webkit-scrollbar-track {
-    background: #e0e0e0;
-    border-radius: 4px;
-  }
-
-  .application-modal-content-main::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 4px;
-  }
-
-  .application-modal-content-main::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
-
-  /* Блок с политикой и кнопкой прижимаем к низу */
-  .application-modal__policy {
-    margin-top: auto; /* Прижимает блок к низу */
-    padding-top: 1rem;
-    border-top: 1px solid rgba(18, 16, 17, 0.3); /* Верхняя граница */
-  }
-
-  /* Дополнительные улучшения для мобильных устройств */
   .application-modal-close-button {
-    top: 0.75rem;
-    right: 0.75rem;
+    top: 1rem;
+    right: 1rem;
   }
 
   .application-modal-content-header {
-    gap: 0.75rem;
-    flex-shrink: 0; /* Запрещаем сжатие заголовка */
+    gap: 1.5rem;
+    flex-shrink: 0;
   }
 
   .application-modal-content-header h3 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   .application-modal-content-header h4 {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 
   .application-modal__text-fields {
-    flex-shrink: 0; /* Запрещаем сжатие полей ввода */
+    flex-shrink: 0;
   }
 
   .application-modal__dropzone {
-    flex-shrink: 0; /* Запрещаем сжатие зоны загрузки */
+    flex-shrink: 0;
   }
 
-  /* Адаптируем зону загрузки под мобильные */
   .application-modal__dropzone-wrapper {
-    min-height: 7rem;
+    min-height: 9.125rem;
   }
 
   .application-modal__dropzone-wrapper-text {
-    max-width: 90%;
+    max-width: 15rem;
   }
 
   .application-modal__dropzone-wrapper-text p {
-    font-size: 0.75rem;
+    font-size: 0.875rem;
   }
 
   .application-modal__dropzone-wrapper-text span {
-    font-size: 0.625rem;
+    font-size: 0.75rem;
   }
 
-  /* Уменьшаем отступы для компактности */
   .dropzone-file__info {
     gap: 0.5rem;
   }
 
   .dropzone-file__info-title p {
-    font-size: 0.875rem;
+    font-size: 1rem;
+  }
+
+  .application-modal__policy {
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(18, 16, 17, 0.3);
   }
 
   .policy-text {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 
   .policy-submit-button {
-    padding: 0.875rem 1.5rem;
+    padding: 1rem 1.5rem;
+    border-radius: 0.25rem;
   }
 }
 
