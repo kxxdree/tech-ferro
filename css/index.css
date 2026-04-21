@@ -3231,19 +3231,11 @@ h3 {
   }
 
   .application-diagonal-lines {
-    left: 2rem;
-    top: 5.07rem;
     width: 5.3rem;
-    height: 29.85rem;
-    background-image: repeating-linear-gradient(125deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3) 1px, transparent 0.125rem, transparent 1.25rem);
   }
 
   .application-diagonal-lines-bottom {
-    right: 2rem;
-    bottom: 5rem;
-    width: 12.5rem;
-    height: 16.25rem;
-    background-image: repeating-linear-gradient(125deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3) 1px, transparent 0.125rem, transparent 1.25rem);
+    width: 5.3rem;
   }
 }
 
