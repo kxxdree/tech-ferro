@@ -363,7 +363,7 @@ if (categoriesList) {
 (function () {
   const breakpoint = 480;
   const originalText = "Смотреть всё";
-  const mobileText = "Все";
+  const mobileText = "Всё";
 
   const categoriesLink = document.querySelector(".categories__title-link a");
   const bestLink = document.querySelector(".best__title-link a");
