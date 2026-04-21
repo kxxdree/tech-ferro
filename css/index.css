@@ -3084,26 +3084,8 @@ h3 {
     height: 56.25rem;
   }
 
-  .application::before {
-    top: 5rem;
-    height: 1px;
-  }
-
-  .application::after {
-    bottom: 5rem;
-    height: 1px;
-  }
-
   .application__container {
     padding: 3rem 2rem;
-  }
-
-  .application__container::before {
-    top: 5rem;
-    bottom: 5rem;
-    left: 50%;
-    width: 46.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.3);
   }
 
   .application__container-img {
@@ -3167,7 +3149,7 @@ h3 {
   }
 
   .application__container-text h3 {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   .application-link {
@@ -3176,7 +3158,7 @@ h3 {
   }
 
   .application-link-button {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .application-link-button svg {
