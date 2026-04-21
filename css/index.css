@@ -2439,6 +2439,40 @@ h3 {
   }
 }
 
+@media (max-width: 480px) {
+  .offer {
+    height: 43.75rem;
+  }
+
+  .offer__container {
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .offer__container h2 {
+    font-size: 4.375rem;
+  }
+
+  .offer__container h3 {
+    font-size: 1.125rem;
+  }
+
+  .offer-link {
+    padding-top: 1.125rem;
+    margin-bottom: 1.125rem;
+  }
+
+  .offer-link a {
+    font-size: 1.5rem;
+  }
+
+  .offer-link svg {
+    width: 1rem;
+    height: 0.85rem;
+    margin-bottom: 0.1rem;
+  }
+}
+
 /* Преимущества */
 
 .advantages {
