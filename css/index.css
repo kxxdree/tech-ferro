@@ -962,7 +962,7 @@ html {
 .quality {
   width: 100%;
   background-color: #fcf7f3;
-  min-height: 75rem;
+  height: 75rem;
   display: flex;
   position: relative;
 }
@@ -1142,63 +1142,96 @@ html {
 /* Качество адаптив */
 @media (max-width: 960px) {
   .quality {
-    min-height: 50rem;
+    height: 56.25rem;
   }
 
   .quality::before {
-    display: none;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 56.25rem;
+    height: 100%;
+    border: 1.33px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    pointer-events: none;
   }
 
   .quality__container-text-block {
-    padding: 0 2rem;
-    height: auto;
-    min-height: 8rem;
+    padding: 0 3rem;
+    height: 8.75rem;
   }
 
   .quality__container-text-block h2 {
-    font-size: 4rem;
+    font-size: 6.25rem;
+    margin-bottom: 0;
   }
 
-  .quality__container-text-block p {
-    font-size: 0.9rem;
+  /* .quality__container-text-block p {
+    font-size: 1.125rem;
     position: static;
-    transform: none;
     padding-left: 1.5rem;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
   }
 
   .quality__container-text-block p::before {
-    width: 0.8rem;
-    height: 0.8rem;
+    width: 1rem;
+    height: 1rem;
+  } */
+
+  .quality__container-text-block p {
+    font-size: 1.125rem;
+    position: absolute;
+    padding-left: 2.5rem;
+    margin: 0;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
-  .quality__container-text-block--left,
-  .quality__container-text-block--center,
-  .quality__container-text-block--right {
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1rem;
+  .quality__container-text-block p::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .quality__container-text-block--left-span {
+    left: 31.875rem;
+  }
+
+  .quality__container-text-block--center-span-left {
+    left: 3.656rem;
+    width: 12.563rem;
+  }
+
+  .quality__container-text-block--center-span-right {
+    right: 3rem;
+    left: auto;
+    width: 13.688rem;
+  }
+
+  .quality__container-text-block--right-span-left {
+    left: 25.333rem;
   }
 
   .quality-image {
-    max-width: 10rem;
-    max-height: 10rem;
+    width: 10rem;
+    max-height: 8.75rem;
   }
 
   .quality-image-one {
-    right: 2rem;
-    top: 2rem;
+    right: 3rem;
+    top: 6.688rem;
   }
 
   .quality-image-two {
-    left: 2rem;
-    bottom: 2rem;
-  }
-
-  .quality-vertical-line,
-  .quality-diagonal-lines,
-  .quality-diagonal-lines-bottom {
-    display: none;
+    left: 3rem;
+    bottom: 9.625rem;
   }
 }
 
