@@ -619,3 +619,11 @@
   opacity: 0.8;
   transition: all 0.2s ease;
 }
+
+/* Меню адаптив  */
+
+@media (max-width: 480px) {
+  .menu__header {
+    padding: 1rem;
+  }
+}
