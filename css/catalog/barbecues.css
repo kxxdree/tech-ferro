@@ -1047,16 +1047,12 @@
   }
 
   .catalog__list-cart-btn {
+    bottom: 9rem;
+    width: 2.5rem;
+    height: 2.5rem;
     opacity: 1;
     visibility: visible;
     transform: scale(1);
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-
-  .catalog__list-cart-btn img {
-    width: 1rem !important;
-    height: 1rem !important;
   }
 
   .list-item__product-info h3,
@@ -1105,6 +1101,20 @@
 
   .catalog__list-image-wrapper img {
     height: 14.938rem;
+  }
+
+  .catalog__list-cart-btn {
+    bottom: 8.5rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+
+  .catalog__list-cart-btn img {
+    width: 1rem !important;
+    height: 1rem !important;
   }
 
   .list-item__product-info h3,

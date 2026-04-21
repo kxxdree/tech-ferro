@@ -730,7 +730,20 @@
     font-size: 0.875rem;
   }
 
- 
+  .related-products__cart-btn {
+    bottom: 9.25rem;
+    right: 0.5rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+
+  .related-products__cart-btn img {
+    width: 1rem !important;
+    height: 1rem !important;
+  }
 
   .discount-info-container {
     padding: 0.875rem;
