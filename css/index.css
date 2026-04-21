@@ -3847,6 +3847,63 @@ h4 {
   }
 }
 
+@media (max-width: 480px) {
+  .reviews__container {
+    padding: 10rem 1rem 8.563rem;
+  }
+
+  .reviews__content-title {
+    font-size: 4.375rem;
+    line-height: 1;
+    text-align: center;
+    max-width: auto;
+  }
+
+  .reviews__content-list {
+    overflow-x: auto;
+    gap: 1.5rem;
+    padding-bottom: 0;
+  }
+
+  .reviews__content-list-item {
+    flex-shrink: 0;
+    width: 18.75rem;
+    height: 25.375rem;
+    scroll-snap-align: start;
+    padding: 1.5rem;
+    gap: 7.375rem;
+  }
+
+  .reviews__content-list-item-header img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .reviews__content-list-item-header h4 {
+    font-size: 1.5rem;
+  }
+
+  .reviews__content-list-item-review {
+    font-size: 1rem;
+
+    display: -webkit-box;
+    line-clamp: 8;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+  }
+
+  .reviews__arrow-button {
+    display: none;
+  }
+
+  .reviews__arrow-button img {
+    display: none;
+  }
+}
+
 /* Доставка  */
 
 .delivery {
