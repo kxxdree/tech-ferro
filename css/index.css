@@ -2949,8 +2949,8 @@ h4 {
   text-decoration: none;
   border: none;
   border-radius: 1rem;
-  min-width: 15.958rem;
-  min-height: 4.479rem;
+  width: 15.958rem;
+  height: 4.479rem;
   color: white;
   font-weight: 300;
   font-size: 1.667rem;
@@ -2987,15 +2987,18 @@ h4 {
     padding: 9.375rem 3rem 0;
   }
 
+  .market-links__content {
+    gap: 1.5rem;
+  }
+
   .market-links__content-links {
-    max-width: 100%;
-    max-height: none;
-    padding: 2rem;
+    width: 50%;
+    height: 31.25rem;
+    padding: 1.5rem 1.313rem;
   }
 
   .market-links__content-links-text h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+    font-size: 2.65rem;
   }
 
   .market-links__content-links-text p {
@@ -3003,18 +3006,20 @@ h4 {
   }
 
   .market-links__content-links-buttons {
-    flex-direction: column;
-    width: 100%;
+    gap: 0.5rem;
   }
 
   .market-links__content-links-buttons a {
-    width: 100%;
-    min-width: auto;
-    font-size: 1.2rem;
+    width: 50%;
+    height: 3.375rem;
+    font-size: 1.25rem;
+    padding: 1rem;
+    border-radius: 0.75rem;
   }
 
   .market-links__content-image {
-    height: 20rem;
+    width: 50%;
+    height: 31.25rem;
   }
 }
 
