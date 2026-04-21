@@ -1805,16 +1805,20 @@ html {
     font-size: 1.5rem;
   }
 
-  .best__list-top,
-  .best__list-bottom {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+  .best__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .best__list-top.best__list-product-card:not(:first-child) {
+    height: 30.688rem;
+    width: 26.25rem;
   }
 
   .best__list-top .best__list-product-card:nth-child(3) a img,
   .best__list-bottom .best__list-product-card:nth-child(1) a img {
-    min-height: auto;
-    max-height: 20rem;
+    height: 32.5rem;
   }
 
   .best__list-product-card a img {
