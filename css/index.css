@@ -2142,34 +2142,22 @@ h3 {
     display: flex;
     overflow-x: auto;
     gap: 1.5rem;
-    scroll-snap-type: x mandatory;
     padding-bottom: 1rem;
   }
 
   .advantages__list::-webkit-scrollbar {
-    height: 4px;
-  }
-
-  .advantages__list::-webkit-scrollbar-track {
-    background: #e5e7eb;
-    border-radius: 4px;
-  }
-
-  .advantages__list::-webkit-scrollbar-thumb {
-    background: #e64410;
-    border-radius: 4px;
+    display: none;
   }
 
   .advantages__list li {
     flex-shrink: 0;
-    width: 300px;
-    height: 400px;
+    width: 18.75rem;
+    height: 25rem;
     scroll-snap-align: start;
   }
 
   .advantages__list li img {
-    width: 300px;
-    height: 400px;
+    height: 25rem;
     object-fit: cover;
   }
 
