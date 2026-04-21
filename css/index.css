@@ -510,6 +510,10 @@ html {
     height: 23rem;
   }
 
+  .search__success-list-item:last-child {
+    margin-right: 1rem;
+  }
+
   .list__item-image {
     height: 16rem;
   }
@@ -2624,7 +2628,6 @@ h3 {
     overflow-x: auto;
     gap: 1.5rem;
     padding-bottom: 1rem;
-    margin-right: -3rem;
   }
 
   .advantages__list::-webkit-scrollbar {
@@ -2637,6 +2640,10 @@ h3 {
     width: 17.5rem;
     height: 21.5rem;
     scroll-snap-align: start;
+  }
+
+  .advantages__list li:last-child {
+    margin-right: 3rem;
   }
 
   .advantages__list li img {
