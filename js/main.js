@@ -6,7 +6,9 @@ const closeApplicationButton = document.querySelector(".application-modal-close-
 
 const addBodyStyles = () => {
   document.body.style.overflow = "hidden";
-  document.body.style.paddingRight = "15px";
+  if (window.innerWidth >= 481) {
+    document.body.style.paddingRight = "15px";
+  }
 };
 
 const removeBodyStyles = () => {
@@ -17,14 +19,14 @@ const removeBodyStyles = () => {
 const openApplicationModal = () => {
   if (applicationModal) {
     applicationModal.classList.add("application-modal--open");
-    // addBodyStyles();
+    addBodyStyles();
   }
 };
 
 const closeApplicationModal = () => {
   if (applicationModal) {
     applicationModal.classList.remove("application-modal--open");
-    // removeBodyStyles();
+    removeBodyStyles();
   }
 };
 
@@ -56,7 +58,8 @@ const searchSuccess = document.querySelector(".search__success");
 const openSearch = () => {
   if (searchContainer) {
     searchContainer.classList.add("search--open");
-    // addBodyStyles();
+    document.body.style.overflow = "hidden";
+    addBodyStyles();
 
     if (searchInput) {
       searchInput.value = "";
@@ -71,7 +74,7 @@ const openSearch = () => {
 const closeSearch = () => {
   if (searchContainer) {
     searchContainer.classList.remove("search--open");
-    // removeBodyStyles();
+    removeBodyStyles();
 
     if (searchInput) {
       searchInput.value = "";
@@ -123,14 +126,14 @@ const closeMenuButton = document.querySelector(".icon-btn--close");
 const openMenu = () => {
   if (menu) {
     menu.classList.add("menu--open");
-    // addBodyStyles();
+    addBodyStyles();
   }
 };
 
 const closeMenu = () => {
   if (menu) {
     menu.classList.remove("menu--open");
-    // removeBodyStyles();
+    removeBodyStyles();
   }
 };
 
