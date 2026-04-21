@@ -2143,6 +2143,7 @@ h3 {
     overflow-x: auto;
     gap: 1.5rem;
     padding-bottom: 1rem;
+    margin-right: -3rem;
   }
 
   .advantages__list::-webkit-scrollbar {
