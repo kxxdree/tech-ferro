@@ -1210,13 +1210,14 @@ html {
   }
 
   .quality__container-text-block--center-span-right {
-    right: 3rem;
+    right: 2.5rem;
     left: auto;
     width: 13.688rem;
   }
 
   .quality__container-text-block--right-span-left {
-    left: 25.333rem;
+    left: 7.438rem;
+    width: 15rem;
   }
 
   .quality-image {
@@ -1231,7 +1232,7 @@ html {
 
   .quality-image-two {
     left: 3rem;
-    bottom: 9.625rem;
+    bottom: 7.625rem;
   }
 }
 
