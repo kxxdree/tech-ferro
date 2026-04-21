@@ -1230,6 +1230,10 @@ html {
   z-index: 0;
 }
 
+.mobile-span {
+  display: none;
+}
+
 /* Качество адаптив */
 
 @media (max-width: 960px) {
@@ -1313,6 +1317,128 @@ html {
   .quality-image-two {
     left: 3rem;
     bottom: 7.625rem;
+  }
+
+  .quality-vertical-line {
+    width: 1px;
+  }
+
+  .quality-vertical-line--left {
+    left: 11.208rem;
+  }
+
+  .quality-vertical-line--center-left {
+    left: 50%;
+  }
+
+  .quality-vertical-line--center-right {
+    display: none;
+  }
+
+  .quality-vertical-line--right {
+    right: 5.604rem;
+  }
+
+  .quality-diagonal-lines {
+    left: 11.208rem;
+    top: 0;
+    width: 18.8rem;
+    height: 23.7rem;
+    background-image: repeating-linear-gradient(125deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 1.33px, transparent 0.125rem, transparent 1rem);
+  }
+
+  .quality-diagonal-lines-bottom {
+    right: 0;
+    bottom: 0;
+    width: 5.604rem;
+    height: 15rem;
+    background-image: repeating-linear-gradient(125deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 1.33px, transparent 0.125rem, transparent 1rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .quality {
+    height: 50rem;
+  }
+
+  .quality::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 56.25rem;
+    height: 100%;
+    border: 1.33px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  .quality__container-text-block {
+    padding: 0.5rem 1rem;
+    height: 4.375rem;
+  }
+
+  .quality__container-text-block h2 {
+    font-size: 4.375rem;
+  }
+
+  .quality__container-text-block p {
+    display: none;
+  }
+
+  .quality-image {
+    width: 10rem;
+    max-height: 8.75rem;
+  }
+
+  .quality-image-one {
+    right: 1rem;
+    top: 2rem;
+    width: 10rem;
+    height: 8.75rem;
+  }
+
+  .quality-image-two {
+    left: 6.25rem;
+    bottom: 6.063rem;
+    width: 10rem;
+    height: 8.75rem;
+  }
+
+  .mobile-span {
+    display: block;
+    position: absolute;
+    font-size: 1rem;
+    line-height: 1.2;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    max-width: 12.875rem;
+  }
+
+  .mobile-span span {
+    display: block;
+    position: relative;
+    padding-left: 1.75rem;
+    margin: 0;
+  }
+
+  .mobile-span span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    width: 1rem;
+    height: 1rem;
+    background-color: #e64410;
+    border-radius: 50%;
+  }
+
+  .mobile-span--geometry {
+    top: 10.938rem;
+    left: 1rem;
   }
 
   .quality-vertical-line {
