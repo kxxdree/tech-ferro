@@ -2420,6 +2420,63 @@ h3 {
   z-index: 0;
 }
 
+/* Заявка адаптив */
+
+@media (max-width: 960px) {
+  .application {
+    height: 56.25rem;
+  }
+
+  .application::before {
+    top: 5rem;
+    height: 1px;
+  }
+
+  .application::after {
+    bottom: 5rem;
+    height: 1px;
+  }
+
+  .application__container {
+    padding: 3rem 2rem;
+  }
+
+  .application__container::before {
+    top: 5rem;
+    bottom: 5rem;
+    left: 50%;
+    width: 46.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .application__container-img {
+    display: none;
+  }
+
+  .application__container-text {
+    max-width: 100%;
+    padding: 3rem 1rem;
+  }
+
+  .application__container-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .application__container-text h3 {
+    font-size: 1rem;
+  }
+
+  .application-link-button {
+    font-size: 1.2rem;
+  }
+
+  .application-vertical-line,
+  .application-diagonal-lines,
+  .application-diagonal-lines-bottom {
+    display: none;
+  }
+}
+
 /* Модальное окно заявки  */
 
 .application-modal {
@@ -3011,52 +3068,6 @@ h4 {
 /* Адаптив  */
 
 @media (max-width: 960px) {
-  /* Заявка */
-  .application {
-    height: auto;
-    min-height: 40rem;
-  }
-
-  .application::before,
-  .application::after {
-    display: none;
-  }
-
-  .application__container {
-    padding: 2rem;
-  }
-
-  .application__container::before {
-    display: none;
-  }
-
-  .application__container-img {
-    display: none;
-  }
-
-  .application__container-text {
-    max-width: 100%;
-    padding: 3rem 1rem;
-  }
-
-  .application__container-text h2 {
-    font-size: 2.5rem;
-  }
-
-  .application__container-text h3 {
-    font-size: 1rem;
-  }
-
-  .application-link-button {
-    font-size: 1.2rem;
-  }
-
-  .application-vertical-line,
-  .application-diagonal-lines,
-  .application-diagonal-lines-bottom {
-    display: none;
-  }
-
   /* Маркетплейсы */
   .market-links {
     height: auto;
