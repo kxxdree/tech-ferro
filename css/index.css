@@ -8,6 +8,22 @@ html {
   @media (max-width: 1280px) {
     font-size: calc(16 * (100vw / 1920)) !important;
   }
+
+  @media (max-width: 960px) {
+    font-size: calc(16 * (100vw / 960)) !important;
+  }
+
+  @media (max-width: 768px) {
+    font-size: calc(16 * (100vw / 768)) !important;
+  }
+
+  @media (max-width: 480px) {
+    font-size: calc(16 * (100vw / 480)) !important;
+  }
+
+  @media (max-width: 360px) {
+    font-size: calc(16 * (100vw / 360)) !important;
+  }
 }
 
 .header {
@@ -143,8 +159,7 @@ html {
 
 @media (max-width: 960px) {
   .header {
-    padding: 1rem 3rem;
-    max-height: 10rem;
+    border-bottom: 1px solid #ffffff4d;
   }
 
   .header__nav {
@@ -153,6 +168,23 @@ html {
 
   .header__burger-btn {
     display: flex;
+  }
+
+  .header {
+    padding: 1rem 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__logo img {
+    height: 2.5rem;
+    width: 6.938rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .header {
+    padding: 1rem;
   }
 }
 
@@ -526,8 +558,8 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 3rem;
-  height: 3rem;
+  width: 3.5rem;
+  height: 3.5rem;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -535,8 +567,8 @@ html {
 }
 
 .icon-btn img {
-  width: 1.125rem;
-  height: 1.125rem;
+  width: 1.5rem;
+  height: 1.5rem;
   display: block;
   object-fit: contain;
 }
@@ -548,6 +580,8 @@ html {
 
 .icon-btn--close img {
   filter: none;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 .menu__content {
@@ -555,13 +589,13 @@ html {
   justify-content: center;
   align-items: center;
   flex: 1;
-  padding: 3rem 3rem 3rem 2.5rem;
+  padding: 3rem 3rem 2.5rem 3rem;
 }
 
 .menu__content-list {
-  text-align: center;
   display: flex;
   flex-direction: column;
+  text-align: center;
   gap: 0.5rem;
 }
 
@@ -649,6 +683,51 @@ html {
 .cookies button:hover {
   background-color: black;
   transition: all 0.2s ease-in-out;
+}
+
+/* Куки адаптив  */
+
+@media (max-width: 960px) {
+  .cookies {
+    width: 100%;
+    min-height: 8.542rem;
+    position: fixed;
+    z-index: 110;
+    bottom: 2.5rem;
+    transform: translateX(-50%);
+    background-color: #fcf7f3;
+    border: 1px solid #6b68684d !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    padding: 2rem;
+    visibility: hidden;
+    opacity: 0;
+    transition:
+      visibility 0.2s,
+      opacity 0.2s ease;
+  }
+
+  .cookies--open {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .cookies p {
+    font-size: 1rem;
+  }
+
+  .cookies button {
+    min-height: 4.542rem;
+    border: none;
+    border-radius: 5.33px;
+    font-weight: 300;
+    padding: 1.333rem 2rem;
+    color: white;
+    font-size: 1.333rem;
+    background-color: #252324;
+  }
 }
 
 /* Основной контент  */
