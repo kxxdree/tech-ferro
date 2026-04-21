@@ -4027,3 +4027,17 @@ h4 {
     height: 37.5rem;
   }
 }
+
+@media (max-width: 480px) {
+  .delivery__container {
+    padding: 0 1rem 12.5rem;
+  }
+
+  .delivery__content-text h2 {
+    font-size: 4.375rem;
+  }
+
+  .delivery__content-image {
+    height: 37.5rem;
+  }
+}
