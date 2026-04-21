@@ -1407,6 +1407,83 @@ html {
   border: 1.33px solid #ffffff33;
 }
 
+/* Категории адаптив */
+
+@media (max-width: 960px) {
+  .categories {
+    min-height: auto;
+    padding-bottom: 4rem;
+  }
+
+  .categories::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translateY(-50%);
+    width: 56.25rem;
+    height: 56.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+  }
+
+  .categories__container {
+    padding: 0 2rem;
+    gap: 14.25rem;
+  }
+
+  .categories__title {
+    margin-top: 2rem;
+  }
+
+  .categories__title h2 {
+    font-size: 6.25rem;
+  }
+
+  .categories__title-link a {
+    font-size: 1.5rem;
+  }
+
+  .categories-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 1.5rem;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 1rem;
+  }
+
+  .categories-list::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .categories-list::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+  }
+
+  .categories-list::-webkit-scrollbar-thumb {
+    background: #e64410;
+    border-radius: 4px;
+  }
+
+  .categories-list li {
+    flex-shrink: 0;
+    width: 318px;
+    scroll-snap-align: start;
+  }
+
+  .categories-list li a {
+    display: block;
+    width: 318px;
+  }
+
+  .categories-list img {
+    width: 318px;
+    height: 460px;
+    object-fit: cover;
+  }
+}
+
 /* Лучшее */
 
 .best {
@@ -2672,72 +2749,6 @@ h4 {
 /* Адаптив  */
 
 @media (max-width: 960px) {
-  /* Категории */
-  .categories {
-    min-height: auto;
-    padding-bottom: 4rem;
-  }
-
-  .categories::before {
-    display: none;
-  }
-
-  .categories__container {
-    padding: 0 2rem;
-    gap: 2rem;
-  }
-
-  .categories__title {
-    margin-top: 2rem;
-  }
-
-  .categories__title h2 {
-    font-size: 4rem;
-  }
-
-  .categories__title-link a {
-    font-size: 1.2rem;
-  }
-
-  .categories-list {
-    display: flex;
-    overflow-x: auto;
-    gap: 1.5rem;
-    scroll-snap-type: x mandatory;
-    padding-bottom: 1rem;
-  }
-
-  .categories-list::-webkit-scrollbar {
-    height: 4px;
-  }
-
-  .categories-list::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 4px;
-  }
-
-  .categories-list::-webkit-scrollbar-thumb {
-    background: #e64410;
-    border-radius: 4px;
-  }
-
-  .categories-list li {
-    flex-shrink: 0;
-    width: 318px;
-    scroll-snap-align: start;
-  }
-
-  .categories-list li a {
-    display: block;
-    width: 318px;
-  }
-
-  .categories-list img {
-    width: 318px;
-    height: 460px;
-    object-fit: cover;
-  }
-
   /* Лучшее */
   .best {
     min-height: auto;
