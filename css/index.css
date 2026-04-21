@@ -1250,6 +1250,17 @@ html {
   .quality-vertical-line--right {
     right: 5.604rem;
   }
+
+  .quality-diagonal-lines {
+    position: absolute;
+    left: 11.208rem;
+    top: 0;
+    width: 18.8rem;
+    height: 23.7rem;
+    background-image: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1.33px, transparent 0.125rem, transparent 1rem);
+    pointer-events: none;
+    z-index: 0;
+  }
 }
 
 /* Категории  */
