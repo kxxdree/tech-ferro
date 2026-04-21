@@ -361,22 +361,23 @@ if (categoriesList) {
 }
 
 (function () {
-  const linkElement = document.querySelector(".categories__title-link a");
-  if (!linkElement) return;
-
-  const originalText = "Смотреть всё";
-  const mobileText = "Всё";
   const breakpoint = 480;
+  const originalText = "Смотреть всё";
+  const mobileText = "Все";
+
+  const categoriesLink = document.querySelector(".categories__title-link a");
+  const bestLink = document.querySelector(".best__title-link a");
 
   function updateLinkText() {
-    if (window.innerWidth <= breakpoint) {
-      if (linkElement.textContent !== mobileText) {
-        linkElement.textContent = mobileText;
-      }
-    } else {
-      if (linkElement.textContent !== originalText) {
-        linkElement.textContent = originalText;
-      }
+    const isMobile = window.innerWidth <= breakpoint;
+    const newText = isMobile ? mobileText : originalText;
+
+    if (categoriesLink && categoriesLink.textContent !== newText) {
+      categoriesLink.textContent = newText;
+    }
+
+    if (bestLink && bestLink.textContent !== newText) {
+      bestLink.textContent = newText;
     }
   }
 
