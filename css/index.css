@@ -1234,6 +1234,22 @@ html {
     left: 3rem;
     bottom: 7.625rem;
   }
+
+  .quality-vertical-line--left {
+    left: 11.208rem;
+  }
+
+  .quality-vertical-line--center-left {
+    left: 50%;
+  }
+
+  .quality-vertical-line--center-right {
+    display: none;
+  }
+
+  .quality-vertical-line--right {
+    right: 5.604rem;
+  }
 }
 
 /* Категории  */
