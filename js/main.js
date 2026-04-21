@@ -360,8 +360,27 @@ if (categoriesList) {
   });
 }
 
-// Текущий год
+(function () {
+  const linkElement = document.querySelector(".categories__title-link a");
+  if (!linkElement) return;
 
-// const currentYear = new Date().getFullYear();
-// const yearElement = document.querySelector(".footer__meta-info--year");
-// yearElement.textContent = currentYear;
+  const originalText = "Смотреть всё";
+  const mobileText = "Всё";
+  const breakpoint = 480;
+
+  function updateLinkText() {
+    if (window.innerWidth <= breakpoint) {
+      if (linkElement.textContent !== mobileText) {
+        linkElement.textContent = mobileText;
+      }
+    } else {
+      if (linkElement.textContent !== originalText) {
+        linkElement.textContent = originalText;
+      }
+    }
+  }
+
+  updateLinkText();
+
+  window.addEventListener("resize", updateLinkText);
+})();

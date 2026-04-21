@@ -1795,6 +1795,64 @@ html {
   }
 }
 
+@media (max-width: 480px) {
+  .categories {
+    min-height: auto;
+    padding-bottom: 0;
+  }
+
+  .categories__container {
+    padding: 3rem 1rem 9.125rem;
+    gap: 11rem;
+  }
+
+  .categories__title {
+    margin-top: 0;
+  }
+
+  .categories__title h2 {
+    font-size: 4.375rem;
+  }
+
+  .categories__title-link {
+    margin-bottom: 0.5rem;
+  }
+
+  .categories__title-link a {
+    font-size: 1.25rem;
+  }
+
+  .categories__title-link svg {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .categories-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 1.5rem;
+  }
+
+  .categories-list li {
+    min-width: 19.875rem;
+    max-width: 19.875rem;
+    height: 28.75rem;
+    scroll-snap-align: start;
+  }
+
+  .categories-list li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .categories-list img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
 /* Лучшее */
 
 .best {
