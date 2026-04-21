@@ -3157,34 +3157,44 @@ h4 {
   .reviews__content-list {
     overflow-x: auto;
     gap: 1.5rem;
-    scroll-snap-type: x mandatory;
     padding-bottom: 1rem;
   }
 
   .reviews__content-list::-webkit-scrollbar {
-    height: 4px;
-  }
-
-  .reviews__content-list::-webkit-scrollbar-track {
-    background: #e5e7eb;
-    border-radius: 4px;
-  }
-
-  .reviews__content-list::-webkit-scrollbar-thumb {
-    background: #e64410;
-    border-radius: 4px;
+    display: none;
   }
 
   .reviews__content-list-item {
     flex-shrink: 0;
-    width: 300px;
+    width: 27rem;
     height: auto;
-    min-height: 250px;
+    height: 15.625rem;
     scroll-snap-align: start;
+    padding: 1.5rem;
+    gap: 1.75rem;
+  }
+
+  .reviews__content-list-item-header img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .reviews__content-list-item-header h4 {
+    font-size: 1.5rem;
+  }
+
+  .reviews__content-list-item-review {
+    font-size: 1rem;
   }
 
   .reviews__arrow-button {
-    display: none;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .reviews__arrow-button img {
+    width: 1rem;
+    height: 1rem;
   }
 }
 
