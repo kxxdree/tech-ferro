@@ -13,9 +13,9 @@ html {
     font-size: calc(16 * (100vw / 960)) !important;
   }
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     font-size: calc(16 * (100vw / 768)) !important;
-  }
+  } */
 
   @media (max-width: 480px) {
     font-size: calc(16 * (100vw / 480)) !important;
