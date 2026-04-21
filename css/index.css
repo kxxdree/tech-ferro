@@ -1429,7 +1429,22 @@ html {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  opacity: 1;
+  visibility: visible;
   transition: all 0.2s ease;
+}
+
+.categories-list--slider-btn:disabled {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.prev-btn,
+.next-btn {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .prev-btn {

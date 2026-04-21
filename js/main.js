@@ -268,6 +268,98 @@ cartButtons.forEach((button) => {
   });
 });
 
+// Категории - слайдер
+
+const categoriesList = document.querySelector(".categories-list");
+const prevBtn = document.querySelector(".prev-btn");
+const nextBtn = document.querySelector(".next-btn");
+
+const updateButtonsVisibility = () => {
+  if (!categoriesList || !prevBtn || !nextBtn) return;
+
+  const scrollLeft = categoriesList.scrollLeft;
+  const maxScrollLeft = categoriesList.scrollWidth - categoriesList.clientWidth;
+
+  if (scrollLeft <= 10) {
+    prevBtn.style.opacity = "0";
+    prevBtn.style.visibility = "hidden";
+    prevBtn.style.pointerEvents = "none";
+  } else {
+    prevBtn.style.opacity = "1";
+    prevBtn.style.visibility = "visible";
+    prevBtn.style.pointerEvents = "auto";
+  }
+
+  if (maxScrollLeft - scrollLeft <= 10) {
+    nextBtn.style.opacity = "0";
+    nextBtn.style.visibility = "hidden";
+    nextBtn.style.pointerEvents = "none";
+  } else {
+    nextBtn.style.opacity = "1";
+    nextBtn.style.visibility = "visible";
+    nextBtn.style.pointerEvents = "auto";
+  }
+};
+
+const scrollCategories = (direction) => {
+  if (!categoriesList) return;
+
+  const scrollAmount = 500;
+  const currentScroll = categoriesList.scrollLeft;
+
+  if (direction === "next") {
+    categoriesList.scrollTo({
+      left: currentScroll + scrollAmount,
+      behavior: "smooth",
+    });
+  } else if (direction === "prev") {
+    categoriesList.scrollTo({
+      left: currentScroll - scrollAmount,
+      behavior: "smooth",
+    });
+  }
+};
+
+if (nextBtn) {
+  nextBtn.addEventListener("click", () => scrollCategories("next"));
+}
+
+if (prevBtn) {
+  prevBtn.addEventListener("click", () => scrollCategories("prev"));
+}
+
+if (categoriesList) {
+  categoriesList.addEventListener("scroll", updateButtonsVisibility);
+
+  setTimeout(updateButtonsVisibility, 100);
+
+  window.addEventListener("resize", () => {
+    setTimeout(updateButtonsVisibility, 100);
+  });
+}
+
+const checkIfScrollNeeded = () => {
+  if (!categoriesList || !prevBtn || !nextBtn) return;
+
+  const needsScroll = categoriesList.scrollWidth > categoriesList.clientWidth;
+
+  if (!needsScroll) {
+    prevBtn.style.display = "none";
+    nextBtn.style.display = "none";
+  } else {
+    prevBtn.style.display = "flex";
+    nextBtn.style.display = "flex";
+    updateButtonsVisibility();
+  }
+};
+
+if (categoriesList) {
+  setTimeout(checkIfScrollNeeded, 100);
+  window.addEventListener("resize", () => {
+    setTimeout(checkIfScrollNeeded, 100);
+  });
+}
+
 // Текущий год
 
 // const currentYear = new Date().getFullYear();
