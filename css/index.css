@@ -2606,12 +2606,12 @@ h3 {
   }
 
   .advantages__container {
-    padding: 6.25rem 3rem;
+    padding: 6.25rem 1rem 3.25rem;
     gap: 2.5rem;
   }
 
   .advantages__title-item {
-    font-size: 6.25rem;
+    font-size: 4.375rem;
   }
 
   .advantages__list {
@@ -2628,18 +2628,19 @@ h3 {
 
   .advantages__list li {
     flex-shrink: 0;
-    width: 18.75rem;
-    height: 25rem;
+    padding: 1rem;
+    width: 17.5rem;
+    height: 21.5rem;
     scroll-snap-align: start;
   }
 
   .advantages__list li img {
-    height: 25rem;
+    height: 22.5rem;
     object-fit: cover;
   }
 
   .advantages__list h3 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .advantages__list p {
