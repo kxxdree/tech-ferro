@@ -36,7 +36,7 @@ function initSearch() {
   searchButton.addEventListener("click", () => {
     searchOverlay.classList.add("search--open");
     document.body.style.overflow = "hidden";
-    document.body.style.paddingRight = "15px";
+    // document.body.style.paddingRight = "15px";
     if (searchInput) {
       setTimeout(() => searchInput.focus(), 100);
     }
@@ -45,7 +45,7 @@ function initSearch() {
   function closeSearch() {
     searchOverlay.classList.remove("search--open");
     document.body.style.overflow = "unset";
-    document.body.style.paddingRight = "0px";
+    // document.body.style.paddingRight = "0px";
     if (searchInput) {
       searchInput.value = "";
     }

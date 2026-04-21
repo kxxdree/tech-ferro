@@ -6,7 +6,9 @@ const closeApplicationButton = document.querySelector(".application-modal-close-
 
 const addBodyStyles = () => {
   document.body.style.overflow = "hidden";
-  document.body.style.paddingRight = "15px";
+  if (window.innerWidth >= 481) {
+    document.body.style.paddingRight = "15px";
+  }
 };
 
 const removeBodyStyles = () => {
@@ -17,14 +19,14 @@ const removeBodyStyles = () => {
 const openApplicationModal = () => {
   if (applicationModal) {
     applicationModal.classList.add("application-modal--open");
-    // addBodyStyles();
+    addBodyStyles();
   }
 };
 
 const closeApplicationModal = () => {
   if (applicationModal) {
     applicationModal.classList.remove("application-modal--open");
-    // removeBodyStyles();
+    removeBodyStyles();
   }
 };
 
@@ -56,6 +58,7 @@ const searchSuccess = document.querySelector(".search__success");
 const openSearch = () => {
   if (searchContainer) {
     searchContainer.classList.add("search--open");
+    document.body.style.overflow = "hidden";
     addBodyStyles();
 
     if (searchInput) {
@@ -360,8 +363,28 @@ if (categoriesList) {
   });
 }
 
-// Текущий год
+(function () {
+  const breakpoint = 480;
+  const originalText = "Смотреть всё";
+  const mobileText = "Всё";
 
-// const currentYear = new Date().getFullYear();
-// const yearElement = document.querySelector(".footer__meta-info--year");
-// yearElement.textContent = currentYear;
+  const categoriesLink = document.querySelector(".categories__title-link a");
+  const bestLink = document.querySelector(".best__title-link a");
+
+  function updateLinkText() {
+    const isMobile = window.innerWidth <= breakpoint;
+    const newText = isMobile ? mobileText : originalText;
+
+    if (categoriesLink && categoriesLink.textContent !== newText) {
+      categoriesLink.textContent = newText;
+    }
+
+    if (bestLink && bestLink.textContent !== newText) {
+      bestLink.textContent = newText;
+    }
+  }
+
+  updateLinkText();
+
+  window.addEventListener("resize", updateLinkText);
+})();
