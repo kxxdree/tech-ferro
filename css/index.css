@@ -1179,6 +1179,10 @@ html {
   bottom: 12.333rem;
 }
 
+.quality-horizontal-line {
+  display: none;
+}
+
 .quality-vertical-line {
   position: absolute;
   top: 0;
@@ -1257,6 +1261,7 @@ html {
   .quality__container-text-block {
     padding: 0 3rem;
     height: 8.75rem;
+    border-bottom: none;
   }
 
   .quality__container-text-block h2 {
@@ -1443,12 +1448,12 @@ html {
 
   .mobile-span--package {
     top: 13.25rem;
-    left: 15.313rem;
+    left: 15.1rem;
   }
 
   .mobile-span--check {
     top: 33.9rem;
-    left: 16.313rem;
+    left: 15.1rem;
   }
 
   .mobile-span--accuracy {
@@ -1456,12 +1461,34 @@ html {
     left: 1rem;
   }
 
+  .quality-horizontal-line {
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+  }
+
+  .quality-horizontal-line--top {
+    top: 23.313rem;
+  }
+
+  .quality-horizontal-line--center {
+    top: 32rem;
+  }
+
+  .quality-horizontal-line--bottom {
+    bottom: 13rem;
+  }
+
   .quality-vertical-line {
     width: 1px;
   }
 
   .quality-vertical-line--left {
-    left: 11.208rem;
+    display: none;
   }
 
   .quality-vertical-line--center-left {
@@ -1473,23 +1500,19 @@ html {
   }
 
   .quality-vertical-line--right {
-    right: 5.604rem;
+    display: none;
   }
 
   .quality-diagonal-lines {
-    left: 11.208rem;
+    left: 0;
     top: 0;
-    width: 18.8rem;
-    height: 23.7rem;
+    width: 15rem;
+    height: 23.3rem;
     background-image: repeating-linear-gradient(125deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 1.33px, transparent 0.125rem, transparent 1rem);
   }
 
   .quality-diagonal-lines-bottom {
-    right: 0;
-    bottom: 0;
-    width: 5.604rem;
-    height: 15rem;
-    background-image: repeating-linear-gradient(125deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 1.33px, transparent 0.125rem, transparent 1rem);
+    display: none;
   }
 }
 
