@@ -1358,13 +1358,15 @@ html {
   stroke: #e64410;
 }
 
+.categories-list--wrapper {
+  position: relative;
+}
+
 .categories-list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  align-items: center;
   gap: 2rem;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  overflow-x: auto;
 }
 
 .categories-list li {
@@ -1407,6 +1409,47 @@ html {
   border: 1.33px solid #ffffff33;
 }
 
+.categories-list--slider-btn {
+  position: absolute;
+  top: 52.5%;
+  z-index: 20;
+  transform: translateY(-50%);
+  width: 3rem;
+  height: 3rem;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.prev-btn {
+  left: -0.5rem;
+}
+
+.prev-btn img {
+  transform: rotate(180deg);
+}
+
+.next-btn {
+  right: -0.5rem;
+}
+
+.categories-list--slider-btn img {
+  filter: invert(1);
+  transition: filter 0.3s ease;
+}
+
+.categories-list--slider-btn:hover {
+  background-color: #e64410;
+}
+
+.categories-list--slider-btn:hover img {
+  filter: invert(0);
+}
 /* Категории адаптив */
 
 @media (max-width: 960px) {
