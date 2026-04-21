@@ -1358,7 +1358,7 @@ html {
 
 @media (max-width: 480px) {
   .quality {
-    height: 50rem;
+    height: 52.5rem;
   }
 
   .quality::before {
@@ -1400,8 +1400,8 @@ html {
   }
 
   .quality-image-two {
-    left: 6.25rem;
-    bottom: 6.063rem;
+    left: 5.25rem;
+    bottom: 3rem;
     width: 10rem;
     height: 8.75rem;
   }
@@ -1438,6 +1438,21 @@ html {
 
   .mobile-span--geometry {
     top: 10.938rem;
+    left: 1rem;
+  }
+
+  .mobile-span--package {
+    top: 13.25rem;
+    left: 15.313rem;
+  }
+
+  .mobile-span--check {
+    top: 33.9rem;
+    left: 16.313rem;
+  }
+
+  .mobile-span--accuracy {
+    top: 35.438rem;
     left: 1rem;
   }
 
