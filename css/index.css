@@ -2440,36 +2440,9 @@ h3 {
 }
 
 @media (max-width: 480px) {
-  .offer {
-    height: 43.75rem;
-  }
-
-  .offer__container {
-    padding: 2rem;
-    gap: 2rem;
-  }
-
-  .offer__container h2 {
-    font-size: 4.375rem;
-  }
-
-  .offer__container h3 {
-    font-size: 1.125rem;
-  }
-
   .offer-link {
     padding-top: 1.125rem;
     margin-bottom: 1.125rem;
-  }
-
-  .offer-link a {
-    font-size: 1.5rem;
-  }
-
-  .offer-link svg {
-    width: 1rem;
-    height: 0.85rem;
-    margin-bottom: 0.1rem;
   }
 }
 
@@ -2581,6 +2554,53 @@ h3 {
 /* Преимущества адаптив*/
 
 @media (max-width: 960px) {
+  .advantages {
+    min-height: auto;
+  }
+
+  .advantages__container {
+    padding: 6.25rem 3rem;
+    gap: 2.5rem;
+  }
+
+  .advantages__title-item {
+    font-size: 6.25rem;
+  }
+
+  .advantages__list {
+    display: flex;
+    overflow-x: auto;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+    margin-right: -3rem;
+  }
+
+  .advantages__list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .advantages__list li {
+    flex-shrink: 0;
+    width: 18.75rem;
+    height: 25rem;
+    scroll-snap-align: start;
+  }
+
+  .advantages__list li img {
+    height: 25rem;
+    object-fit: cover;
+  }
+
+  .advantages__list h3 {
+    font-size: 1.5rem;
+  }
+
+  .advantages__list p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
   .advantages {
     min-height: auto;
   }
