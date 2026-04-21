@@ -498,6 +498,11 @@ html {
 
   .search__success-list {
     gap: 0.75rem;
+    margin-right: -1rem;
+  }
+
+  .search__success-list::-webkit-scrollbar {
+    display: none;
   }
 
   .search__success-list-item {

@@ -56,7 +56,7 @@ const searchSuccess = document.querySelector(".search__success");
 const openSearch = () => {
   if (searchContainer) {
     searchContainer.classList.add("search--open");
-    addBodyStyles();
+    // addBodyStyles();
 
     if (searchInput) {
       searchInput.value = "";
@@ -71,7 +71,7 @@ const openSearch = () => {
 const closeSearch = () => {
   if (searchContainer) {
     searchContainer.classList.remove("search--open");
-    removeBodyStyles();
+    // removeBodyStyles();
 
     if (searchInput) {
       searchInput.value = "";
@@ -123,14 +123,14 @@ const closeMenuButton = document.querySelector(".icon-btn--close");
 const openMenu = () => {
   if (menu) {
     menu.classList.add("menu--open");
-    addBodyStyles();
+    // addBodyStyles();
   }
 };
 
 const closeMenu = () => {
   if (menu) {
     menu.classList.remove("menu--open");
-    removeBodyStyles();
+    // removeBodyStyles();
   }
 };
 
