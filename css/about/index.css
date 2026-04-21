@@ -441,12 +441,12 @@
     padding: 1.5rem 1rem 3rem 1rem;
   }
 
-  .about__intro-section {
-    gap: 1.5rem;
+  .about__container {
+    gap: 2.5rem;
   }
 
   .about-title {
-    font-size: 2rem;
+    font-size: 3.125rem;
   }
 
   .about-subtitle {
