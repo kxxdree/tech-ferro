@@ -3137,6 +3137,57 @@ h4 {
   height: 1.5rem;
 }
 
+/* Отзывы адаптив */
+
+@media (max-width: 960px) {
+  .reviews__container {
+    padding: 14.063rem 3rem 2rem;
+  }
+
+  .reviews__content {
+    gap: 3.75rem;
+  }
+
+  .reviews__content-title {
+    font-size: 4.375rem;
+    text-align: center;
+    max-width: 43.25rem;
+  }
+
+  .reviews__content-list {
+    overflow-x: auto;
+    gap: 1.5rem;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 1rem;
+  }
+
+  .reviews__content-list::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .reviews__content-list::-webkit-scrollbar-track {
+    background: #e5e7eb;
+    border-radius: 4px;
+  }
+
+  .reviews__content-list::-webkit-scrollbar-thumb {
+    background: #e64410;
+    border-radius: 4px;
+  }
+
+  .reviews__content-list-item {
+    flex-shrink: 0;
+    width: 300px;
+    height: auto;
+    min-height: 250px;
+    scroll-snap-align: start;
+  }
+
+  .reviews__arrow-button {
+    display: none;
+  }
+}
+
 /* Доставка  */
 
 .delivery {
@@ -3228,49 +3279,6 @@ h4 {
 /* Адаптив  */
 
 @media (max-width: 960px) {
-  /* Отзывы */
-  .reviews__container {
-    padding: 4rem 2rem;
-  }
-
-  .reviews__content-title {
-    font-size: 2.5rem;
-    text-align: center;
-  }
-
-  .reviews__content-list {
-    overflow-x: auto;
-    gap: 1.5rem;
-    scroll-snap-type: x mandatory;
-    padding-bottom: 1rem;
-  }
-
-  .reviews__content-list::-webkit-scrollbar {
-    height: 4px;
-  }
-
-  .reviews__content-list::-webkit-scrollbar-track {
-    background: #e5e7eb;
-    border-radius: 4px;
-  }
-
-  .reviews__content-list::-webkit-scrollbar-thumb {
-    background: #e64410;
-    border-radius: 4px;
-  }
-
-  .reviews__content-list-item {
-    flex-shrink: 0;
-    width: 300px;
-    height: auto;
-    min-height: 250px;
-    scroll-snap-align: start;
-  }
-
-  .reviews__arrow-button {
-    display: none;
-  }
-
   /* Доставка */
   .delivery__container {
     padding: 0 2rem 4rem;
