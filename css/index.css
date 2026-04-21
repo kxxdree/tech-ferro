@@ -1369,9 +1369,16 @@ html {
   overflow-x: auto;
 }
 
+.categories-list::-webkit-scrollbar {
+  display: none;
+}
+
 .categories-list li {
   position: relative;
   overflow: hidden;
+  min-width: 26.5rem;
+  max-width: 26.5rem;
+  height: 38.313rem;
 }
 
 .categories-list li a {
@@ -1381,8 +1388,7 @@ html {
 
 .categories-list img {
   width: 100%;
-  max-width: 26.5rem;
-  max-height: 38.313rem;
+  height: 100%;
   display: block;
   transition: transform 0.3s ease;
 }
@@ -1450,6 +1456,7 @@ html {
 .categories-list--slider-btn:hover img {
   filter: invert(0);
 }
+
 /* Категории адаптив */
 
 @media (max-width: 960px) {
