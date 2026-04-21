@@ -1033,10 +1033,11 @@ html {
     border: none;
     background: none;
     isolation: auto;
+    margin-bottom: 1rem;
   }
 
   .hero__catalog-link span {
-    font-size: 1.5rem;
+    font-size: 1.5;
     font-weight: 300;
   }
 
