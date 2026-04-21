@@ -2450,7 +2450,59 @@ h3 {
   }
 
   .application__container-img {
+    position: absolute;
+    z-index: 100;
+    max-width: 12.5rem;
+    max-height: 12.5rem;
+  }
+
+  .application__container-img:nth-child(2) {
+    top: 4.875rem;
+    left: 9.875rem;
+    width: 8.75rem;
+    height: 8.75rem;
+  }
+
+  .application__container-img:nth-child(3) {
+    top: 3rem;
+    right: 3rem;
+    width: 12.5rem;
+    height: 12.5rem;
+  }
+
+  .application__container-img:nth-child(4) {
+    top: 11.563rem;
+    right: 10.25rem;
+    width: 8.75rem;
+    height: 8.75rem;
+  }
+
+  .application__container-img:nth-child(5) {
     display: none;
+  }
+
+  .application__container-img:nth-child(6) {
+    display: none;
+  }
+
+  .application__container-img:nth-child(7) {
+    bottom: 6.375rem;
+    right: 6.75rem;
+    width: 8.75rem;
+    height: 8.75rem;
+  }
+
+  .application__container-img:nth-child(8) {
+    bottom: 23.333rem;
+    left: 13.667rem;
+    z-index: 11;
+  }
+
+  .application__container-img:nth-child(9) {
+    bottom: 29.167rem;
+    left: 4rem;
+    max-width: 16.667rem;
+    max-height: 16.667rem;
   }
 
   .application__container-text {
