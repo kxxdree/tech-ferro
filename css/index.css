@@ -1518,18 +1518,12 @@ html {
     display: flex;
     overflow-x: auto;
     gap: 1.5rem;
-    scroll-snap-type: x mandatory;
-    padding-bottom: 1rem;
-  }
-
-  .categories-list::-webkit-scrollbar {
-    display: none;
   }
 
   .categories-list li {
-    flex-shrink: 0;
+    min-width: 19.875rem;
+    max-width: 19.875rem;
     height: 28.75rem;
-    width: 19.875rem;
     scroll-snap-align: start;
   }
 
