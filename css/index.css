@@ -1458,33 +1458,25 @@ html {
   }
 
   .categories-list::-webkit-scrollbar {
-    height: 4px;
-  }
-
-  .categories-list::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 4px;
-  }
-
-  .categories-list::-webkit-scrollbar-thumb {
-    background: #e64410;
-    border-radius: 4px;
+    display: none;
   }
 
   .categories-list li {
     flex-shrink: 0;
-    width: 318px;
+    height: 28.75rem;
+    width: 19.875rem;
     scroll-snap-align: start;
   }
 
   .categories-list li a {
     display: block;
-    width: 318px;
+    width: 100%;
+    height: 100%;
   }
 
   .categories-list img {
-    width: 318px;
-    height: 460px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
   }
 }
