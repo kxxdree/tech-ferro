@@ -2122,6 +2122,66 @@ h3 {
   color: inherit;
 }
 
+/* Преимущества адаптив*/
+
+@media (max-width: 960px) {
+  .advantages {
+    min-height: auto;
+  }
+
+  .advantages__container {
+    padding: 6.25rem 3rem;
+    gap: 2.5rem;
+  }
+
+  .advantages__title-item {
+    font-size: 6.25rem;
+  }
+
+  .advantages__list {
+    display: flex;
+    overflow-x: auto;
+    gap: 1.5rem;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 1rem;
+  }
+
+  .advantages__list::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .advantages__list::-webkit-scrollbar-track {
+    background: #e5e7eb;
+    border-radius: 4px;
+  }
+
+  .advantages__list::-webkit-scrollbar-thumb {
+    background: #e64410;
+    border-radius: 4px;
+  }
+
+  .advantages__list li {
+    flex-shrink: 0;
+    width: 300px;
+    height: 400px;
+    scroll-snap-align: start;
+  }
+
+  .advantages__list li img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .advantages__list h3 {
+    font-size: 1.5rem;
+  }
+
+  .advantages__list p {
+    font-size: 1rem;
+  }
+}
+
 /* Заявка  */
 
 .application {
@@ -2962,63 +3022,6 @@ h4 {
 /* Адаптив  */
 
 @media (max-width: 960px) {
-  /* Преимущества */
-  .advantages {
-    min-height: auto;
-  }
-
-  .advantages__container {
-    padding: 3rem 2rem;
-    gap: 2rem;
-  }
-
-  .advantages__title-item {
-    font-size: 4rem;
-  }
-
-  .advantages__list {
-    display: flex;
-    overflow-x: auto;
-    gap: 1.5rem;
-    scroll-snap-type: x mandatory;
-    padding-bottom: 1rem;
-  }
-
-  .advantages__list::-webkit-scrollbar {
-    height: 4px;
-  }
-
-  .advantages__list::-webkit-scrollbar-track {
-    background: #e5e7eb;
-    border-radius: 4px;
-  }
-
-  .advantages__list::-webkit-scrollbar-thumb {
-    background: #e64410;
-    border-radius: 4px;
-  }
-
-  .advantages__list li {
-    flex-shrink: 0;
-    width: 300px;
-    height: 400px;
-    scroll-snap-align: start;
-  }
-
-  .advantages__list li img {
-    width: 300px;
-    height: 400px;
-    object-fit: cover;
-  }
-
-  .advantages__list h3 {
-    font-size: 1.5rem;
-  }
-
-  .advantages__list p {
-    font-size: 1rem;
-  }
-
   /* Заявка */
   .application {
     height: auto;
