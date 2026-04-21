@@ -1780,6 +1780,48 @@ html {
   transform: scale(0.95);
 }
 
+/* Лучшее адаптив*/
+
+@media (max-width: 960px) {
+  .best {
+    min-height: auto;
+    padding-bottom: 3rem;
+  }
+
+  .best__container {
+    padding: 6.25rem 3rem 4rem;
+    gap: 2.5rem;
+  }
+
+  .best__title {
+    margin-top: 0;
+  }
+
+  .best__title h2 {
+    font-size: 7.5rem;
+  }
+
+  .best__title-link a {
+    font-size: 1.5rem;
+  }
+
+  .best__list-top,
+  .best__list-bottom {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .best__list-top .best__list-product-card:nth-child(3) a img,
+  .best__list-bottom .best__list-product-card:nth-child(1) a img {
+    min-height: auto;
+    max-height: 20rem;
+  }
+
+  .best__list-product-card a img {
+    height: 20rem;
+  }
+}
+
 /* Акция  */
 
 .offer {
@@ -2805,45 +2847,6 @@ h4 {
 /* Адаптив  */
 
 @media (max-width: 960px) {
-  /* Лучшее */
-  .best {
-    min-height: auto;
-    padding-bottom: 3rem;
-  }
-
-  .best__container {
-    padding: 0 2rem 4rem;
-    gap: 2rem;
-  }
-
-  .best__title {
-    margin-top: 2rem;
-  }
-
-  .best__title h2 {
-    font-size: 4rem;
-  }
-
-  .best__title-link a {
-    font-size: 1.2rem;
-  }
-
-  .best__list-top,
-  .best__list-bottom {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .best__list-top .best__list-product-card:nth-child(3) a img,
-  .best__list-bottom .best__list-product-card:nth-child(1) a img {
-    min-height: auto;
-    max-height: 20rem;
-  }
-
-  .best__list-product-card a img {
-    height: 20rem;
-  }
-
   /* Акция */
   .offer {
     min-height: 30rem;
