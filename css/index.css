@@ -669,7 +669,7 @@ html {
 }
 
 .cookies button {
-  min-height: 4.542rem;
+  height: 4.542rem;
   border: none;
   border-radius: 5.33px;
   font-weight: 300;
@@ -688,7 +688,7 @@ html {
 
 @media (max-width: 960px) {
   .cookies {
-    max-width: calc(100% - 6rem) !important;
+    width: calc(100% - 6rem) !important;
     height: 6.375rem;
     position: fixed;
     z-index: 110;
@@ -719,11 +719,10 @@ html {
 
   .cookies button {
     width: 8rem;
-    height: auto;
-    border: none;
+    height: 3.375rem;
     border-radius: 0.25rem;
     font-weight: 300;
-    padding: 0 1.5rem;
+    padding: 0;
     color: white;
     font-size: 1rem;
     background-color: #252324;
