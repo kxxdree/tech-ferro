@@ -1444,6 +1444,11 @@ html {
     font-size: 1.5rem;
   }
 
+  .categories__title-link svg {
+    width: 1rem;
+    height: 1rem;
+  }
+
   .categories-list {
     display: flex;
     overflow-x: auto;
