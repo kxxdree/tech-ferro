@@ -2493,16 +2493,19 @@ h3 {
   }
 
   .application__container-img:nth-child(8) {
-    bottom: 23.333rem;
-    left: 13.667rem;
-    z-index: 11;
+    bottom: 5rem;
+    left: 10.375rem;
+    width: 8.75rem;
+    height: 8.75rem;
+    z-index: 2;
   }
 
   .application__container-img:nth-child(9) {
-    bottom: 29.167rem;
-    left: 4rem;
-    max-width: 16.667rem;
-    max-height: 16.667rem;
+    bottom: 9.375rem;
+    left: 3.125rem;
+    width: 12.5rem;
+    height: 12.5rem;
+    z-index: 1;
   }
 
   .application__container-text {
