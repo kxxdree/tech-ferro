@@ -3109,27 +3109,24 @@ h3 {
   .application__container-img {
     position: absolute;
     z-index: 100;
-    max-width: 12.5rem;
-    max-height: 12.5rem;
+    max-width: 8.75rem;
+    max-height: 8.75rem;
   }
 
   .application__container-img:nth-child(2) {
-    top: 4.875rem;
-    left: 9.875rem;
+    display: none;
+  }
+
+  .application__container-img:nth-child(3) {
+    top: 1.75rem;
+    left: 0;
     width: 8.75rem;
     height: 8.75rem;
   }
 
-  .application__container-img:nth-child(3) {
-    top: 3rem;
-    right: 3rem;
-    width: 12.5rem;
-    height: 12.5rem;
-  }
-
   .application__container-img:nth-child(4) {
-    top: 11.563rem;
-    right: 10.25rem;
+    top: 4.75rem;
+    right: -2rem;
     width: 8.75rem;
     height: 8.75rem;
   }
@@ -3143,26 +3140,21 @@ h3 {
   }
 
   .application__container-img:nth-child(7) {
-    bottom: 6.375rem;
-    right: 6.75rem;
-    width: 8.75rem;
-    height: 8.75rem;
+    display: none;
   }
 
   .application__container-img:nth-child(8) {
-    bottom: 5rem;
-    left: 10.375rem;
+    bottom: 2.5rem;
+    left: 0;
     width: 8.75rem;
     height: 8.75rem;
-    z-index: 2;
   }
 
   .application__container-img:nth-child(9) {
-    bottom: 9.375rem;
-    left: 3.125rem;
-    width: 12.5rem;
-    height: 12.5rem;
-    z-index: 1;
+    bottom: 6.375rem;
+    left: 23.5rem;
+    width: 8.75rem;
+    height: 8.75rem;
   }
 
   .application__container-text {
