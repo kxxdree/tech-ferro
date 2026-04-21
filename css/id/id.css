@@ -713,6 +713,7 @@
 
   .card-gallery--list {
     gap: 0.5rem;
+    display: none;
   }
 
   .card-gallery--list-item {
