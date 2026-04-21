@@ -17,14 +17,14 @@ const removeBodyStyles = () => {
 const openApplicationModal = () => {
   if (applicationModal) {
     applicationModal.classList.add("application-modal--open");
-    addBodyStyles();
+    // addBodyStyles();
   }
 };
 
 const closeApplicationModal = () => {
   if (applicationModal) {
     applicationModal.classList.remove("application-modal--open");
-    removeBodyStyles();
+    // removeBodyStyles();
   }
 };
 
