@@ -1112,34 +1112,6 @@ html {
     font-size: 3.125rem;
     line-height: 1;
   }
-
-
-
-  .hero__catalog-link {
-    width: 0px;
-    height: 0px;
-    bottom: 4rem;
-    right: 50%;
-    transform: translateX(50%);
-    border-radius: 0;
-    padding: 0.5rem 1rem;
-    backdrop-filter: none;
-    border: none;
-    background: none;
-    isolation: auto;
-    margin-bottom: 1rem;
-  }
-
-  .hero__catalog-link span {
-    font-size: 1.5;
-    font-weight: 300;
-  }
-
-  .hero__catalog-link img {
-    width: 0.75rem;
-    height: 0.75rem;
-    margin-top: 0;
-  }
 }
 
 /* Качество */
