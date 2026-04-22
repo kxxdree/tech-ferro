@@ -1683,36 +1683,12 @@ html {
     bottom: 15rem;
   }
 
-  .quality-vertical-line {
-    width: 1px;
-  }
-
-  .quality-vertical-line--left {
-    display: none;
-  }
-
-  .quality-vertical-line--center-left {
-    left: 50%;
-  }
-
-  .quality-vertical-line--center-right {
-    display: none;
-  }
-
-  .quality-vertical-line--right {
-    display: none;
-  }
-
   .quality-diagonal-lines {
     left: 0;
     top: 0;
-    width: 15rem;
-    height: 23.3rem;
-    background-image: repeating-linear-gradient(125deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 1.33px, transparent 0.125rem, transparent 1rem);
-  }
-
-  .quality-diagonal-lines-bottom {
-    display: none;
+    width: 11.3rem;
+    height: 23.6rem;
+    background-image: repeating-linear-gradient(125deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 1px, transparent 0.125rem, transparent 1rem);
   }
 }
 
