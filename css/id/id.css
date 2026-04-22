@@ -570,22 +570,24 @@
   .card-gallery--list {
     flex-direction: row;
     width: 100%;
-    height: auto;
+    height: 42.5rem;
     overflow-x: auto;
-    overflow-y: visible;
     gap: 0.75rem;
   }
 
   .card-gallery--list-item {
-    min-width: 5rem;
-    min-height: 5rem;
-    max-width: 5rem;
-    max-height: 5rem;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 42.5rem;
+    max-height: 42.5rem;
+  }
+
+  .list-item--active {
+    border: none;
   }
 
   .card-gallery--main-image {
-    width: 100%;
-    height: 42.5rem;
+    display: none;
   }
 
   .card-info {
@@ -707,20 +709,21 @@
   }
 
   .card-gallery {
+    width: 100%;
     gap: 0.75rem;
     height: 24.5rem;
   }
 
   .card-gallery--list {
     gap: 0.5rem;
-    display: none;
+    height: 24.5rem;
   }
 
   .card-gallery--list-item {
-    min-width: 4rem;
-    min-height: 4rem;
-    max-width: 4rem;
-    max-height: 4rem;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 22rem;
+    min-height: 22rem;
   }
 
   .card-title-container h1 {
