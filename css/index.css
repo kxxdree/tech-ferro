@@ -4465,6 +4465,20 @@ h4 {
   }
 }
 
+@media (max-width: 360px) {
+  .reviews__container {
+    padding: 6.25rem 1rem 5rem;
+  }
+
+  .reviews__content-title {
+    font-size: 3.125rem;
+  }
+
+  .reviews__content-list {
+    gap: 1rem;
+  }
+}
+
 /* Доставка  */
 
 .delivery {
