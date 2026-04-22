@@ -3589,64 +3589,36 @@ h3 {
   }
 
   .application__container-text {
-    max-width: 49.563rem;
-    gap: 2rem;
+    max-width: 100%;
   }
 
   .application__container-text h2 {
-    font-size: 4.375rem;
+    font-size: 3.125rem;
   }
 
   .application__container-text h3 {
-    font-size: 1rem;
+    font-size: 0.875rem;
   }
 
   .application-link {
-    padding-top: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .application-link-button {
-    font-size: 1.25rem;
-  }
-
-  .application-link-button svg {
-    width: 0.75rem;
-    height: 0.75rem;
-  }
-
-  .application-vertical-line {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 1px;
-    background-color: #ffffff4d;
-    pointer-events: none;
-  }
-
-  .application-horizontal-line {
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background-color: #ffffff4d;
-    pointer-events: none;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   .application-vertical-line--left {
-    left: 2rem;
+    left: 0.75rem;
   }
 
   .application-vertical-line--center-left {
-    left: 7.25rem;
+    left: 5.438rem;
   }
 
   .application-vertical-line--center-right {
-    right: 7.25rem;
+    right: 5.438rem;
   }
 
   .application-vertical-line--right {
-    right: 2rem;
+    right: 0.75rem;
   }
 
   .application-horizontal-line--center-bottom {
