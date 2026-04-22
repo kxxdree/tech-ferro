@@ -582,6 +582,10 @@
     max-height: 42.5rem;
   }
 
+  .card-gallery--list-item:hover {
+    border: none;
+  }
+
   .list-item--active {
     border: none;
   }
