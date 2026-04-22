@@ -4616,3 +4616,26 @@ h4 {
     height: 37.5rem;
   }
 }
+
+@media (max-width: 360px) {
+  .delivery__container {
+    padding: 0 1rem 6.25rem;
+  }
+
+  .delivery__content {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .delivery__content-text h2 {
+    font-size: 3.125rem;
+  }
+
+  .delivery__content-text-list h3 {
+    font-size: 2rem;
+  }
+
+  .delivery__content-image {
+    height: 20rem;
+  }
+}
