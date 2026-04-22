@@ -388,3 +388,56 @@ if (categoriesList) {
 
   window.addEventListener("resize", updateLinkText);
 })();
+
+// Преимущества скролл
+
+document.addEventListener("DOMContentLoaded", function () {
+  const advantagesSection = document.querySelector(".advantages");
+  if (!advantagesSection) return;
+
+  const list = advantagesSection.querySelector(".advantages__list");
+  const dotsContainer = advantagesSection.querySelector(".advantages__dots");
+  if (!list || !dotsContainer) return;
+
+  const items = list.children;
+  const itemsCount = items.length;
+
+  for (let i = 0; i < itemsCount; i++) {
+    const dot = document.createElement("span");
+    dot.dataset.index = i;
+    dot.addEventListener("click", function () {
+      const targetItem = items[i];
+      targetItem.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest",
+        inline: "start",
+      });
+    });
+    dotsContainer.appendChild(dot);
+  }
+
+  const dots = dotsContainer.querySelectorAll("span");
+
+  function updateActiveDot() {
+    const scrollLeft = list.scrollLeft;
+    const itemWidth = items[0]?.offsetWidth || 0;
+    const gap = parseFloat(getComputedStyle(list).gap) || 0;
+    const fullItemWidth = itemWidth + gap;
+
+    let activeIndex = Math.round(scrollLeft / fullItemWidth);
+    activeIndex = Math.min(activeIndex, itemsCount - 1);
+    activeIndex = Math.max(activeIndex, 0);
+
+    dots.forEach((dot, idx) => {
+      if (idx === activeIndex) {
+        dot.classList.add("active");
+      } else {
+        dot.classList.remove("active");
+      }
+    });
+  }
+
+  list.addEventListener("scroll", updateActiveDot);
+  setTimeout(updateActiveDot, 100);
+  window.addEventListener("resize", updateActiveDot);
+});
