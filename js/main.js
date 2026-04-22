@@ -6,7 +6,7 @@ const closeApplicationButton = document.querySelector(".application-modal-close-
 
 const addBodyStyles = () => {
   document.body.style.overflow = "hidden";
-  if (window.innerWidth >= 481) {
+  if (window.innerWidth >= 961) {
     document.body.style.paddingRight = "15px";
   }
 };

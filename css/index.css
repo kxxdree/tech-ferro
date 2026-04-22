@@ -2363,6 +2363,18 @@ html {
     object-fit: cover;
   }
 
+  .best__list-bottom .best__list-product-card:nth-child(1) {
+    order: 3;
+  }
+
+  .best__list-bottom .best__list-product-card:nth-child(2) {
+    order: 2;
+  }
+
+  .best__list-bottom .best__list-product-card:nth-child(3) {
+    order: 1;
+  }
+
   .best__list-product-card {
     width: auto;
   }
