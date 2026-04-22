@@ -209,3 +209,67 @@ nextBtn.addEventListener("click", () => scrollList("right"));
 relatedProductsList.addEventListener("scroll", updateButtonsVisibility);
 window.addEventListener("resize", updateButtonsVisibility);
 setTimeout(updateButtonsVisibility, 100);
+
+// Фотогаллерея скролл
+
+document.addEventListener("DOMContentLoaded", function () {
+  const cardGallery = document.querySelector(".card-gallery");
+  if (!cardGallery) return;
+
+  const galleryList = cardGallery.querySelector(".card-gallery--list");
+  const dotsContainer = cardGallery.querySelector(".card-gallery__dots");
+
+  if (!galleryList || !dotsContainer) return;
+
+  const items = galleryList.children;
+  const itemsCount = items.length;
+
+  dotsContainer.innerHTML = "";
+
+  for (let i = 0; i < itemsCount; i++) {
+    const dot = document.createElement("span");
+    dot.dataset.index = i;
+    dot.addEventListener("click", function () {
+      const targetItem = items[i];
+      targetItem.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest",
+        inline: "start",
+      });
+    });
+    dotsContainer.appendChild(dot);
+  }
+
+  const dots = dotsContainer.querySelectorAll("span");
+
+  function updateActiveDot() {
+    if (itemsCount === 0) return;
+
+    const scrollLeft = galleryList.scrollLeft;
+    const itemWidth = items[0]?.offsetWidth || 0;
+    const gap = parseFloat(getComputedStyle(galleryList).gap) || 0;
+    const fullItemWidth = itemWidth + gap;
+
+    let activeIndex = Math.round(scrollLeft / fullItemWidth);
+    activeIndex = Math.min(activeIndex, itemsCount - 1);
+    activeIndex = Math.max(activeIndex, 0);
+
+    dots.forEach((dot, idx) => {
+      if (idx === activeIndex) {
+        dot.classList.add("active");
+      } else {
+        dot.classList.remove("active");
+      }
+    });
+  }
+
+  galleryList.addEventListener("scroll", updateActiveDot);
+
+  let resizeTimeout;
+  window.addEventListener("resize", function () {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(updateActiveDot, 150);
+  });
+
+  setTimeout(updateActiveDot, 100);
+});
