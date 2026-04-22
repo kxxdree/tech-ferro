@@ -4213,6 +4213,26 @@ h4 {
   }
 }
 
+@media (max-width: 360px) {
+  .market-links__content-links-text h2 {
+    font-size: 2.25rem;
+  }
+
+  .market-links__content-links-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .market-links__content-links-buttons a {
+    width: 100%;
+  }
+
+  .market-links__content-image {
+    width: 100%;
+    height: 25rem;
+  }
+}
+
 /* Отзывы  */
 
 .reviews {
