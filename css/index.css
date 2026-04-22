@@ -4041,6 +4041,13 @@ h4 {
   }
 }
 
+@media (max-width: 360px) {
+  .application-modal-content {
+    top: 2.5rem;
+    padding: 1.5rem 1rem;
+  }
+}
+
 /* Маркетплейсы */
 
 .market-links {
