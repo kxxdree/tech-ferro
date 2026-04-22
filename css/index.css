@@ -3553,6 +3553,14 @@ h3 {
     height: 46.313rem;
   }
 
+  .application::before {
+    display: none;
+  }
+
+  .application::after {
+    display: none;
+  }
+
   .application__container-img {
     position: absolute;
     z-index: 100;
@@ -3622,7 +3630,7 @@ h3 {
   }
 
   .application-horizontal-line--center-bottom {
-    bottom: 21.25rem;
+    bottom: 11.313rem;
   }
 
   .application-diagonal-lines {
