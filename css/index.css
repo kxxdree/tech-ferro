@@ -1582,6 +1582,140 @@ html {
   }
 }
 
+@media (max-width: 360px) {
+  .quality {
+    height: 52.5rem;
+  }
+
+  .quality__container-text-block {
+    padding: 0rem 1rem;
+    height: 3.125rem;
+  }
+
+  .quality__container-text-block h2 {
+    font-size: 3.125rem;
+  }
+
+  .quality__container-text-block p {
+    display: none;
+  }
+
+  .quality-image {
+    width: 8.625rem;
+    height: 7.5rem;
+  }
+
+  .quality-image-one {
+    right: 1rem;
+    top: 2rem;
+  }
+
+  .quality-image-two {
+    left: 3.75rem;
+    bottom: 5.188rem;
+  }
+
+  .mobile-span {
+    font-size: 0.875rem;
+    max-width: 11.125rem;
+  }
+
+  .mobile-span span {
+    display: block;
+    position: relative;
+    padding-left: 1.75rem;
+    margin: 0;
+  }
+
+  .mobile-span span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 50;
+    margin: auto 0;
+    width: 1rem;
+    height: 1rem;
+    background-color: #e64410;
+    border-radius: 50%;
+  }
+
+  .mobile-span--geometry {
+    top: 10.938rem;
+    left: 1rem;
+  }
+
+  .mobile-span--package {
+    top: 14.25rem;
+    left: 10.6rem;
+  }
+
+  .mobile-span--check {
+    top: 32rem;
+    left: 9.8rem;
+  }
+
+  .mobile-span--accuracy {
+    top: 35.438rem;
+    left: 1rem;
+  }
+
+  .quality-horizontal-line {
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+  }
+
+  .quality-horizontal-line--top {
+    top: 23.313rem;
+  }
+
+  .quality-horizontal-line--center {
+    top: 32rem;
+  }
+
+  .quality-horizontal-line--bottom {
+    bottom: 13rem;
+  }
+
+  .quality-vertical-line {
+    width: 1px;
+  }
+
+  .quality-vertical-line--left {
+    display: none;
+  }
+
+  .quality-vertical-line--center-left {
+    left: 50%;
+  }
+
+  .quality-vertical-line--center-right {
+    display: none;
+  }
+
+  .quality-vertical-line--right {
+    display: none;
+  }
+
+  .quality-diagonal-lines {
+    left: 0;
+    top: 0;
+    width: 15rem;
+    height: 23.3rem;
+    background-image: repeating-linear-gradient(125deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 1.33px, transparent 0.125rem, transparent 1rem);
+  }
+
+  .quality-diagonal-lines-bottom {
+    display: none;
+  }
+}
+
 /* Категории  */
 
 .categories {
