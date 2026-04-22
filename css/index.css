@@ -3548,6 +3548,120 @@ h3 {
   }
 }
 
+@media (max-width: 360px) {
+  .application {
+    height: 46.313rem;
+  }
+
+  .application__container-img {
+    position: absolute;
+    z-index: 100;
+    max-width: 6.375rem;
+    max-height: 6.25rem;
+  }
+
+  .application__container-img:nth-child(3) {
+    top: 2.25rem;
+    left: 0;
+    width: 6.375rem;
+    height: 6.25rem;
+  }
+
+  .application__container-img:nth-child(4) {
+    top: 4.75rem;
+    right: -1rem;
+    width: 6.375rem;
+    height: 6.25rem;
+  }
+
+  .application__container-img:nth-child(8) {
+    bottom: 2rem;
+    left: 0;
+    width: 6.375rem;
+    height: 6.25rem;
+  }
+
+  .application__container-img:nth-child(9) {
+    bottom: 2.75rem;
+    left: 17.063rem;
+    width: 6.375rem;
+    height: 6.25rem;
+  }
+
+  .application__container-text {
+    max-width: 49.563rem;
+    gap: 2rem;
+  }
+
+  .application__container-text h2 {
+    font-size: 4.375rem;
+  }
+
+  .application__container-text h3 {
+    font-size: 1rem;
+  }
+
+  .application-link {
+    padding-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .application-link-button {
+    font-size: 1.25rem;
+  }
+
+  .application-link-button svg {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .application-vertical-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #ffffff4d;
+    pointer-events: none;
+  }
+
+  .application-horizontal-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #ffffff4d;
+    pointer-events: none;
+  }
+
+  .application-vertical-line--left {
+    left: 2rem;
+  }
+
+  .application-vertical-line--center-left {
+    left: 7.25rem;
+  }
+
+  .application-vertical-line--center-right {
+    right: 7.25rem;
+  }
+
+  .application-vertical-line--right {
+    right: 2rem;
+  }
+
+  .application-horizontal-line--center-bottom {
+    bottom: 21.25rem;
+  }
+
+  .application-diagonal-lines {
+    width: 5.3rem;
+  }
+
+  .application-diagonal-lines-bottom {
+    width: 5.3rem;
+  }
+}
+
 /* Модальное окно заявки  */
 
 .application-modal {
