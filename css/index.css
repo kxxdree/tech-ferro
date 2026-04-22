@@ -2029,6 +2029,25 @@ html {
   }
 }
 
+@media (max-width: 360px) {
+  .categories {
+    min-height: auto;
+    padding-bottom: 0;
+  }
+
+  .categories__container {
+    padding: 3rem 1rem 3rem;
+  }
+
+  .categories__title {
+    margin-top: 0;
+  }
+
+  .categories__title h2 {
+    font-size: 3.125rem;
+  }
+}
+
 /* Лучшее */
 
 .best {
