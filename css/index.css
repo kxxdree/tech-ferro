@@ -1081,6 +1081,67 @@ html {
   }
 }
 
+@media (max-width: 360px) {
+  .hero {
+    height: 50rem;
+  }
+
+  .hero__container {
+    margin-top: 8.75rem;
+  }
+
+  .hero__title-wrapper {
+    flex-direction: column;
+    padding: 0 1rem;
+    gap: 0;
+  }
+
+  .hero__title-wrapper h2 {
+    margin-left: -2rem;
+  }
+
+  .hero__title {
+    font-size: 0.875rem;
+    min-width: 19.25rem;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero__description {
+    font-size: 3.125rem;
+    line-height: 1;
+  }
+
+
+
+  .hero__catalog-link {
+    width: 0px;
+    height: 0px;
+    bottom: 4rem;
+    right: 50%;
+    transform: translateX(50%);
+    border-radius: 0;
+    padding: 0.5rem 1rem;
+    backdrop-filter: none;
+    border: none;
+    background: none;
+    isolation: auto;
+    margin-bottom: 1rem;
+  }
+
+  .hero__catalog-link span {
+    font-size: 1.5;
+    font-weight: 300;
+  }
+
+  .hero__catalog-link img {
+    width: 0.75rem;
+    height: 0.75rem;
+    margin-top: 0;
+  }
+}
+
 /* Качество */
 
 .quality {
