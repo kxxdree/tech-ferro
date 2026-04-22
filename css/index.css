@@ -2584,6 +2584,10 @@ h3 {
   color: inherit;
 }
 
+.advantages__dots {
+  display: none;
+}
+
 /* Преимущества адаптив*/
 
 @media (max-width: 960px) {
@@ -2641,6 +2645,7 @@ h3 {
   .advantages__container {
     padding: 6.25rem 1rem 3.25rem;
     gap: 2.5rem;
+    position: relative;
   }
 
   .advantages__title-item {
@@ -2651,7 +2656,8 @@ h3 {
     display: flex;
     overflow-x: auto;
     gap: 1.5rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0;
+    scroll-snap-type: x mandatory;
   }
 
   .advantages__list::-webkit-scrollbar {
@@ -2681,6 +2687,25 @@ h3 {
 
   .advantages__list p {
     font-size: 1rem;
+  }
+
+  .advantages__dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.25rem;
+  }
+
+  .advantages__dots span {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #d0d5dd;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+  }
+
+  .advantages__dots span.active {
+    background-color: #475467;
   }
 }
 
