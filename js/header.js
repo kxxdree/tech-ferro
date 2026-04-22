@@ -17,11 +17,24 @@ fetch("/components/header/header.html")
       }
     });
 
+    document.querySelectorAll(".menu__content-list li a").forEach((link) => {
+      const href = link.getAttribute("href");
+      const linkPage = href.replace(".html", "").replace("/", "");
+
+      const menuItem = link.closest("li");
+      menuItem.classList.remove("active-link");
+
+      if (linkPage === activePage || (activePage === "index" && href === "/")) {
+        menuItem.classList.add("active-link");
+      }
+    });
+
     initSearch();
     initMenu();
   });
 
 // Открытие поиска
+
 function initSearch() {
   const searchButton = document.getElementById("search-button");
   const searchOverlay = document.getElementById("mainSearch");
