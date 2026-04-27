@@ -3119,7 +3119,7 @@ h3 {
   left: 50%;
   transform: translate(-50%);
   width: 46.25rem;
-  border: 1.33px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   pointer-events: none;
 }
@@ -3159,13 +3159,13 @@ h3 {
   align-items: center;
   width: fit-content;
   margin: auto;
-  border-bottom: 1.33px solid white;
+  border-bottom: 1px solid white;
   transition: border-bottom-color 0.2s ease;
 }
 
 .application-link-button {
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 300;
   line-height: 1.1;
   letter-spacing: -0.05em;
@@ -3206,7 +3206,7 @@ h3 {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 1.33px;
+  width: 1px;
   background-color: #ffffff4d;
   pointer-events: none;
 }
@@ -3215,7 +3215,7 @@ h3 {
   position: absolute;
   left: 0;
   right: 0;
-  height: 1.33px;
+  height: 1px;
   background-color: #ffffff4d;
   pointer-events: none;
 }
