@@ -77,6 +77,8 @@ html {
 
 .active-link {
   position: relative;
+  pointer-events: none;
+  cursor: default;
 }
 
 .active-link::before {
