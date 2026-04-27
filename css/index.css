@@ -1702,7 +1702,7 @@ html {
 .categories {
   width: 100%;
   background-color: #252324;
-  min-height: 75rem;
+  height: auto;
   position: relative;
 }
 
@@ -1721,14 +1721,13 @@ html {
 }
 
 .categories__container {
-  padding: 0 4rem;
+  padding: 2rem 4rem 4.75rem;
   display: flex;
   flex-direction: column;
-  gap: 15.646rem;
+  gap: 6.25rem;
 }
 
 .categories__title {
-  margin-top: 3.917rem;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -1814,7 +1813,7 @@ html {
   overflow: hidden;
   min-width: 26.5rem;
   max-width: 26.5rem;
-  height: 38.313rem;
+  height: 35.5rem;
 }
 
 .categories-list li a {
