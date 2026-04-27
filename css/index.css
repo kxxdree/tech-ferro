@@ -3118,7 +3118,7 @@ h3 {
   bottom: 5rem;
   left: 50%;
   transform: translate(-50%);
-  width: 46.25rem;
+  width: 48rem;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   pointer-events: none;
@@ -3128,7 +3128,7 @@ h3 {
   display: flex;
   flex-direction: column;
   max-width: 66.083rem;
-  gap: 2.667rem;
+  gap: 2rem;
   text-align: center;
   margin: auto;
 }
@@ -3139,7 +3139,7 @@ h3 {
 }
 
 .application__container-text h2 {
-  font-size: 5rem;
+  font-size: 5.25rem;
   letter-spacing: -0.08em;
   max-width: 49.563rem;
 }
@@ -3225,11 +3225,11 @@ h3 {
 }
 
 .application-vertical-line--center-left {
-  left: 18.75rem;
+  left: 18rem;
 }
 
 .application-vertical-line--center-right {
-  right: 18.75rem;
+  right: 18rem;
 }
 
 .application-vertical-line--right {
@@ -3244,7 +3244,7 @@ h3 {
   position: absolute;
   left: 0;
   top: 5.15rem;
-  width: 18.75rem;
+  width: 18rem;
   height: 31.75rem;
   background-image: repeating-linear-gradient(130deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5) 1.33px, transparent 0.125rem, transparent 1.5rem);
   pointer-events: none;
@@ -3255,7 +3255,7 @@ h3 {
   position: absolute;
   right: 0;
   bottom: 5rem;
-  width: 18.75rem;
+  width: 18rem;
   height: 17rem;
   background-image: repeating-linear-gradient(125deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) 1.33px, transparent 0.125rem, transparent 1.5rem);
   pointer-events: none;
@@ -3281,6 +3281,7 @@ h3 {
 
   .application__container {
     padding: 3rem 2rem;
+    width: 100%;
   }
 
   .application__container::before {
