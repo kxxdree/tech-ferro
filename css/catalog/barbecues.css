@@ -77,7 +77,7 @@
 .category__header-types li,
 .category__header-types-mobile li {
   padding: 0.5rem 1rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   border: 1px solid transparent;
   color: #121011;
   transition: all 0.2s ease;
