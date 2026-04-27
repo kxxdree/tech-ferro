@@ -38,6 +38,7 @@
   max-width: 1440px;
   display: flex;
   flex-direction: column;
+  gap: 5rem;
   margin: auto;
 }
 
@@ -553,6 +554,7 @@
 
   .card-container {
     margin: 0;
+    gap: 0;
   }
 
   .card-details {
