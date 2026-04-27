@@ -3016,7 +3016,7 @@ h3 {
 .application {
   width: 100%;
   background-color: #252324;
-  height: 75rem;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -3025,7 +3025,7 @@ h3 {
 .application::before {
   content: "";
   position: absolute;
-  top: 6.667rem;
+  top: 5rem;
   left: 0;
   right: 0;
   height: 1.33px;
@@ -3037,7 +3037,7 @@ h3 {
 .application::after {
   content: "";
   position: absolute;
-  bottom: 6.667rem;
+  bottom: 5rem;
   left: 0;
   right: 0;
   height: 1.33px;
@@ -3050,16 +3050,18 @@ h3 {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 84rem;
+  margin: auto;
   height: 100%;
-  padding: 4rem;
+  padding: 3rem;
 }
 
 .application__container-img {
   position: absolute;
   z-index: 100;
-  max-width: 16.625rem;
-  max-height: 16.625rem;
+  max-width: 12.5rem;
+  max-height: 12.5rem;
+  display: none;
 }
 
 .application__container-img:nth-child(2) {
@@ -3070,8 +3072,8 @@ h3 {
 .application__container-img:nth-child(3) {
   top: 4rem;
   right: 4rem;
-  width: 16.625rem;
-  height: 16.625rem;
+  width: 12.5rem;
+  height: 12.5rem;
 }
 
 .application__container-img:nth-child(4) {
@@ -3082,8 +3084,8 @@ h3 {
 .application__container-img:nth-child(5) {
   bottom: 14.333rem;
   right: 14.077rem;
-  width: 16.625rem;
-  height: 16.625rem;
+  width: 12.5rem;
+  height: 12.5rem;
 }
 
 .application__container-img:nth-child(6) {
@@ -3105,18 +3107,18 @@ h3 {
 .application__container-img:nth-child(9) {
   bottom: 29.167rem;
   left: 4rem;
-  width: 16.625rem;
-  height: 16.625rem;
+  width: 12.5rem;
+  height: 12.5rem;
 }
 
 .application__container::before {
   content: "";
   position: absolute;
-  top: 6.667rem;
-  bottom: 6.667rem;
+  top: 5rem;
+  bottom: 5rem;
   left: 50%;
   transform: translate(-50%);
-  width: 62rem;
+  width: 46.25rem;
   border: 1.33px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   pointer-events: none;
@@ -3134,20 +3136,20 @@ h3 {
 .application__container-text h2,
 h3 {
   color: white;
-  font-weight: 400;
 }
 
 .application__container-text h2 {
-  font-size: 6.667rem;
+  font-size: 5rem;
   letter-spacing: -0.08em;
+  max-width: 49.563rem;
 }
 
 .application__container-text h3 {
-  font-size: 1.667rem;
+  font-size: 1.25rem;
   font-weight: 300;
   line-height: 1.2;
   letter-spacing: -0.05em;
-  max-width: 35.917rem;
+  max-width: 26.938rem;
   text-transform: uppercase;
   margin: auto;
 }
@@ -3219,31 +3221,31 @@ h3 {
 }
 
 .application-vertical-line--left {
-  left: 4rem;
+  left: 0;
 }
 
 .application-vertical-line--center-left {
-  left: 28.5rem;
+  left: 18.75rem;
 }
 
 .application-vertical-line--center-right {
-  right: 28.5rem;
+  right: 18.75rem;
 }
 
 .application-vertical-line--right {
-  right: 4rem;
+  right: 0;
 }
 
 .application-horizontal-line--center-bottom {
-  bottom: 28rem;
+  bottom: 22rem;
 }
 
 .application-diagonal-lines {
   position: absolute;
-  left: 4rem;
-  top: 6.81rem;
-  width: 24.5rem;
-  height: 40.1rem;
+  left: 0;
+  top: 5.15rem;
+  width: 18.75rem;
+  height: 31.75rem;
   background-image: repeating-linear-gradient(130deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5) 1.33px, transparent 0.125rem, transparent 1.5rem);
   pointer-events: none;
   z-index: 0;
@@ -3251,10 +3253,10 @@ h3 {
 
 .application-diagonal-lines-bottom {
   position: absolute;
-  right: 4.05rem;
-  bottom: 6.8rem;
-  width: 24.5rem;
-  height: 21.25rem;
+  right: 0;
+  bottom: 5rem;
+  width: 18.75rem;
+  height: 17rem;
   background-image: repeating-linear-gradient(125deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) 1.33px, transparent 0.125rem, transparent 1.5rem);
   pointer-events: none;
   z-index: 0;
