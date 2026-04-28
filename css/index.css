@@ -1703,6 +1703,7 @@ html {
   width: 100%;
   background-color: #252324;
   height: 100vh;
+  max-height: 62.063rem;
   position: relative;
 }
 
@@ -1732,7 +1733,7 @@ html {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  padding-bottom: 1rem;
+  /* padding-bottom: 1rem; */
   position: relative;
 }
 
@@ -2074,7 +2075,7 @@ html {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  padding-bottom: 1rem;
+  /* padding-bottom: 1rem; */
   position: relative;
   border-bottom: 1.33px solid rgba(0, 0, 0, 0.3);
 }
