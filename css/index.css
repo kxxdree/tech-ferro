@@ -3065,20 +3065,22 @@ h3 {
 }
 
 .application__container-img:nth-child(2) {
-  top: 4rem;
-  left: 19.083rem;
+  top: 3rem;
+  left: 12rem;
+  width: 8.75rem;
+  height: 8.75rem;
 }
 
 .application__container-img:nth-child(3) {
-  top: 4rem;
-  right: 4rem;
-  width: 12.5rem;
-  height: 12.5rem;
+  top: 3rem;
+  right: 0;
 }
 
 .application__container-img:nth-child(4) {
-  top: 15.417rem;
-  right: 13.667rem;
+  top: 11.563rem;
+  right: 7rem;
+  width: 8.75rem;
+  height: 8.75rem;
 }
 
 .application__container-img:nth-child(5) {
