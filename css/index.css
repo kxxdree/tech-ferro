@@ -77,6 +77,8 @@ html {
 
 .active-link {
   position: relative;
+  pointer-events: none;
+  cursor: default;
 }
 
 .active-link::before {
@@ -1700,7 +1702,8 @@ html {
 .categories {
   width: 100%;
   background-color: #252324;
-  min-height: 75rem;
+  height: 100vh;
+  max-height: 62.063rem;
   position: relative;
 }
 
@@ -1719,18 +1722,18 @@ html {
 }
 
 .categories__container {
-  padding: 0 4rem;
+  padding: 2rem 4rem 4.75rem;
   display: flex;
   flex-direction: column;
-  gap: 15.646rem;
+  height: 100%;
+  /* gap: 6.25rem; */
 }
 
 .categories__title {
-  margin-top: 3.917rem;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  padding-bottom: 1rem;
+  /* padding-bottom: 1rem; */
   position: relative;
 }
 
@@ -1746,8 +1749,7 @@ html {
 
 .categories__title h2 {
   color: white;
-  font-size: 11.667rem;
-  font-weight: 400;
+  font-size: 8.75rem;
   letter-spacing: -0.08em;
   line-height: 1;
   transition: color 0.3s ease;
@@ -1764,7 +1766,7 @@ html {
 
 .categories__title-link a {
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 1.1;
   letter-spacing: -0.05em;
   text-decoration: none;
@@ -1772,8 +1774,8 @@ html {
 }
 
 .categories__title-link svg {
-  width: 1.125rem;
-  height: 1.125rem;
+  width: 1rem;
+  height: 1rem;
 }
 
 .categories__title-link svg path {
@@ -1794,6 +1796,7 @@ html {
 
 .categories-list--wrapper {
   position: relative;
+  margin-top: auto;
 }
 
 .categories-list {
@@ -1812,7 +1815,7 @@ html {
   overflow: hidden;
   min-width: 26.5rem;
   max-width: 26.5rem;
-  height: 38.313rem;
+  height: 35.5rem;
 }
 
 .categories-list li a {
@@ -2072,14 +2075,14 @@ html {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  padding-bottom: 1rem;
+  /* padding-bottom: 1rem; */
   position: relative;
   border-bottom: 1.33px solid rgba(0, 0, 0, 0.3);
 }
 
 .best__title h2 {
   color: black;
-  font-size: 11.667rem;
+  font-size: 8.75rem;
   font-weight: 400;
   letter-spacing: -0.08em;
   line-height: 1;
@@ -2097,7 +2100,7 @@ html {
 
 .best__title-link a {
   color: black;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 1.1;
   letter-spacing: -0.05em;
   text-decoration: none;
@@ -2105,8 +2108,8 @@ html {
 }
 
 .best__title-link svg {
-  width: 1.125rem;
-  height: 1.125rem;
+  width: 1rem;
+  height: 1rem;
   margin-top: 0.25rem;
 }
 
@@ -2799,8 +2802,7 @@ h3 {
 .advantages__title-item {
   display: block;
   width: 100%;
-  font-size: 11.667rem;
-  font-weight: 400;
+  font-size: 8.75rem;
   line-height: 1.1;
   letter-spacing: -0.08em;
 }
@@ -3015,7 +3017,7 @@ h3 {
 .application {
   width: 100%;
   background-color: #252324;
-  height: 75rem;
+  height: 62.063rem;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -3024,7 +3026,7 @@ h3 {
 .application::before {
   content: "";
   position: absolute;
-  top: 6.667rem;
+  top: 5rem;
   left: 0;
   right: 0;
   height: 1.33px;
@@ -3036,7 +3038,7 @@ h3 {
 .application::after {
   content: "";
   position: absolute;
-  bottom: 6.667rem;
+  bottom: 5rem;
   left: 0;
   right: 0;
   height: 1.33px;
@@ -3049,74 +3051,86 @@ h3 {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 84rem;
+  margin: auto;
   height: 100%;
-  padding: 4rem;
+  padding: 3rem;
 }
 
 .application__container-img {
   position: absolute;
   z-index: 100;
-  max-width: 16.625rem;
-  max-height: 16.625rem;
+  max-width: 12.5rem;
+  max-height: 12.5rem;
 }
 
 .application__container-img:nth-child(2) {
-  top: 4rem;
-  left: 19.083rem;
+  top: 3rem;
+  left: 12rem;
+  width: 8.75rem;
+  height: 8.75rem;
 }
 
 .application__container-img:nth-child(3) {
-  top: 4rem;
-  right: 4rem;
-  width: 16.625rem;
-  height: 16.625rem;
+  top: 3rem;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .application__container-img:nth-child(4) {
-  top: 15.417rem;
-  right: 13.667rem;
+  top: 11.563rem;
+  right: 7rem;
+  width: 8.75rem;
+  height: 8.75rem;
 }
 
 .application__container-img:nth-child(5) {
-  bottom: 14.333rem;
-  right: 14.077rem;
-  width: 16.625rem;
-  height: 16.625rem;
+  bottom: 12.75rem;
+  right: 7.563rem;
+  width: 12.25rem;
+  height: 100%;
 }
 
 .application__container-img:nth-child(6) {
-  bottom: 8.5rem;
-  right: 27.917rem;
+  bottom: 7.5rem;
+  right: 18rem;
+  width: 8.75rem;
+  height: 8.75rem;
 }
 
 .application__container-img:nth-child(7) {
-  bottom: 4rem;
-  left: 42rem;
+  bottom: 3rem;
+  left: 28.5rem;
+  width: 8.75rem;
+  height: 8.75rem;
 }
 
 .application__container-img:nth-child(8) {
-  bottom: 23.333rem;
-  left: 13.667rem;
+  bottom: 19rem;
+  left: 5rem;
+  width: 8.75rem;
+  height: 8.75rem;
   z-index: 11;
 }
 
 .application__container-img:nth-child(9) {
-  bottom: 29.167rem;
-  left: 4rem;
-  width: 16.625rem;
-  height: 16.625rem;
+  bottom: 24rem;
+  left: -4rem;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
 }
 
 .application__container::before {
   content: "";
   position: absolute;
-  top: 6.667rem;
-  bottom: 6.667rem;
+  top: 5rem;
+  bottom: 5rem;
   left: 50%;
   transform: translate(-50%);
-  width: 62rem;
-  border: 1.33px solid rgba(255, 255, 255, 0.3);
+  width: 50rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   pointer-events: none;
 }
@@ -3125,7 +3139,7 @@ h3 {
   display: flex;
   flex-direction: column;
   max-width: 66.083rem;
-  gap: 2.667rem;
+  gap: 2rem;
   text-align: center;
   margin: auto;
 }
@@ -3133,20 +3147,20 @@ h3 {
 .application__container-text h2,
 h3 {
   color: white;
-  font-weight: 400;
 }
 
 .application__container-text h2 {
-  font-size: 6.667rem;
+  font-size: 5.75rem;
   letter-spacing: -0.08em;
+  max-width: 49.563rem;
 }
 
 .application__container-text h3 {
-  font-size: 1.667rem;
+  font-size: 1.25rem;
   font-weight: 300;
   line-height: 1.2;
   letter-spacing: -0.05em;
-  max-width: 35.917rem;
+  max-width: 26.938rem;
   text-transform: uppercase;
   margin: auto;
 }
@@ -3156,13 +3170,13 @@ h3 {
   align-items: center;
   width: fit-content;
   margin: auto;
-  border-bottom: 1.33px solid white;
+  border-bottom: 1px solid white;
   transition: border-bottom-color 0.2s ease;
 }
 
 .application-link-button {
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 300;
   line-height: 1.1;
   letter-spacing: -0.05em;
@@ -3203,7 +3217,7 @@ h3 {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 1.33px;
+  width: 1px;
   background-color: #ffffff4d;
   pointer-events: none;
 }
@@ -3212,37 +3226,38 @@ h3 {
   position: absolute;
   left: 0;
   right: 0;
-  height: 1.33px;
+  height: 1px;
   background-color: #ffffff4d;
   pointer-events: none;
 }
 
 .application-vertical-line--left {
-  left: 4rem;
+  left: -4rem;
 }
 
 .application-vertical-line--center-left {
-  left: 28.5rem;
+  left: 17rem;
 }
 
 .application-vertical-line--center-right {
-  right: 28.5rem;
+  right: 17rem;
 }
 
 .application-vertical-line--right {
-  right: 4rem;
+  right: -4rem;
 }
 
 .application-horizontal-line--center-bottom {
-  bottom: 28rem;
+  bottom: 23.25rem;
+  margin: 0 -4rem;
 }
 
 .application-diagonal-lines {
   position: absolute;
-  left: 4rem;
-  top: 6.81rem;
-  width: 24.5rem;
-  height: 40.1rem;
+  left: -4rem;
+  top: 5.15rem;
+  width: 21rem;
+  height: 33.5rem;
   background-image: repeating-linear-gradient(130deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5) 1.33px, transparent 0.125rem, transparent 1.5rem);
   pointer-events: none;
   z-index: 0;
@@ -3250,10 +3265,10 @@ h3 {
 
 .application-diagonal-lines-bottom {
   position: absolute;
-  right: 4.05rem;
-  bottom: 6.8rem;
-  width: 24.5rem;
-  height: 21.25rem;
+  right: -4rem;
+  bottom: 5rem;
+  width: 21rem;
+  height: 18.25rem;
   background-image: repeating-linear-gradient(125deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) 1.33px, transparent 0.125rem, transparent 1.5rem);
   pointer-events: none;
   z-index: 0;
@@ -3278,6 +3293,7 @@ h3 {
 
   .application__container {
     padding: 3rem 2rem;
+    width: 100%;
   }
 
   .application__container::before {
