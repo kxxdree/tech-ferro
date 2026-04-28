@@ -3016,7 +3016,7 @@ h3 {
 .application {
   width: 100%;
   background-color: #252324;
-  height: 100vh;
+  height: 62.063rem;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -3118,7 +3118,7 @@ h3 {
   bottom: 5rem;
   left: 50%;
   transform: translate(-50%);
-  width: 48rem;
+  width: 50rem;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   pointer-events: none;
@@ -3225,11 +3225,11 @@ h3 {
 }
 
 .application-vertical-line--center-left {
-  left: 18rem;
+  left: 17rem;
 }
 
 .application-vertical-line--center-right {
-  right: 18rem;
+  right: 17rem;
 }
 
 .application-vertical-line--right {
@@ -3237,15 +3237,15 @@ h3 {
 }
 
 .application-horizontal-line--center-bottom {
-  bottom: 22rem;
+  bottom: 23.75rem;
 }
 
 .application-diagonal-lines {
   position: absolute;
   left: 0;
   top: 5.15rem;
-  width: 18rem;
-  height: 31.75rem;
+  width: 17rem;
+  height: 33rem;
   background-image: repeating-linear-gradient(130deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5) 1.33px, transparent 0.125rem, transparent 1.5rem);
   pointer-events: none;
   z-index: 0;
@@ -3255,8 +3255,8 @@ h3 {
   position: absolute;
   right: 0;
   bottom: 5rem;
-  width: 18rem;
-  height: 17rem;
+  width: 17rem;
+  height: 18.75rem;
   background-image: repeating-linear-gradient(125deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) 1.33px, transparent 0.125rem, transparent 1.5rem);
   pointer-events: none;
   z-index: 0;
