@@ -3074,6 +3074,8 @@ h3 {
 .application__container-img:nth-child(3) {
   top: 3rem;
   right: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .application__container-img:nth-child(4) {
@@ -3087,7 +3089,7 @@ h3 {
   bottom: 12.75rem;
   right: 7.563rem;
   width: 12.25rem;
-  height: 12.5rem;
+  height: 100%;
 }
 
 .application__container-img:nth-child(6) {
@@ -3098,21 +3100,26 @@ h3 {
 }
 
 .application__container-img:nth-child(7) {
-  bottom: 4rem;
-  left: 42rem;
+  bottom: 3rem;
+  left: 28.5rem;
+  width: 8.75rem;
+  height: 8.75rem;
 }
 
 .application__container-img:nth-child(8) {
-  bottom: 23.333rem;
-  left: 13.667rem;
+  bottom: 19rem;
+  left: 7rem;
+  width: 8.75rem;
+  height: 8.75rem;
   z-index: 11;
 }
 
 .application__container-img:nth-child(9) {
-  bottom: 29.167rem;
-  left: 4rem;
-  width: 12.5rem;
-  height: 12.5rem;
+  bottom: 24rem;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
 }
 
 .application__container::before {
