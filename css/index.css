@@ -3091,8 +3091,10 @@ h3 {
 }
 
 .application__container-img:nth-child(6) {
-  bottom: 8.5rem;
-  right: 27.917rem;
+  bottom: 7.5rem;
+  right: 18rem;
+  width: 8.75rem;
+  height: 8.75rem;
 }
 
 .application__container-img:nth-child(7) {
