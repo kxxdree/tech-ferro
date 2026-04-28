@@ -3245,7 +3245,7 @@ h3 {
   left: 0;
   top: 5.15rem;
   width: 17rem;
-  height: 33rem;
+  height: 33.5rem;
   background-image: repeating-linear-gradient(130deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5) 1.33px, transparent 0.125rem, transparent 1.5rem);
   pointer-events: none;
   z-index: 0;
@@ -3256,7 +3256,7 @@ h3 {
   right: 0;
   bottom: 5rem;
   width: 17rem;
-  height: 18.75rem;
+  height: 18.25rem;
   background-image: repeating-linear-gradient(125deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3) 1.33px, transparent 0.125rem, transparent 1.5rem);
   pointer-events: none;
   z-index: 0;
