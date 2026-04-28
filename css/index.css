@@ -3061,7 +3061,7 @@ h3 {
   z-index: 100;
   max-width: 12.5rem;
   max-height: 12.5rem;
-  display: none;
+  /* display: none; */
 }
 
 .application__container-img:nth-child(2) {
@@ -3139,7 +3139,7 @@ h3 {
 }
 
 .application__container-text h2 {
-  font-size: 5.25rem;
+  font-size: 5.75rem;
   letter-spacing: -0.08em;
   max-width: 49.563rem;
 }
@@ -3237,7 +3237,7 @@ h3 {
 }
 
 .application-horizontal-line--center-bottom {
-  bottom: 23.75rem;
+  bottom: 23.25rem;
 }
 
 .application-diagonal-lines {
